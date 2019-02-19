@@ -1,0 +1,386 @@
+.integral-top {
+    background: url("../../img/images/integral/integral-top.png") no-repeat center;
+    width: 100%;
+    min-width: 1280px;
+    height: 200px;
+}
+
+.integral-top .left-top {
+    float: left;
+    width: 880px;
+    height: 200px;
+}
+
+.integral-top .left-top > img {
+    float: left;
+    margin: 30px 0 0 20px;
+}
+
+.integral-top .left-top ul {
+    float: left;
+    margin: 80px 0 0 20px;
+}
+
+.integral-top .left-top ul li {
+    float: left;
+    color: #ede170;
+    font-size: 14px;
+}
+
+.integral-top .left-top ul .split-lines {
+    margin: 3px 20px 0 20px;
+    border-right: 1px solid #00a964;
+    height: 15px;
+}
+
+.integral-top .left-top ul li > a {
+    font-size: 12px;
+    color: #00a964;
+    text-decoration: underline;
+}
+
+.integral-top .right-top {
+    float: right;
+    font-size: 12px;
+    margin-top: 95px;
+    color: #ffffff;
+}
+
+.integral-top .right-top > a {
+    color: #ffffff;
+}
+
+.integral-top .right-top > a:hover {
+    color: #ffffff;
+}
+
+/*积分banner*/
+.integral-banner {
+    height: 560px;
+    background-color: #ffffff;
+}
+
+.integral-content {
+    width: 1280px;
+    margin: 0 auto;
+    border-bottom: 0;
+    position: relative;
+}
+
+.integral-banner .integral-content {
+    height: 560px;
+}
+
+.integral-banner .banner-box {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    z-index: 9;
+    height: 380px;
+    width: 1280px;
+    background-color: #ffffff;
+}
+
+.integral-banner .banner-box .change-integral {
+    position: relative;
+    width: 1280px;
+    height: 380px;
+    overflow: hidden;
+}
+
+.integral-banner .banner-box .change-integral li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1280px;
+    height: 380px;
+}
+
+.integral-banner .banner-box .change-integral li > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.integral-banner .banner-box .change-integral .banner1 {
+    background: url("../../img/images/integral/integral-banner1.png") no-repeat center;
+}
+
+.integral-banner .banner-box .change-integral .banner2 {
+    background: url("../../img/images/integral/integral-banner2.png") no-repeat center;
+}
+
+.integral-banner .banner-box .change-integral .banner3 {
+    background: url("../images/integral/integral-banner3.png") no-repeat center;
+}
+
+.integral-banner .banner-box .change-integral .banner4 {
+    background: url("../images/integral/integral-banner4.png") no-repeat center;
+}
+
+/*控制原点*/
+.integral-banner .banner-box .control-box {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    z-index: 15;
+    cursor: pointer;
+}
+
+.integral-banner .banner-box .control-box > li {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    float: left;
+    margin-right: 10px;
+}
+
+.integral-banner .banner-box .control-box .active-banner {
+    background-color: #07813B;
+}
+
+/*优惠券*/
+.integral-banner .coupons-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    padding: 30px 0;
+}
+
+.integral-banner .coupons-box > li {
+    float: left;
+    margin-left: 40px;
+    width: 400px;
+    height: 181px;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.integral-banner .coupons-box > li > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.integral-banner .coupons-box > li:hover {
+    transform: translateY(-5px);
+}
+
+.integral-banner .coupons-box > li:first-child {
+    margin-left: 0;
+}
+
+.integral-banner .coupons-box .coupon1 {
+    background: url("../../img/images/integral/coupon1.png") no-repeat center;
+}
+
+.integral-banner .coupons-box .coupon2 {
+    background: url("../../img/images/integral/coupon2.png") no-repeat center;
+}
+
+.integral-banner .coupons-box .coupon3 {
+    background: url("../../img/images/integral/coupon3.png") no-repeat center;
+}
+
+.integral-banner .coupons-box > li .cash-box {
+    float: left;
+    width: 207px;
+    height: 181px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+.integral-banner .coupons-box > li .cash-box > i {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.integral-banner .coupons-box > li .cash-box > span {
+    font-size: 24px;
+}
+
+.integral-banner .coupons-box > li .cash-box > em {
+    font-size: 14px;
+}
+
+.integral-banner .coupons-box > li .exchange {
+    float: left;
+    width: 192px;
+    height: 181px;
+    text-align: center;
+    padding-top: 45px;
+    box-sizing: border-box;
+}
+
+.integral-banner .coupons-box > li .exchange > em {
+    font-size: 14px;
+    color: #3e3a3a;
+}
+
+.integral-banner .coupons-box > li .exchange > span {
+    font-size: 18px;
+    color: #f53848;
+    display: block;
+}
+
+.integral-banner .coupons-box > li .exchange > i {
+    width: 118px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 100px;
+    background-color: #ffffff;
+    color: #3e3a3a;
+}
+
+/*切换列表*/
+.switch-box {
+    height: 70px;
+}
+
+.switch-list li {
+    float: left;
+    height: 70px;
+    line-height: 70px;
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+    font-size: 18px;
+    color: #3e3a3a;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.switch-list li:hover {
+    color: #008144;
+    border-bottom: 2px solid #008144;
+}
+
+.switch-list .split-lines {
+    margin: 26px 20px 0;
+    height: 20px;
+    border-left: 1px solid #efefef;
+}
+
+.switch-list .active-list {
+    color: #008144;
+    border-bottom: 2px solid #008144;
+}
+
+/*礼品盒子*/
+.justify-box {
+    background-color: #f7f8f8;
+    padding-top: 40px;
+}
+
+.justify-box .justify-item {
+    width: 1280px;
+    min-height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.justify-box .justify-item:first-child + .justify-item{
+    display: none;
+}
+.justify-box .justify-item .lists-box{
+    margin-right: -40px;
+}
+.justify-box .justify-item .lists-box:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.justify-box .justify-item .item {
+    float: left;
+    width: 400px;
+    height: 480px;
+    margin: 0 40px 40px 0;
+    background-color: #ffffff;
+    text-align: center;
+    transition: all .3s;
+}
+.justify-box .justify-item .item:hover{
+    box-shadow: 0 2px 6px 4px #f1f2f2;
+    transform: translateY(-5px);
+}
+.justify-box .justify-item .item:hover a{
+    color: initial;
+}
+.justify-box .justify-item .item>a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.justify-box .justify-item .last-item {
+    margin-right: 0;
+}
+.justify-box .justify-item .item .product{
+   width: 400px;
+    height: 300px;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+.justify-box .justify-item .item .product>img{
+    max-width: 400px;
+    height: 100%;
+}
+.justify-box .justify-item .item .iqy-box{
+    width: 400px;
+    height: 300px;
+    text-align: center;
+}
+.justify-box .justify-item .item .item-text {
+    font-size: 18px;
+    text-align: left;
+    word-break: break-all;
+    width: 340px;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 20px;
+    margin: 25px auto 0;
+    height: 55px;
+    line-height: 35px;
+    overflow: hidden;
+}
+.justify-item .item .limit-box{
+    margin-top: 20px;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+.justify-item .item .limit-box:after{
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+.justify-item .item .limit-box .limit-left {
+    font-size: 14px;
+    float: left;
+    margin-top: 10px;
+}
+
+.justify-item .item .limit-box .limit-left > span {
+    color: #f53848;
+    font-size: 18px;
+}
+/*btn*/
+.btn{
+    width: 120px;
+    font-size: 14px;
+    margin-top: 0;
+}
+.btn:hover{
+    box-shadow: 0 2px 6px #cfcece;
+}
+.justify-item .item .limit-box .btn{
+    float: right;
+}

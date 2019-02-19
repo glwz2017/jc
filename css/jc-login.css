@@ -1,0 +1,250 @@
+.login-warp {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+/*主体*/
+.section {
+    width: 100%;
+    min-width: 1280px;
+    background: url("../../img/images/jc-login/jc-login.jpg") no-repeat center;
+    height: 648px;
+}
+
+.login-box {
+    position: absolute;
+    top: 50px;
+    right: 42px;
+    width: 480px;
+    height: 550px;
+}
+
+.login-box .login-title {
+    font-size: 18px;
+    color: #595656;
+    height: 50px;
+    line-height: 50px;
+    background-color: #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.login-box .login-title > li {
+    float: left;
+    width: 240px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login-box .login-title .active {
+    background-color: #ffffff;
+}
+
+/*用户登录*/
+.user-login {
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    padding-top: 77px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.user-login input[type="text"], input[type="password"] {
+    width: 270px;
+    height: 40px;
+    line-height: 40px \9;
+    border: none;
+    outline: none;
+    text-indent: 15px;
+    margin-left: 10px;
+    background: url("../../img/images/jc-login/jc-input.png") no-repeat center;
+}
+
+.user-login p:first-child + p {
+    margin-top: 20px;
+}
+
+.keep-pwd {
+    display: inline-block;
+    width: 195px;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 12px;
+    margin-left: 5px;
+    position: relative;
+}
+
+.keep-pwd > input {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.login-btn {
+    margin-top: 40px;
+}
+
+.login-btn > a {
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    color: #ffffff;
+    border-radius: 2px;
+    background-color: #238d32;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.login-btn > a:hover {
+    background-color: #00a656;
+    box-shadow: 0 2px 0 0 #e8e8e8;
+    color: #ffffff;
+}
+
+.no-user {
+    margin-top: 50px;
+    width: 335px;
+    border-top: 1px #c9caca dashed;
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+}
+
+.no-user > span {
+    position: absolute;
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    top: -8px;
+    left: 100px;
+    background-color: #ffffff;
+    width: 157px;
+}
+
+.no-user > span > a {
+    color: #00be67;
+}
+
+/*用户注册*/
+.user-registration {
+    height: 500px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #ffffff;
+    display: none;
+}
+
+.user-registration  p {
+    margin-bottom: 16px;
+    margin-left: -22px;
+}
+
+.user-registration input[type="text"], input[type="password"] {
+    width: 270px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    outline: none;
+    text-indent: 15px;
+    margin-left: 0;
+    background: url("../../img/images/jc-login/jc-input.png") no-repeat center;
+}
+
+.user-registration label {
+    width: 80px;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.user-registration  p:first-child + p input {
+    width: 167px;
+    height: 40px;
+    line-height: 40px;
+    background: url("../../img/images/jc-login/code-input.png") no-repeat center;
+}
+
+.user-registration  p:first-child + p a {
+    border: 1px solid #9eb2cd;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 13px;
+    height: 38px;
+    width: 82px;
+    font-size: 12px;
+    background-color: #fff;
+}
+
+.user-registration  p:first-child + p + p {
+    position: relative;
+}
+
+.user-registration  p:first-child + p + p > a {
+    display: inline-block;
+    width: 100px;
+    position: absolute;
+    right: 71px;
+    top: 5px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 2px;
+    color: #ffffff;
+}
+
+.get-code {
+    background-color: #238d32;
+    cursor: pointer;
+}
+
+.active-code {
+    cursor: not-allowed;
+    background-color: #595656;
+}
+
+.agreement {
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 25px !important;
+}
+.agreement input{
+    vertical-align: middle;
+}
+.agreement label{
+    margin-right: 0;
+}
+.register-now{
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    color: #ffffff;
+    border-radius: 2px;
+    background-color: #238d32;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.register-now:hover{
+    background-color: #00a656;
+    box-shadow: 0 2px 0 0 #e8e8e8;
+    color: #ffffff;
+}
+.agreement a{
+    color: #1f8d40;
+}
+.footer {
+    background-color: #ffffff !important;
+}
+.footer p{
+    font-size: 12px;
+    color: #9fa0a0;
+    margin-top: 10px;
+}
+.footer p>span{
+    font-size: 36px;
+    vertical-align: middle;
+    margin-right: 25px;
+}

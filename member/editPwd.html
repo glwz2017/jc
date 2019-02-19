@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        .edit-pwd {
+            width: 850px;
+            background-color: #ffffff;
+            padding-bottom: 50px;
+        }
+
+        .pwd-box {
+            width: 420px;
+            height: auto;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+
+        .pwd-box  p {
+            margin-bottom: 20px;
+        }
+
+        .pwd-box  p > label {
+            width: 115px;
+            display: inline-block;
+            font-size: 14px;
+            color: #3e3a3a;
+        }
+
+        .pwd-box  p > input[type="password"] {
+            width: 295px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #f4f4f4;
+            border: 1px solid #d7d7d7;
+            text-indent: 15px;
+        }
+        .edit-pwd .get-box{
+            text-align: center;
+            margin-left: 30px;
+        }
+        .edit-pwd .get-box>input{
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #046122;
+            border-radius: 2px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            color: #ffffff;
+            margin-top: 15px;
+            transition: all .3s;
+        }
+        .edit-pwd .get-box>input:hover{
+            background-color: #045720;
+        }
+    </style>
+</head>
+<body>
+<div class="edit-pwd">
+    <div class="pwd-box">
+        <form action="#">
+            <p>
+                <label for="old-pwd">请填写旧密码:</label>
+                <input type="password" id="old-pwd">
+            </p>
+            <p>
+                <label for="new-pwd">请填写新密码:</label>
+                <input type="password" id="new-pwd">
+            </p>
+            <p>
+                <label for="check-pwd">验证新密码:</label>
+                <input type="password" id="check-pwd">
+            </p>
+        </form>
+    </div>
+    <div class="get-box">
+        <input type="submit" value="提交修改">
+    </div>
+</div>
+</body>
+</html>

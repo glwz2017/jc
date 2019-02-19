@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="author" content="glwz2017, 2991703821@qq.com"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="images/jc.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="images/jc.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/base-new.css "/>
+    <link rel="stylesheet" type="text/css" href="css/pcb-introduce.css "/>
+    <!--字体图标-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!--浏览器版本-->
+    <!--[if lte IE 8]>
+    <script>var _iealwn = {once: 0, outver: 8};</script>
+    <script id="_iealwn_js" src="//support.dmeng.net/ie-alert-warning/latest.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--顶部快捷方式-->
+<div class="the-shortcut">
+    <div class="ui-left">
+        PCB制板\ SMT贴装综合服务商
+    </div>
+    <div class="ui-right">
+        <ul class="clearfloat">
+            <li class="js-phone-order">
+                <span class="iconfont">&#xe60c;</span>
+                手机端下单
+            </li>
+            <li class="split-lines"></li>
+            <li>
+                24小时客服：13826578334
+            </li>
+            <li class="split-lines"></li>
+            <li class="add-favorite">
+                收藏本站
+            </li>
+        </ul>
+    </div>
+</div>
+<!--导航-->
+<div class="nav-box js-nav-box clearfloat">
+    <div class="nav-left">
+        <h1>
+            <a href="index.html" class="iconfont">&#xe60d;</a>
+        </h1>
+        <ul class="nav-menu clearfloat">
+            <li>
+                <a href="index.html">首页</a>
+            </li>
+            <li>
+                <a href="smt-order.html">SMT贴片报价</a>
+            </li>
+            <li>
+                <a href="pcb-order.html">PCB打样报价</a>
+            </li>
+            <li class="active-menu">
+                <a href="javascript:void(0)">工艺介绍</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li>
+                        <a href="smt-introduce.html">SMT介绍</a>
+                    </li>
+                    <li class="active-second">
+                        <a href="pcb-introduce.html">PCB介绍</a>
+                    </li>
+                    <li>
+                        <a href="material-introduce.html">物料介绍</a>
+                    </li>
+                    <li>
+                        <a href="product-display.html">产品展示</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="integral/integral-mall.html">积分商城</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">关于我们</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li>
+                        <a href="about-us.html">企业简介</a>
+                    </li>
+                    <li>
+                        <a href="news.html">新闻资讯</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="user-share.html">用户分享</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">帮助中心</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li><a href="questions.html">常见问题</a></li>
+                    <li><a href="buy-guide.html">购物指南</a></li>
+                    <li><a href="feedback.html">意见反馈</a></li>
+                    <li><a href="link-us.html">联系我们</a></li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <!--未登录-->
+        <div class="no-login">
+            <ul class="clearfloat">
+                <li><a href="jc-login.html">登录</a></li>
+                <li class="split-lines"></li>
+                <li><a href="jc-login.html">注册</a></li>
+            </ul>
+            <!--购物车-->
+            <div class="car-box">
+                <a href="javascript:void(0)">
+                    <span class="iconfont">&#xe600;</span>
+                </a>
+            </div>
+        </div>
+        <!--已登录-->
+        <div class="logined">
+            <i class="user-img"><img src="images/user-pic.png" alt="头像" width="40" height="40"></i>
+            <div class="user-info">
+                <span>您好!00379A</span>
+                <span class="iconfont">&#xe629;</span>
+                <!--下拉菜单-->
+                <div class="info-box">
+                    <ul class="info-list">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span>我的积分</span>
+                                <span class="num">20</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span>我的余额</span>
+                                <span class="num">￥20000.00</span>
+                            </a>
+                        </li>
+                        <li class="the-divider"></li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span>订单管理</span>
+                                <span class="num mark">10</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span>有效优惠券</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span>个人信息管理</span>
+                                <span class="num"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> <span>收货地址管理</span></a>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0)" class="sign-out">安全退出</a>
+                </div>
+            </div>
+            <!--购物车-->
+            <div class="car-box">
+                <a href="javascript:void(0)">
+                    <span class="iconfont">&#xe600;</span>
+                    <span class="number"> 99</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--banner-->
+<div class="introduce-banner">
+    <div class="w-1280">
+        <div class="current-location">
+            <!--您当前位置：首页 - 关于我们 - 企业简介-->
+            您当前位置：<a href="index.html">首页</a> - <a href="about-us.html">工艺介绍</a> - <a href="about-us.html">PCB介绍</a>
+        </div>
+        <img src="images/introduce-title2.png" alt="introduce" width="600" height="158" class="introduce-title">
+    </div>
+</div>
+<!--优势-->
+<div class="advantages-box">
+    <ul>
+        <li>
+            <div class="ensure-text">
+                <h3>高性价比</h3>
+                <p>
+                    双面板5cm以内只需50元/款; 四层板在5cm以内仅需200元/款； 此外，网上付款客户再享95折特惠。
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="ensure-text">
+                <h3>快速交货</h3>
+                <p>
+                    单/双层面板可12小时加急、四层板可48小时加急、六层板可72小时加急，产品准时交付率高。
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="ensure-text">
+                <h3>原材料\产品质量</h3>
+                <p>
+                    板材采用建滔KB6060A和金安国纪A级料，有防伪水印，上市公司生产，符合UL和ROHS标准。 产品采用双重测试 （AOI光学扫描+飞针测试）
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="ensure-text">
+                <h3>精湛的工艺</h3>
+                <p>
+                    可订做1~10层板精密打样，最小可接4/4mil线宽线距,最小8mil过孔。
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--品质保障-->
+<div class="security-box">
+    <span class="security">品质保障</span>
+    <div class="btn-group js-security-btn">
+        <a href="javascript:void(0)" class="btn active-btn">软件保障</a>
+        <a href="javascript:void(0)" class="btn">硬件保障</a>
+    </div>
+    <!--软件与硬件-->
+    <div class="soft-hard clearfloat js-soft-hard">
+        <div class="item">
+            <h2>品质源于技术</h2>
+            <div class="item-content">
+                <div class="left-content">
+                    <div class="soft-img">
+                        <img src="images/soft1.png" alt="品质" width="130" height="130">
+                        <img src="images/soft2.png" alt="品质" width="130" height="130">
+                        <img src="images/soft3.png" alt="品质" width="130" height="130">
+                    </div>
+                    <ul class="img-text clearfloat">
+                        <li>
+                            <span>孔铜厚度</span>
+                            <i>18-22um</i>
+                        </li>
+                        <li>
+                            <span>面铜厚度大于</span>
+                            <i>35um</i>
+                        </li>
+                        <li>
+                            <span>沉铜后</span>
+                            <i>背光测试</i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-content">
+                    1、70分钟的图电时间，保证孔铜厚度18-22um, 面铜厚度大于35um
+                    <br>2、沉铜后做背光测试 ，保障孔铜的附着力
+                    <br>3、蚀刻后做切片分析，保障孔铜厚度及面铜厚度
+                    <br>4、AOI光学扫描，保障线路的直通率（防止开路、短路、线幼）
+                    <br>5、高速螺杆飞针机测试，保障板子的良率
+                    <br>6、阻焊采用LED平行曝光机曝光
+                    <br>7、高精度激光文字打印。保证文字清晰度和精准度
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <h2>先进的设备\原料</h2>
+            <div class="item-content">
+                <div class="left-content">
+                    <div class="soft-img">
+                        <img src="images/hard1.png" alt="品质" width="130" height="130">
+                        <img src="images/hard2.png" alt="品质" width="130" height="130">
+                        <img src="images/hard3.png" alt="品质" width="130" height="130">
+                    </div>
+                    <ul class="img-text clearfloat">
+                        <li>
+                            <span>广信</span>
+                            <i>感光油墨</i>
+                        </li>
+                        <li>
+                            <span>采用军工料</span>
+                            <i>A级</i>
+                        </li>
+                        <li>
+                            <span>制作过程</span>
+                            <i>极致精细</i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-content hard-content">
+                    <span> ● 优质的板材</span>
+                    <br>对于电路板核心原材料板材，采用的是 A级军工料，质量非常有保证。
+                    <br><span>● 精致的印刷工艺</span>
+                    <br>采用广信感光油墨，符合环保标准，经高温烘烤，油墨色泽光鲜艳丽，字符清晰。
+                    <br><span>● 精细化的制作过程</span>
+                    <br>表面处理工艺：金手指、沉金、喷锡； 阻焊颜色：绿、蓝、红、黄、白，哑光 黑，哑光绿，紫。
+                    <br><span>● 快捷更准时的配送</span>
+                    <br>我们将在承诺的时间内，及时将样板送达 您的手中。
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--下单链接-->
+<div class="order-link">
+    <ul class="link-box clearfloat">
+        <li class="layer1">
+            <div class="link-img">
+                <div class="link-text">
+                    <span>单/双面板</span>
+                    <p>
+                        5 X 5cm内
+                        <br>可12，24小时加急
+                        <br>正常交期2~3天
+                        <br>仅需工程费
+                    </p>
+                    <i>￥48元/10片</i>
+                </div>
+            </div>
+            <a href="pcb-order.html" class="buy-now">立即购买</a>
+        </li>
+        <li class="layer2">
+            <div class="link-img">
+                <div class="link-text">
+                    <span>单/双面板</span>
+                    <p>
+                        10 X 10cm内
+                        <br>可12，24小时加急
+                        <br>正常交期2~3天
+                        <br>仅需工程费
+                    </p>
+                    <i>￥50元/10片</i>
+                </div>
+            </div>
+            <a href="pcb-order.html" class="buy-now">立即购买</a>
+        </li>
+        <li class="layer3">
+            <div class="link-img">
+                <div class="link-text">
+                    <span>4层板打样</span>
+                    <p>
+                        10 X 10cm内
+                        <br>可12，24小时加急,
+                        <br>正常交期4~5天
+                    </p>
+                    <i>￥200元/10片</i>
+                </div>
+            </div>
+            <a href="pcb-order.html" class="buy-now">立即购买</a>
+        </li>
+        <li class="layer4">
+            <div class="link-img">
+                <div class="link-text">
+                    <span>超值价六层板打样</span>
+                    <p>
+                        10 X 10cm内
+                        <br>可72小时加急
+                        <br>正常交期6~7天
+                    </p>
+                    <i>￥960元/10片</i>
+                </div>
+            </div>
+            <a href="pcb-order.html" class="buy-now">立即购买</a>
+        </li>
+    </ul>
+</div>
+<!--加工能力-->
+<div class="capacity-box">
+    <div class="w-1280">
+        <div class="capacity-parameter">
+            <h2>加工能力</h2>
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th style="width: 25%">PCB项目</th>
+                    <th style="width: 25%">加工能力</th>
+                    <th style="width: 49%;">工艺详解</th>
+                </tr>
+                <tr>
+                    <td>层数</td>
+                    <td>1-10层</td>
+                    <td>捷多邦可生产1-10层的通孔板</td>
+                </tr>
+                <tr>
+                    <td>最大尺寸</td>
+                    <td>500x1100mm</td>
+                    <td>常规版尺寸为550x420mm，超过该尺寸为超长板</td>
+                </tr>
+                <tr>
+                    <td>外形尺寸精度</td>
+                    <td>±0.2mm</td>
+                    <td>CNC外形公差±0.2mmV-cut板外形公差±0.5mm</td>
+                </tr>
+                <tr>
+                    <td>板厚公差</td>
+                    <td>±0.1mm</td>
+                    <td>因生产工艺原因（沉铜、阻焊、焊盘喷镀会增加板厚）一般走正公差</td>
+                </tr>
+                <tr>
+                    <td>成品外层铜厚</td>
+                    <td>1OZ/2OZ/3OZ</td>
+                    <td>指成品电路板外层线路铜箔的厚度，1OZ＝35um，2OZ=70um，3OZ=105um</td>
+                </tr>
+                <tr>
+                    <td>成品内层铜厚</td>
+                    <td>35um/50um</td>
+                    <td>1.6及2.0板厚的四、六层板可根据客户要求指定内层铜厚</td>
+                </tr>
+                <tr>
+                    <td>最小间隙</td>
+                    <td>4mil（0.1mm）</td>
+                    <td>目前可接4mil线距，间隙尽可能大于6mil，小于6mil的价格会稍贵一些</td>
+                </tr>
+                <tr>
+                    <td>钻孔孔径( 机器钻 )</td>
+                    <td>0.2--6.3mm</td>
+                    <td>0.2mm是钻孔的最小孔径，6.3mm是钻孔的最大孔径，如大于6.3mm工厂要另行处理；0.65mm是最小
+                        槽刀（PTH）孔径，如有小于0.65mm的金属槽工程将加大到0.65mm制作，铝基板最小孔为0.8mm，铝
+                        基板槽孔最小孔为1.2mm；无铜孔（NPTH）最小孔径为0.45mm，如小于则加大到0.45mm。</td>
+                </tr>
+                <tr>
+                    <td>成品孔孔径 ( 机器钻)</td>
+                    <td>0.2--6.20mm</td>
+                    <td>因孔内壁附有金属铜，成品孔孔径一般小于文件中的钻孔孔径</td>
+                </tr>
+                <tr>
+                    <td>孔径公差 (机器钻 )</td>
+                    <td>±0.08mm</td>
+                    <td>钻孔的公差为±0.08mm， 例如设计为0.6mm的孔，实物板的成品孔径在0.52--0.68mm是合格允许的</td>
+                </tr>
+                <tr>
+                    <td>最小字符宽</td>
+                    <td>≥0.15mm</td>
+                    <td>字符最小的宽度，如果小于0.15mm，实物板可能会因设计原因而造成字符不清晰</td>
+                </tr>
+                <tr>
+                    <td>最小字符高</td>
+                    <td>≥0.8mm</td>
+                    <td>字符最小的高度，如果小于0.8mm，实物板可能会因设计原因造成字符不清晰</td>
+                </tr>
+                <tr>
+                    <td>字符宽高比</td>
+                    <td>1:5</td>
+                    <td>最合适的宽高比例，更利于生产</td>
+                </tr>
+                <tr>
+                    <td>走线与外形间距</td>
+                    <td>≥0.3mm（12mil）</td>
+                    <td>锣板出货，线路层走线距板子外形线的距离不小于0.3mm；V割拼板出货，走线距V割中心线距离不能小
+                        于0.4mm</td>
+                </tr>
+                <tr>
+                    <td>拼版：无间隙拼版间隙</td>
+                    <td>0间隙拼</td>
+                    <td>是拼版出货，中间板与板的间隙为0（文档有详解）</td>
+                </tr>
+                <tr>
+                    <td>拼版：有间隙拼版间隙</td>
+                    <td>1.6mm</td>
+                    <td>有间隙拼版的间隙不要小于1.6mm，否则锣边时比较困难</td>
+                </tr>
+                <tr>
+                    <td>半孔工艺最小半孔孔径</td>
+                    <td>0.6mm</td>
+                    <td>半孔工艺是一种特殊工艺，最小孔径不得小于0.6mm</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<!--用户须知-->
+<div class="user-rules">
+    <div class="rules">
+        <h2>用户须知</h2>
+        <ul>
+            <li>
+                <div class="provide-info data">
+                    <div class="info-title">
+                        <span class="iconfont">&#xe615;</span>
+                        注意事项
+                    </div>
+                </div>
+                <div class="info-text">
+                    <div class="item">
+                        <span class="iconfont">&#xe615;</span>
+                        <p>默认工艺：仅限1.6mm板厚，有铅喷锡，铜厚1OZ，绿油白字 </p>
+                    </div>
+                    <div class="item">
+                        <span class="iconfont">&#xe615;</span>
+                        <p>
+                            文件格式：我们仅接受DXP，Protel99，PADS，CAM以及Gerber文件
+                        </p>
+                    </div>
+                    <div class="item">
+                        <span class="iconfont">&#xe615;</span>
+                        <p>
+                            物流：广东省内：仅限于样板联昊通(包邮)、速尔(包邮)，顺丰(不包邮)
+                            广东省外：仅限于样板天天快递(包邮)，德邦(仅支持到付)
+                            批量不包邮
+                        </p>
+                    </div>
+                    <div class="item">
+                        <span class="iconfont">&#xe615;</span>
+                        <p>
+                            有特殊工艺者，请务必注明或联系客服业务专员
+                        </p>
+                    </div>
+                    <div class="item">
+                        <span class="iconfont">&#xe615;</span>
+                        <p>
+                            过孔工艺只满足圆孔，不做方孔等其他异性过孔
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="provide-info stencil">
+                    <div class="info-title">
+                        <span class="iconfont">&#xe615;</span>
+                       <span class="iconfont-text"> 样板正常交期（默认工艺）</span>
+                    </div>
+                </div>
+                <div class="info-text">
+                    <div class="item">
+                        <span class="iconfont">&#xe615;</span>
+                        <p>单/双面板：正常交期2~3天，可12、24小时加急</p>
+                    </div>
+                    <div class="item">
+                        <span class="iconfont">&#xe615;</span>
+                        <p>
+                            四层板：正常交期4~5天，可12、24、72小时加急
+                        </p>
+                    </div>
+                    <div class="item">
+                        <span class="iconfont">&#xe615;</span>
+                        <p>
+                            六层板：正常交期6~7天，可72小时加急
+                        </p>
+                    </div>
+                    <div class="item">
+                        <span class="iconfont">&#xe615;</span>
+                        <p>
+                            铝基板：正常交期3~4天，可12小时加急
+                        </p>
+                    </div>
+                    <div class="item">
+                        <span class="iconfont">&#xe615;</span>
+                        <p>
+                            小批量：5平米内5~6天；10平米内6~7天；10平米以上8~9天
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="provide-info material">
+                    <div class="info-title">
+                        <span class="iconfont">&#xe615;</span>
+                        温馨提示
+                    </div>
+                </div>
+                <div class="info-text">
+                    <div class="item">
+                        <span class="iconfont">&#xe615;</span>
+                        <p>
+                            除了亚光黑，亚光绿和紫色，其它颜色， 我们一律免费！
+                        </p>
+                    </div>
+                    <div class="item">
+                        <span class="iconfont">&#xe615;</span>
+                        <p>
+                            当天18点前下单付款，交期从第二天开始起算
+                        </p>
+                    </div>
+                    <div class="item">
+                        <span class="iconfont">&#xe615;</span>
+                        <p>
+                            12小时加急：上午11:00前下单付款，交期为当天晚上23:00发货
+                            下午17:30前下单付款，交期为第二天上午12:00前发货
+                        </p>
+                    </div>
+                    <div class="item">
+                        <span class="iconfont">&#xe615;</span>
+                        <p>
+                            以上时间是指工厂交货时间，物流时间另计
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--免责条款-->
+<div class="disclaimer">
+    <div class="disclaimer-left">
+        免责条款
+    </div>
+    <ul>
+        <li>1、客户提供的物料不齐，但要求上线生产的，后续不承担补料；</li>
+        <li> 2、因来料引起的不良，比如PCB断线，物料假货，物料封装不对等我司不承担任何责任；</li>
+        <li> 3、生产过程中出现异常，需要沟通但无法联系到客户相关人员导致无法确认的，有权自处理；</li>
+        <li> 4、因技术资料引起的贴装错误，我司不承担任何责任。</li>
+    </ul>
+</div>
+<!--服务保障-->
+<div class="four-guarante">
+    <div class="w-1280">
+        <div class="item">
+            <i><img src="images/guar1@icon.png"/></i>
+            <em>
+                <span class="dt f18">质量保证</span>
+                <p class="txt f14">知名品牌，厂家直售</p>
+            </em>
+        </div>
+        <div class="item">
+            <i><img src="images/guar2@icon.png"/></i>
+            <em>
+                <span class="dt f18">交期保证</span>
+                <p class="txt f14">按时发货，加急服务</p>
+            </em>
+        </div>
+        <div class="item">
+            <i><img src="images/guar3@icon.png"/></i>
+            <em>
+                <span class="dt f18">付款安全</span>
+                <p class="txt f14">使用大众及安全的方式支付</p>
+            </em>
+        </div>
+        <div class="item">
+            <i><img src="images/guar4@icon.png"/></i>
+            <em>
+                <span class="dt f18">价格优势</span>
+                <p class="txt f14">优势的价格源于不同生产能力</p>
+            </em>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+</div>
+<!--底部版权-->
+<div class="footer">
+    <!--关于捷创-->
+    <div class="footer-content clearfloat">
+        <div class="w-1280">
+            <div class="footer-left clearfloat">
+                <ul class="jc-menu ">
+                    <li>关于捷创</li>
+                    <li><a href="javascript:void(0)">企业简介</a></li>
+                    <li><a href="javascript:void(0)">产品展示</a></li>
+                    <li><a href="javascript:void(0)">联系我们</a></li>
+                    <li><a href="javascript:void(0)">用户分享</a></li>
+                </ul>
+                <ul class="jc-menu">
+                    <li>产品服务</li>
+                    <li><a href="javascript:void(0)">SMT贴片报价</a></li>
+                    <li><a href="javascript:void(0)">PCB打样报价</a></li>
+                </ul>
+                <ul class="jc-menu">
+                    <li>工艺介绍</li>
+                    <li><a href="javascript:void(0)">SMT介绍</a></li>
+                    <li><a href="javascript:void(0)">PCB介绍</a></li>
+                    <li><a href="javascript:void(0)">物料介绍</a></li>
+                    <li><a href="javascript:void(0)">产品展示</a></li>
+                </ul>
+                <ul class="jc-menu">
+                    <li>帮助中心</li>
+                    <li><a href="javascript:void(0)">常见问题</a></li>
+                    <li><a href="javascript:void(0)">购物指南</a></li>
+                    <li><a href="javascript:void(0)">意见反馈</a></li>
+                    <li><a href="javascript:void(0)">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div class="contact-us">
+                    <h3>CONTACT US .</h3>
+                    <div class="contact-item clearfloat">
+                        <i>办公地址：</i>
+                        <span>深圳市坂田街道万科星火online七栋234-235室</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>联系电话：</i>
+                        <span>18033063691</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>企业邮箱：</i>
+                        <span>2881601568@qq.com</span>
+                    </div>
+                </div>
+                <div class="contact-us">
+                    <h3>&nbsp;</h3>
+                    <div class="contact-item clearfloat">
+                        <i>工厂地址：</i>
+                        <span>深圳市坪山新区坑梓街道金沙工业区中兴路15号</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>联系电话：</i>
+                        <span>13826578334</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>企业邮箱：</i>
+                        <span>2881601568</span>
+                    </div>
+                </div>
+                <!--扫码关注-->
+                <div class="qr-code">
+                    <i>
+                        扫一扫关注公众号
+                        <br>随时了解捷创动态
+                    </i>
+                    <img src="images/the-public.png" alt="二维码" width="97" height="97">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--版权-->
+    <div class="jc-copyright">
+        <div class="w-1280">
+            <div class="copyright-box">
+                <div class="copyright-left">
+                    <span class="iconfont">&#xe60d;</span>
+                    <span>Copyright © 2016 www.jc-pcba.com 版权所有 深圳捷创电子科技有限公司 粤ICP备16117886号-1</span>
+                </div>
+                <div class="copyright-right">
+                    <a href="http://wpa.qq.com/msgrd?v=1&uin=2881601560&site=www.jdbpcb.com&menu=yes" target="_blank"
+                       class="iconfont">&#xe603;</a>
+                    <a href="https://weibo.com/6500851014/" target="_blank" class="iconfont">&#xe653;</a>
+                    <a href="https://shop303085121.taobao.com/" target="_blank" class="iconfont">&#xe616;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--通用弹窗遮罩-->
+<div class="g-mian-bg"></div>
+<!--跳转手机站链接弹窗-->
+<div class="phone-box js-phone-box">
+    <div class="phone-link">
+        <div class="link-left">
+            <h3>
+                捷创移动端网站
+                现已上线
+            </h3>
+            <p>
+                打开您的手机浏览器
+                <br>扫一扫及可进入捷创移动端
+                <br>便可随时随地
+                <br>计价--下单--管理您的订单
+            </p>
+        </div>
+        <img src="images/phone.png" alt="手机" width="340" height="423" class="phone">
+        <div class="link-right">
+            <h6>移动端二维码</h6>
+            <img src="images/phone-qr.png" alt="手机二维码" width="203" height="203">
+        </div>
+        <!--关闭按钮-->
+        <i class="iconfont popup-close js-popup-close">&#xe7be;</i>
+    </div>
+</div>
+<!--右侧分享-->
+<div class="share-box">
+    <!--返回顶部按钮-->
+    <div class="back-btn js-back-btn">
+        <span class="iconfont">&#xe649;</span>
+    </div>
+    <!--每一项-->
+    <ul class="share-lists">
+        <li>
+            <a href="javascript:void(0)">
+                <i>99</i>
+                <span class="iconfont">&#xe611;</span>
+            </a>
+        </li>
+        <li class="phone-btn">
+            <span class="iconfont" title="点击">&#xe60c;</span>
+        </li>
+        <li>
+            <span class="iconfont">&#xe61f;</span>
+            <!--弹出电话-->
+            <div class="tel-popup">24小时客服：13826578334</div>
+        </li>
+        <li>
+            <span class="iconfont">&#xe60b;</span>
+            <!--弹出微信-->
+            <div class="wx-popup">
+                <div class="wexin">
+                    <img src="images/wechat.png" alt="微信" width="127" height="127">
+                    <p>
+                        扫一扫
+                        <br>关注捷创
+                        <br>微信
+                        <br>公众号
+                    </p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<script src="js/golbal.js"></script>
+<script>
+    $(function () {
+        //软硬品质保障
+        $('.js-security-btn .btn').click(function () {
+            var index = $(this).index();
+            $(this).addClass('active-btn').siblings('.btn').removeClass('active-btn');
+            $('.js-soft-hard .item').eq(index).stop().fadeIn().siblings('.item').stop().fadeOut(0);
+        });
+    });//end function
+</script>
+</body>
+</html>

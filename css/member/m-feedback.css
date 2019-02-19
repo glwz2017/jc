@@ -1,0 +1,271 @@
+.feedback-box {
+    background-color: #ffffff;
+    padding-bottom: 120px;
+    height: auto;
+}
+
+.feedback-title {
+    height: 60px;
+    background-color: #e5e5e5;
+}
+
+.feedback-title > li {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #3e3a3a;
+    font-size: 16px;
+    float: left;
+    width: 180px;
+    border-top: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.feedback-title .active-li {
+    background-color: #ffffff;
+    border-top: 2px solid #098734;
+}
+
+.feedback-box .feedback-content {
+    width: 870px;
+    margin: 70px auto 0;
+}
+
+.opinion-box {
+    height: 130px;
+    border-bottom: 1px solid #ccc;
+}
+
+.opinion-box i {
+    height: 127px;
+    width: 160px;
+    display: inherit;
+    float: left;
+    margin-top: 3px;
+}
+
+.opinion-box .opinion-title {
+    float: left;
+    width: 690px;
+    margin: 20px 0 0 20px;
+    font-size: 14px;
+}
+
+.opinion-box .opinion-title > span {
+    font-size: 16px;
+    color: #006532;
+}
+
+.opinion-box .opinion-title > h6 {
+    font-size: 14px;
+    color: #f53848;
+    margin-top: 5px;
+}
+
+/*编辑盒子*/
+.edit-box {
+    margin: 50px 0 0 80px;
+}
+
+.edit-box .edit-item {
+    margin-bottom: 20px;
+}
+
+.edit-box .edit-item:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.edit-box .edit-left {
+    float: left;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.edit-box .edit-left label {
+    font-size: 16px;
+}
+
+.edit-box .edit-left label > span {
+    color: #f53848;
+    margin-right: 5px;
+}
+
+.edit-box .edit-right {
+    float: left;
+    width: 500px;
+}
+
+.edit-box .edit-right > span {
+    color: #f53848;
+}
+
+.edit-box .edit-right > .user-name {
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid #ccc;
+    width: 240px;
+    background-color: #f4f4f4;
+    text-indent: 15px;
+    font-size: 16px;
+}
+
+.sex-box {
+    margin-left: 20px;
+}
+
+.sex-box > span {
+    color: #f53848;
+}
+
+.edit-box .edit-right > input[type="radio"] {
+    margin-left: 15px;
+}
+
+.edit-box .edit-right > .user-email {
+    width: 500px;
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    text-indent: 15px;
+    font-size: 16px;
+}
+
+.edit-box .edit-right > textarea {
+    width: 500px;
+    height: 198px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+    outline: none;
+}
+
+.edit-box .edit-right > .submit-btn {
+    width: 170px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 4px;
+    background-color: #04652a;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    transition: all .3s;
+}
+
+.edit-box .edit-right > .submit-btn:hover {
+    box-shadow: 0 4px 6px #ccc;
+}
+
+/*留言列表*/
+.feedback-box .lists-box {
+    margin-top: 80px;
+    border-top: 1px solid #ccc;
+}
+
+.feedback-box .lists-box > h3 {
+    height: 70px;
+    line-height: 70px;
+    font-size: 18px;
+}
+
+.feedback-box .lists-box .list-item {
+    margin-bottom: 20px;
+}
+
+.feedback-box .lists-box .list-item .user-list, .sys-list {
+    width: 870px;
+    padding: 25px 0;
+    border: 1px solid #ccc;
+}
+
+/*用户留言*/
+.feedback-box .lists-box .list-item .user-list {
+    background-color: #f4f4f4;
+}
+
+.feedback-box .lists-box .list-item .user-list:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.feedback-box .lists-box .list-item .user-list > .header-pic {
+    width: 95px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+}
+
+.feedback-box .lists-box .list-item .user-list > .header-pic > img {
+    width: 40px;
+    height: 40px;
+}
+
+.feedback-box .lists-box .list-item .user-list > .message {
+    float: left;
+    width: 750px;
+}
+
+.list-item .user-list > .message > h6 {
+    color: #898989;
+    font-size: 12px;
+}
+
+.list-item .user-list > .message > .message-text {
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+/*系统留言*/
+.feedback-box .lists-box .list-item .sys-list {
+    margin-top: -1px;
+}
+
+.feedback-box .lists-box .list-item .sys-list:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.feedback-box .lists-box .list-item .sys-list > .header-pic {
+    width: 95px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+}
+
+.feedback-box .lists-box .list-item .sys-list > .header-pic > img {
+    width: 40px;
+    height: 40px;
+}
+
+.feedback-box .lists-box .list-item .sys-list > .message {
+    float: left;
+    width: 750px;
+}
+
+.list-item .sys-list > .message > h6 {
+    color: #898989;
+    font-size: 12px;
+}
+
+.list-item .sys-list > .message > .message-text {
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 10px;
+}

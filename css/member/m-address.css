@@ -1,0 +1,128 @@
+.address-box {
+    background-color: #ffffff;
+    /*height: 500px;*/
+    padding-bottom: 120px;
+    height: auto;
+}
+
+.address-title {
+    height: 60px;
+    background-color: #e5e5e5;
+}
+
+.address-title > li {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #3e3a3a;
+    font-size: 16px;
+    float: left;
+    width: 180px;
+    border-top: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.address-title .active-li {
+    background-color: #ffffff;
+    border-top: 2px solid #098734;
+}
+
+.address-content {
+    margin-top: 45px;
+}
+
+.address-content .add-address {
+    height: 80px;
+}
+
+.address-content .add-address > a {
+    float: right;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #046122;
+    color: #ffffff;
+    margin-right: 55px;
+    transition: all .3s;
+}
+
+.address-content .add-address > a:hover {
+    background-color: #04521d;
+}
+
+.address-content .address-items {
+    width: 910px;
+    margin: 20px auto 0;
+    min-height: 70px;
+}
+
+.address-content .address-items .address-item {
+    background: url("../../images/member/default-address.png") no-repeat center;
+    width: 420px;
+    height: 160px;
+    margin-left: 28px;
+    float: left;
+    margin-bottom: 18px;
+    cursor: pointer;
+    padding: 20px 15px 0 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.address-items .address-item .item-text {
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+    color: #3e3a3a;
+}
+
+.address-items .address-item .item-text p {
+    margin-top: 5px;
+}
+
+.address-items .address-item .item-text .get-address {
+    overflow: hidden;
+    height: 38px;
+}
+/*地址*/
+.address-items .address-item .address-edit {
+    margin-top: 10px;
+    float: right;
+}
+
+.address-item .address-edit a {
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+.address-item .address-edit a:first-child {
+     color: #3e3a3a;
+ }
+.address-item .address-edit a:first-child+a{
+    color: #00612b;
+}
+.address-item .address-edit a:first-child+a+a{
+    color: #f63849;
+}
+
+.address-items .address-item .address-flag {
+    background: url("../../images/member/active-flag.png") no-repeat center;
+    width: 52px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+/*激活地址项*/
+.address-content .address-items .active-address-item {
+    background: url("../../images/member/active-address.png") no-repeat center;
+}
+/*激活地址*/
+.address-items .active-address-item .active-address {
+    display: block;
+
+}

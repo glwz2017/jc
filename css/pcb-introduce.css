@@ -1,0 +1,480 @@
+body {
+    background-color: #f7f8f8;
+}
+
+.introduce-banner {
+    background: url("../images/pcb-introduce.jpg") no-repeat center;
+    width: 100%;
+    min-width: 1280px;
+    height: 400px;
+}
+
+.introduce-banner .current-location {
+    float: right;
+    margin-top: 25px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.introduce-banner .current-location > a {
+    color: #ffffff;
+}
+
+.introduce-banner .introduce-title {
+    float: left;
+    margin-top: 110px;
+}
+
+/*优势*/
+.advantages-box {
+    height: 210px;
+    background-color: #bba284;
+}
+
+.advantages-box > ul {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.advantages-box > ul:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.advantages-box > ul > li {
+    width: 24.9%;
+    float: left;
+    height: 210px;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    position: relative;
+}
+
+.advantages-box .ensure-text {
+    margin: 40px 0 0 40px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.advantages-box .ensure-text h3 {
+    color: #4e4743;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.advantages-box .ensure-text p {
+    width: 230px;
+}
+
+.advantages-box > ul > li {
+    border-right: 1px solid #a98f75;
+}
+
+.advantages-box > ul > li:hover {
+    background-color: #b0977c;
+}
+
+/*优势*/
+/*品质保障*/
+.security-box {
+    border-top: 1px solid #eff0f0;
+    width: 1280px;
+    margin: 135px auto 0;
+    position: relative;
+}
+
+.security-box .security {
+    position: absolute;
+    top: -18px;
+    right: 0;
+    z-index: 3;
+    padding-left: 30px;
+    background-color: #f7f8f8;
+    display: inline-block;
+    font-size: 24px;
+}
+
+.security-box .btn-group {
+    float: right;
+    margin-top: 40px;
+}
+
+.security-box .btn-group .btn {
+    background-color: #ffffff;
+    color: #3e3a3a;
+    border: 1px solid transparent;
+    box-shadow: none;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.security-box .btn-group .btn:hover {
+    border: 1px solid #05732b;
+}
+
+/*激活样式*/
+.security-box .btn-group .active-btn {
+    border: 1px solid #05732b;
+    color: #05732b;
+}
+
+.soft-hard {
+    margin-top: 60px;
+}
+
+.soft-hard .item:first-child + .item {
+    display: none;
+}
+
+.soft-hard .item {
+    float: left;
+    width: 1280px;
+}
+
+.soft-hard .item h2 {
+    color: #b0977f;
+}
+
+.soft-hard .item .item-content {
+    margin-top: 80px;
+    height: 260px;
+    background-color: #ffffff;
+    padding: 0 40px;
+    border-radius: 6px;
+}
+
+.soft-hard .item .item-content .left-content {
+    float: left;
+    width: 475px;
+    position: relative;
+    height: 240px;
+}
+
+.left-content .soft-img {
+    width: 475px;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    z-index: 3;
+}
+
+.left-content .soft-img img {
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.left-content .soft-img img:hover {
+    transform: rotateZ(360deg);
+}
+
+.left-content .img-text {
+    margin-top: 135px;
+}
+
+.left-content .img-text li {
+    float: left;
+    border-left: 1px solid #efefef;
+    padding: 0 35px;
+}
+
+.left-content .img-text li:first-child {
+    padding-left: 0;
+    border-left: 0;
+}
+
+.left-content .img-text span {
+    font-size: 14px;
+}
+
+.left-content .img-text i {
+    font-size: 24px;
+    color: #3e3a3a;
+    margin-top: 10px;
+}
+
+.soft-hard .item .item-content .right-content {
+    float: left;
+    margin: 50px 0 0 120px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.soft-hard .item .item-content .hard-content {
+    margin-top: 25px;
+}
+
+.hard-content span {
+    font-weight: bold;
+}
+
+/*品质保障*/
+/*下单链接*/
+.order-link {
+    margin-top: 50px;
+    background-color: #ffffff;
+    height: 480px;
+}
+.order-link .link-box{
+    width: 1280px;
+    margin: 0 auto;
+}
+.order-link .link-box li {
+    width: 25%;
+    height: 480px;
+    float: left;
+    cursor: pointer;
+}
+.order-link .link-box li .link-img{
+    width: 320px;
+    height: 420px;
+}
+.order-link .link-box .layer1 .link-img{
+    background: url("../images/layer1.png") no-repeat center;
+}
+.order-link .link-box .layer2 .link-img{
+    background: url("../images/layer2.png") no-repeat center;
+}
+.order-link .link-box .layer3 .link-img{
+    background: url("../images/layer3.png") no-repeat center;
+}
+.order-link .link-box .layer4 .link-img{
+    background: url("../images/layer4.png") no-repeat center;
+}
+.link-box li .link-img .link-text{
+    padding-top: 130px;
+    text-align: center;
+    color: #ffffff;
+}
+.link-img .link-text span{
+    font-size: 24px;
+}
+.link-img .link-text p{
+    margin-top: 20px;
+    line-height: 25px;
+    min-height: 100px;
+    max-height: 160px;
+    overflow: hidden;
+}
+.link-img .link-text i{
+    font-size: 18px;
+    color: #f53848;
+    margin-top: 25px;
+}
+.order-link .link-box li .buy-now{
+    display: inline-block;
+    width: 320px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 14px;
+    color: #00a964;
+    border-right: 1px solid #efefef;
+    transition: all .3s ease-in;
+}
+.order-link .link-box li:first-child .buy-now{
+    border-left: 1px solid #efefef;
+}
+.order-link .link-box li:hover .buy-now{
+    background-color: #0da95b;
+    color: #ffffff;
+}
+/*下单链接*/
+/*加工能力*/
+.capacity-box {
+   margin-top: 60px;
+}
+
+.capacity-parameter {
+    border-radius: 6px;
+    background-color: #ffffff;
+    padding: 25px 40px 50px;
+    box-sizing: border-box;
+}
+
+.capacity-parameter h2 {
+    font-size: 24px;
+    color: #3e3a3a;
+    margin-bottom: 15px;
+}
+
+.capacity-parameter table {
+    width: 100%;
+    border-right: 1px solid #efefef;
+}
+
+.capacity-parameter table tr:first-child {
+    height: 40px;
+    color: #ffffff;
+    background-color: #0da95b;
+}
+
+.capacity-parameter table th {
+    border-right: 1px solid #098946;
+    text-align: left;
+    text-indent: 25px;
+}
+
+.capacity-parameter table td {
+    border: 1px solid #efefef;
+    border-right: 0;
+    border-top: 0;
+    height: 50px;
+    line-height: 25px;
+    text-align: left;
+    padding: 5px 10px 5px 25px;
+}
+
+/*加工能力*/
+/*用户须知*/
+.user-rules {
+    margin-top: 30px;
+}
+
+.user-rules .rules {
+    width: 1280px;
+    margin: 0 auto;
+    border-radius: 6px;
+    background-color: #ffffff;
+    height: 720px;
+    padding: 50px 40px 0;
+    box-sizing: border-box;
+}
+
+.user-rules .rules ul {
+    margin-top: 22px;
+}
+
+.user-rules .rules ul:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.user-rules .rules ul li {
+    width: 360px;
+    float: left;
+    height: 620px;
+    margin-left: 60px;
+}
+
+.user-rules .rules ul li:first-child {
+    margin-left: 0;
+}
+
+.provide-info {
+    width: 360px;
+    height: 120px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.user-rules .rules ul li .data {
+    background: url("../images/pcb-rules1.png") no-repeat center;
+}
+
+.user-rules .rules ul li .stencil {
+    background: url("../images/pcb-rules2.png") no-repeat center;
+}
+
+.user-rules .rules ul li .material {
+    background: url("../images/pcb-rules3.png") no-repeat center;
+}
+
+.provide-info .info-title {
+    font-size: 24px;
+    color: #0b953a;
+    float: left;
+    margin: 40px 0 0 35px;
+    text-align: right;
+
+}
+
+.provide-info .info-title .iconfont {
+    font-size: 40px;
+    line-height: 40px;
+    margin-right: 7px;
+    vertical-align: middle;
+    float: left;
+}
+.provide-info .info-title .iconfont-text{
+    float: left;
+    display: inline-block;
+    width: 150px;
+    margin-top: -20px;
+}
+.rules ul li .info-text {
+    border-left: 1px solid #efefef;
+    height: 500px;
+    margin-left: 50px;
+    padding-top: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.rules ul li .info-text .item {
+    min-height: 25px;
+    width: 310px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.info-text .item .iconfont {
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    left: -10px;
+    z-index: 3;
+    color: #dcdddd;
+    font-size: 20px;
+}
+
+.info-text .item p {
+    padding-left: 30px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #3e3a3a;
+    width: 268px;
+}
+
+.info-text .item p > span {
+    color: #f53848;
+}
+
+/*用户须知*/
+/*免责条款*/
+.disclaimer {
+    margin: 60px auto;
+    height: 150px;
+    width: 1280px;
+    background: #fdebd6;
+    border-radius: 6px;
+}
+
+.disclaimer .disclaimer-left {
+    float: left;
+    margin: 30px 0 0 70px;
+    background: url("../images/portrait.png") no-repeat bottom center;
+    width: 80px;
+    height: 120px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.disclaimer ul {
+    float: left;
+    margin: 30px 0 0 65px;
+}
+
+.disclaimer ul li {
+    margin-bottom: 10px;
+}
+
+/*免责条款*/

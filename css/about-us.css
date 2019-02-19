@@ -1,0 +1,335 @@
+.about-banner {
+    background: url("../images/about-banner.jpg") no-repeat center;
+    width: 100%;
+    height: 700px;
+    min-width: 1280px;
+}
+
+.about-banner .company-name {
+    float: left;
+    margin-top: 180px;
+    height: 157px;
+    /*border-left: 2px solid #0b953a;*/
+}
+
+.about-banner .current-position {
+    float: right;
+    margin-top: 420px;
+    font-size: 12px;
+    color: #ffffff;
+
+}
+.about-banner .current-position>a{
+    color: #ffffff;
+    max-width: 170px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: text-top;
+}
+
+/*企业简介*/
+.company-introduction {
+    height: 810px;
+    background-color: #f7f8f8;
+}
+
+.company-introduction .company-content {
+    width: 1280px;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 6px;
+    height: 980px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    top: -243px;
+}
+
+.company-introduction .company-content .company-title {
+    position: absolute;
+    top: -5px;
+    left: 40px;
+}
+
+.company-introduction .company-content .company-box {
+    padding-top: 130px;
+    box-sizing: border-box;
+}
+
+.company-content .company-box .company-text {
+    float: left;
+    width: 800px;
+}
+
+.company-box .company-text > h4 {
+    font-size: 18px;
+}
+
+.company-box .company-text > p {
+    margin-top: 30px;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.company-content .company-box .company-video {
+    background: url("../images/video-bg.png") no-repeat center;
+    width: 298px;
+    height: 370px;
+    overflow: hidden;
+    float: right;
+    text-align: center;
+    padding-top: 80px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.company-box .company-video .video-btn {
+    font-size: 80px;
+    color: #00a964;
+    line-height: 80px;
+    display: block;
+    transition: all .3s;
+}
+
+.company-box .company-video > i {
+    font-size: 12px;
+    color: #00a964;
+}
+
+.company-content .company-box .company-video .video-btn:hover {
+    transform: rotate(360deg);
+    color: #f53848;
+}
+
+/*视频播放*/
+.video-box {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    margin-left: -300px;
+    z-index: 99999;
+    display: none;
+}
+
+.video-box .close {
+    position: absolute;
+    right: -5px;
+    top: -12px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .3s;
+    color: #007746;
+}
+
+.company-content .our-advantages {
+    margin-top: 80px;
+}
+
+.our-advantages .our-title {
+    border-bottom: 1px solid #efefef;
+}
+
+.our-advantages .our-title h3 {
+    border-bottom: 1px solid #0b953a;
+    font-size: 24px;
+    color: #3e3a3a;
+    display: inline-block;
+}
+
+.our-advantages ul {
+    padding: 35px 0;
+}
+
+.our-advantages ul > li {
+    font-size: 24px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+}
+
+.our-advantages ul > li > img {
+    transition: all 1s;
+}
+
+.our-advantages ul > .lines {
+    margin: 0 90px;
+    border-left: 1px solid #efefef;
+    height: 167px;
+}
+
+.our-advantages ul > li > p {
+    margin-top: 20px;
+}
+
+.our-advantages ul > li:first-child {
+    text-align: left;
+}
+
+.our-advantages ul > li:hover img {
+    transform: rotateY(360deg);
+}
+
+/*企业文化*/
+.company-culture {
+    height: 600px;
+    background: url("../images/culture-bg.jpg") no-repeat center;
+    width: 100%;
+}
+
+.company-culture .culture-text {
+    width: 840px;
+    color: #ffffff;
+    padding-top: 70px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.company-culture .culture-text > p {
+    margin-top: 30px;
+    line-height: 25px;
+}
+
+.company-culture .culture-img {
+    float: right;
+    width: 340px;
+    padding-top: 110px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.company-culture .culture-img .img-title {
+    border-bottom: 1px solid #ffffff;
+    height: 36px;
+}
+
+.company-culture .culture-img .img-title > h3 {
+    color: #ffffff;
+    float: right;
+    height: 36px;
+    font-size: 24px;
+    border-bottom: 1px solid #19fd88;
+}
+
+.company-culture .culture-img > img {
+    position: absolute;
+    top: 165px;
+    left: 10px;
+}
+
+/*工厂设备 */
+.factory-equipment {
+    height: 840px;
+    background-color: #f7f8f8;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+
+.factory-equipment .factory-content {
+    border-radius: 6px;
+    background-color: #ffffff;
+    height: 730px;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 60px 40px 0;
+    box-sizing: border-box;
+}
+.factory-equipment .factory-content .factory-title{
+    border-bottom: 1px solid #efefef;
+}
+.factory-content .factory-title h3{
+    font-size: 24px;
+    border-bottom: 1px solid #0b953a;
+    display: inline-block;
+}
+.factory-equipment .factory-content .factory-box{
+
+}
+.factory-content .factory-box .factory-left{
+    float: left;
+    width: 920px;
+    padding: 30px 40px 0 0;
+    box-sizing: border-box;
+}
+.factory-box .factory-left .img-box{
+    width: 880px;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+}
+.factory-box .factory-left .img-box>img{
+    width: 100%;
+    height: 100%;
+}
+/*名字提示*/
+.name-mask{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.4);
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+}
+/*右侧*/
+.factory-box .factory-right{
+    float: right;
+    width: 278px;
+    height: 630px;
+    border-left: 1px solid #efefef;
+}
+.factory-box .factory-right .shows-imgs{
+    padding: 40px 0 0 38px;
+    box-sizing: border-box;
+    height: 520px;
+    overflow: hidden;
+}
+.factory-box .factory-right .shows-imgs li{
+    width: 100px;
+    height: 60px;
+    float: left;
+    background-color: #d4d4d4;
+    margin-right: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.factory-box .factory-right .shows-imgs li>img{
+    width: 100%;
+    height: 100%;
+}
+.factory-box .factory-right .shows-imgs .active-img{
+    border: 4px solid #0b953a;
+    height: 60px;
+}
+/*分页展示*/
+.factory-box .factory-right .paging-box{
+    border-top: 1px solid #efefef;
+    width: 220px;
+    margin: 0 38px;
+    padding-top: 20px;
+}
+.pages-box{
+    float:left;
+    margin-left: 10px;
+}
+.pages-box .total-pages{
+    color: #0b953a;
+}
+.up-down{
+    float: left;
+    margin-left: 65px;
+}
+.up-down li{
+    float: left;
+    cursor: pointer;
+}
+.up-down .separation{
+    margin: 0 15px;
+}
+.up-down .active-pages{
+    color: #0b953a;
+}

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="images/jc.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="images/jc.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/base-new.css"/>
+    <!--字体图标-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!--浏览器版本-->
+    <!--[if lte IE 8]>
+    <script>var _iealwn = {once: 0, outver: 8};</script>
+    <script id="_iealwn_js" src="//support.dmeng.net/ie-alert-warning/latest.js"></script>
+    <![endif]-->
+    <style>
+        body {
+            background-color: #2a2a2a;
+        }
+
+        .display-content {
+            width: 1280px;
+            height: 760px;
+            margin: 0 auto;
+        }
+
+        .display-left {
+            float: left;
+            width: 948px;
+            height: auto;
+        }
+
+        .display-left .current-location {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #ffffff;
+        }
+
+        .display-left .current-location > a {
+            color: #ffffff;
+        }
+
+        .display-left .big-img {
+            margin-top: 20px;
+            width: 880px;
+            height: 550px;
+            overflow: hidden;
+            text-align: center;
+            line-height: 550px;
+            background: url("images/loading.gif") no-repeat center #ffffff;
+        }
+
+        .display-right {
+            height: 560px;
+            width: 280px;
+            border-left: 2px solid #212121;
+            float: right;
+            margin-top: 80px;
+            padding-left: 50px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+        .display-right > ul {
+            margin-right: -15px;
+            height: 450px;
+        }
+
+        .display-right > ul > li {
+            margin-right: 15px;
+            float: left;
+            width: 100px;
+            height: 60px;
+            line-height: 60px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .display-right > ul > li > img {
+            max-width: 100px;
+        }
+
+        .display-right > ul .active {
+            border: 4px solid #0b953a;
+            height: 60px;
+        }
+
+        /*分页展示*/
+        .paging-box {
+            border-top: 1px solid #212121;
+            width: 216px;
+            padding-top: 25px;
+            color: #ffffff;
+            margin-top: 50px;
+            user-select: none;
+        }
+
+        .pages-box {
+            float: left;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+
+        .pages-box .total-pages {
+            color: #0b953a;
+        }
+
+        .up-down {
+            float: right;
+        }
+
+        .up-down li {
+            float: left;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .up-down .separation {
+            margin: 0 15px;
+        }
+
+        .up-down .active-pages {
+            color: #0b953a;
+        }
+
+        /*版权*/
+        .copyright {
+            margin-top: 40px;
+            color: #b5b5b6;
+            height: 30px;
+        }
+
+        .copyright > span {
+            float: left;
+        }
+
+        .copyright .iconfont {
+            font-size: 30px;
+            line-height: 30px;
+            margin-right: 30px;
+        }
+
+        .copyright > span:first-child + span {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<!--顶部快捷方式-->
+<div class="the-shortcut">
+    <div class="ui-left">
+        PCB制板\ SMT贴装综合服务商
+    </div>
+    <div class="ui-right">
+        <ul class="clearfloat">
+            <li class="js-phone-order">
+                <span class="iconfont">&#xe60c;</span>
+                手机端下单
+            </li>
+            <li class="split-lines"></li>
+            <li>
+                24小时客服：13826578334
+            </li>
+            <li class="split-lines"></li>
+            <li class="add-favorite">
+                收藏本站
+            </li>
+        </ul>
+    </div>
+</div>
+<!--导航-->
+<div class="nav-box js-nav-box clearfloat">
+    <div class="nav-left">
+        <h1>
+            <a href="index.html" class="iconfont">&#xe60d;</a>
+        </h1>
+        <ul class="nav-menu clearfloat">
+            <li >
+                <a href="index.html">首页</a>
+            </li>
+            <li>
+                <a href="smt-order.html">SMT贴片报价</a>
+            </li>
+            <li>
+                <a href="pcb-order.html">PCB打样报价</a>
+            </li>
+            <li class="active-menu">
+                <a href="javascript:void(0)">工艺介绍</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li>
+                        <a href="smt-introduce.html">SMT介绍</a>
+                    </li>
+                    <li>
+                        <a href="pcb-introduce.html">PCB介绍</a>
+                    </li>
+                    <li>
+                        <a href="material-introduce.html">物料介绍</a>
+                    </li>
+                    <li class="active-second">
+                        <a href="product-display.html">产品展示</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="integral/integral-mall.html">积分商城</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">关于我们</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li>
+                        <a href="about-us.html">企业简介</a>
+                    </li>
+                    <li>
+                        <a href="news.html">新闻资讯</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="user-share.html">用户分享</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">帮助中心</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li><a href="questions.html">常见问题</a></li>
+                    <li><a href="buy-guide.html">购物指南</a></li>
+                    <li><a href="feedback.html">意见反馈</a></li>
+                    <li><a href="link-us.html">联系我们</a></li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <!--未登录-->
+        <div class="no-login">
+            <ul class="clearfloat">
+                <li><a href="jc-login.html">登录</a></li>
+                <li class="split-lines"></li>
+                <li><a href="jc-login.html">注册</a></li>
+            </ul>
+            <!--购物车-->
+            <div class="car-box">
+                <a href="javascript:void(0)">
+                    <span class="iconfont">&#xe600;</span>
+                    99
+                </a>
+            </div>
+        </div>
+        <!--已登录-->
+        <div class="logined">
+            <i class="user-img"><img src="images/user-pic.png" alt="头像" width="40" height="40"></i>
+            <div class="user-info">
+                <span>您好!00379A</span>
+                <span class="iconfont">&#xe629;</span>
+                <!--下拉菜单-->
+                <div class="info-box">
+                    <ul class="info-list">
+                        <li>
+                            <a href="javascript:void(0)">订单管理</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">个人信息管理</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">优惠券管理</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0)" class="sign-out">安全退出</a>
+                </div>
+            </div>
+            <!--购物车-->
+            <div class="car-box">
+                <a href="javascript:void(0)">
+                    <span class="iconfont">&#xe600;</span>
+                    99
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--示例图片-->
+<div class="display">
+    <div class="display-content clearfloat">
+        <div class="display-left">
+            <!--当前位置-->
+            <div class="current-location">
+                您当前位置：<a href="index.html">首页</a> - <a href="javascript:void(0)">工艺介绍</a>
+                - <a href="product-display.html">产品展示</a>
+            </div>
+            <!--big-->
+            <div class="big-img js-big-img" id="big-img">
+                <img src="" alt="">
+            </div>
+            <!--版权-->
+            <div class="copyright">
+                <span class="iconfont">&#xe60d;</span>
+                <span>Copyright © 2016 www.jc-pcba.com 版权所有 深圳捷创电子科技有限公司 粤ICP备16117886号-1</span>
+            </div>
+        </div>
+        <div class="display-right">
+            <ul class="js-show-img clearfloat">
+                <li class="active">
+                    <img src="http://www.jc-pcba.com/img/images/equipment/02.jpg" alt="雅马哈2" width="100" height="62">
+                </li>
+                <li>
+                    <img src="http://www.jc-pcba.com/img/images/equipment/02.jpg" alt="雅马哈2">
+                </li>
+                <li>
+                    <img src="http://www.jc-pcba.com/img/images/product/01.jpg" alt="雅马哈2" width="100" height="62">
+                </li>
+                <li>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3KYTOku2QSohVCQRZzFCYjbTnTQs2kMTru3OakckSv5FijbCb"
+                         alt="雅马哈2" width="100" height="62">
+                </li>
+                <li>
+                    <img src="images/banner3.jpg" alt="雅马哈2">
+                </li>
+                <li>
+                    <img src="images/user-pic.png" alt="雅马哈2">
+                </li>
+                <li>
+                    <img src="http://www.jc-pcba.com/img/images/product/03.jpg" alt="雅马哈2">
+                </li>
+                <li>
+                    <img src="http://www.jc-pcba.com/img/images/equipment/02.jpg" alt="雅马哈2" width="100" height="62">
+                </li>
+                <li>
+                    <img src="http://www.jc-pcba.com/img/images/product/01.jpg" alt="雅马哈2" width="100" height="62">
+                </li>
+                <li>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3KYTOku2QSohVCQRZzFCYjbTnTQs2kMTru3OakckSv5FijbCb"
+                         alt="雅马哈2" width="100" height="62">
+                </li>
+                <li>
+                    <img src="images/banner3.jpg" alt="雅马哈2">
+                </li>
+                <li>
+                    <img src="http://www.jc-pcba.com/img/images/equipment/02.jpg" alt="雅马哈2" width="100" height="62">
+                </li>
+            </ul>
+            <!--分页切换-->
+            <div class="paging-box clearfloat">
+                <!--显示页数-->
+                <div class="pages-box">
+                    <span class="now-pages js-now-pages">1</span>
+                    <span>/</span>
+                    <span class="total-pages js-total-pages">2</span>
+                </div>
+                <!--分页操作-->
+                <ul class="up-down js-up-down">
+                    <li class="up-pages pages js-up-pages">上一页</li>
+                    <li class="separation">|</li>
+                    <li class="down-pages pages active-pages js-down-pages">下一页</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--通用弹窗遮罩-->
+<div class="g-mian-bg"></div>
+<!--跳转手机站链接弹窗-->
+<div class="phone-box js-phone-box">
+    <div class="phone-link">
+        <div class="link-left">
+            <h3>
+                捷创移动端网站
+                现已上线
+            </h3>
+            <p>
+                打开您的手机浏览器
+                <br>扫一扫及可进入捷创移动端
+                <br>便可随时随地
+                <br>计价--下单--管理您的订单
+            </p>
+        </div>
+        <img src="images/phone.png" alt="手机" width="340" height="423" class="phone">
+        <div class="link-right">
+            <h6>移动端二维码</h6>
+            <img src="images/phone-qr.png" alt="手机二维码" width="203" height="203">
+        </div>
+        <!--关闭按钮-->
+        <i class="iconfont popup-close js-popup-close">&#xe7be;</i>
+    </div>
+</div>
+<!--右侧分享-->
+<div class="share-box">
+    <!--返回顶部按钮-->
+    <div class="back-btn js-back-btn">
+        <span class="iconfont">&#xe649;</span>
+    </div>
+    <!--每一项-->
+    <ul class="share-lists">
+        <li>
+            <a href="javascript:void(0)">
+                <i>99</i>
+                <span class="iconfont">&#xe611;</span>
+            </a>
+        </li>
+        <li class="phone-btn">
+            <span class="iconfont" title="点击">&#xe60c;</span>
+        </li>
+        <li>
+            <span class="iconfont">&#xe61f;</span>
+            <!--弹出电话-->
+            <div class="tel-popup">24小时客服：13826578334</div>
+        </li>
+        <li>
+            <span class="iconfont">&#xe60b;</span>
+            <!--弹出微信-->
+            <div class="wx-popup">
+                <div class="wexin">
+                    <img src="images/wechat.png" alt="微信" width="127" height="127">
+                    <p>
+                        扫一扫
+                        <br>关注捷创
+                        <br>微信
+                        <br>公众号
+                    </p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<script src="js/golbal.js"></script>
+<!--layer-->
+<script src="js/layer-v3.1.1/layer/layer.js"></script>
+<script>
+    $(function () {
+
+        function AutoResizeImage(maxWidth, maxHeight, objImg) {
+            var img = new Image();
+            img.src = objImg.src;
+            var hRatio;
+            var wRatio;
+            var Ratio = 1;
+            var w = img.width;
+            var h = img.height;
+            wRatio = maxWidth / w;
+            hRatio = maxHeight / h;
+            if (maxWidth == 0 && maxHeight == 0) {
+                Ratio = 1;
+            } else if (maxWidth == 0) {//
+                if (hRatio < 1) Ratio = hRatio;
+            } else if (maxHeight == 0) {
+                if (wRatio < 1) Ratio = wRatio;
+            } else if (wRatio < 1 || hRatio < 1) {
+                Ratio = (wRatio <= hRatio ? wRatio : hRatio);
+            }
+            if (Ratio < 1) {
+                w = w * Ratio;
+                h = h * Ratio;
+            }
+            objImg.height = h;
+            objImg.width = w;
+        }//等比缩放
+        $(document).on('click', '.js-show-img li', function () {
+            $(this).addClass('active').siblings('li').removeClass('active');
+            var src = $(this).children('img').attr('src');
+            $('.js-big-img').children('img').attr('src', src);
+            var $img = $('.js-big-img').children('img');
+            AutoResizeImage(800, 533, $img[0]);
+        });
+        //图片加载失败处理
+        $('.js-show-img img').error(function () {
+            $(this).hide();
+            $(this).parent().css({'background': 'url("img/images/loading.gif") no-repeat center #ffffff'});
+            $(this).parent().attr('title', '加载延迟......');
+        });
+        //分页数据
+        var pagination = function (size, current, arr) {
+            var skipNum = (current - 1) * size;
+            var newArr = (skipNum + size) > arr.length ? arr.slice(skipNum, arr.length) : arr.slice(skipNum, skipNum + size);
+            var newStr = '';
+            for (var i = 0; i < newArr.length; i++) {
+                newStr += '  <li>\n' + '<img src=" ' + newArr[i] + ' ">\n' + '</li>'
+            }
+            return newStr;
+        };//return newImages
+
+        //大图处理
+        function bigImgHandle() {
+            //
+            var $firstLi = $('.js-show-img li');
+            $firstLi.first().addClass('active');
+            $('#big-img').find('img').attr('src', $firstLi.first().find('img').attr('src'));
+            var $bigImg = $('.js-big-img').children('img');
+            AutoResizeImage(800, 533, $bigImg[0]);
+        }
+
+        //请求图片信息
+        void function () {
+            var $showImg = $('.js-show-img');
+            var kk = true;
+            $.ajax({
+                //返回数组 数据格式，详情参考本地 img2.json
+                url: 'img2.json',
+                post: 'get',
+                success: function (data) {
+                    addImgs(data);
+                    $showImg.empty();//清空数据
+                    $showImg.append(pagination(12, 1, data));//更新数据
+                    bigImgHandle();//大图处理
+                },
+                error: function () {
+                    console.log('网络开差了,请在服务器环境下浏览');
+                }
+            });
+
+           //添加图片
+            function addImgs(data) {
+                var imgArr = data;
+                var size = 12;  //一页数量
+                var totalPages = Math.ceil(imgArr.length / size);
+                $('.js-total-pages').html(totalPages);
+                var page = 1; //默认第一页
+                // 上一页
+                $('.js-up-pages').click(function () {
+                    if (page <= 1) {
+                        layer.msg('没有更多了', {icon: 2});
+                        return false;
+                    }
+                    page--;
+                    $('.js-now-pages').html(page);
+                    $showImg.empty();//清空数据
+                    $showImg.append(pagination(size, page, imgArr));//更新数据
+                    bigImgHandle();//大图处理
+                });
+                // 下一页
+                $('.js-down-pages').click(function () {
+                    if (page >= totalPages) {
+                        layer.msg('没有更多了', {icon: 2});
+                        return false;
+                    }
+                    page++;
+                    $('.js-now-pages').html(page);
+                    $showImg.empty();//清空数据
+                    $showImg.append(pagination(size, page, imgArr));//更新数据
+                    bigImgHandle();//大图处理
+                });
+            } //end addImgs
+        }();//end  图片请求
+
+    });//end function
+</script>
+
+</body>
+</html>

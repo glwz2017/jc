@@ -1,0 +1,96 @@
+.financial-box{
+    background-color: #ffffff;
+    height: auto;
+}
+.financial-box .financial-title{
+    height: 60px;
+    background-color: #e5e5e5;
+}
+.financial-box .financial-title>li{
+    float: left;
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #3e3a3a;
+    font-size: 16px;
+    border-right: 1px solid #ffffff;
+    border-top: 2px solid #e5e5e5;
+    cursor: pointer;
+}
+.financial-box .financial-title>li:hover{
+    border-top: 2px solid #098734;
+}
+/*激活样式*/
+.financial-box .financial-title .active-li{
+    border-top: 2px solid #098734;
+    background-color: #ffffff;
+}
+
+/*存款标题*/
+.deposit-box{
+    height: 120px;
+    line-height: 120px;
+    border: 1px solid #e5e5e5;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    background: url("../../images/member/deposit.png") no-repeat 4% center;
+
+}
+
+.deposit-box .left-box{
+    float: left;
+    margin-left: 125px;
+}
+.deposit-box .left-box>span:first-child{
+    font-size: 30px;
+    color: #3e3a3a;
+}
+.deposit-box .left-box>span:first-child+span{
+    font-size: 30px;
+    color: #f63849;
+}
+.deposit-box .right-box{
+    float: right;
+    margin-right: 50px;
+}
+
+.deposit-box .right-box>a{
+    color: #d0021b;
+    font-size: 14px;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid #d0021b;
+    transition: all .3s;
+    background-color: #ffffff;
+}
+.deposit-box .right-box>a:hover{
+    background-color: #e7e7e7;
+}
+
+/*透支盒子*/
+/*透支盒子*/
+.overdraft-box{
+    height: 120px;
+    line-height: 120px;
+    border: 1px solid #e5e5e5;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    background: url("../../images/member/overdraft.png") no-repeat 4% center;
+}
+
+.overdraft-box .left-box{
+    float: left;
+    margin-left: 125px;
+}
+.overdraft-box .left-box>span:first-child{
+    font-size: 30px;
+    color: #3e3a3a;
+}
+.overdraft-box .left-box>span:first-child+span{
+    font-size: 30px;
+    color: #f63849;
+}

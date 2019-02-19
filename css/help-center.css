@@ -1,0 +1,517 @@
+.help-top {
+    background: url("../images/questions-logo.jpg") no-repeat center;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.current-location {
+    float: right;
+    margin-top: 160px;
+    color: #ffffff;
+}
+
+.current-location > a {
+    color: #ffffff;
+}
+
+.help-center {
+    background-color: #ffffff;
+}
+
+.help-content {
+    width: 1280px;
+    margin: 0 auto;
+    padding-right: 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.help-left {
+    float: left;
+    width: 940px;
+    min-height: 600px;
+    border-right: 1px solid #efefef;
+    padding-bottom: 300px;
+}
+
+/*question 页面*/
+.help-left > h2 {
+    border-bottom: 2px solid #07813b;
+    display: inline-block;
+    margin-top: 70px;
+    height: 38px;
+    font-size: 18px;
+    position: relative;
+}
+
+.help-content .split-lines {
+    width: 1240px;
+    height: 2px;
+    border-bottom: 2px solid #efefef;
+    position: absolute;
+    top: 106px;
+    left: 0;
+}
+
+.help-left .lists-box {
+    margin-top: 30px;
+    width: 880px;
+}
+
+.help-left .lists-box .item:first-child .item-text {
+    display: block;
+}
+
+.item .item-title {
+    height: 90px;
+    cursor: pointer;
+    border-bottom: 1px #efefef dashed;
+}
+
+.item .item-title .iconfont {
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffa300;
+    float: left;
+    margin-top: 33px;
+}
+
+.item .item-title > h3 {
+    float: left;
+    margin-left: 25px;
+    font-size: 18px;
+    width: 700px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 31px;
+    transition: all .3s;
+}
+
+.item .item-title .icon-xiala {
+    float: right;
+    font-size: 18px;
+    color: #8a8a8a;
+    transition: all .3s;
+}
+
+.item .item-title:hover h3 {
+    color: #008144;
+}
+
+.item .item-title:hover .icon-xiala {
+    transform: rotate(180deg);
+}
+
+.item .item-text {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ddddde;
+    margin-top: -1px;
+    background-color: #f7f8f8;
+    display: none;
+}
+
+.item .item-text > p {
+    font-size: 14px;
+    width: 840px;
+    margin: 25px auto 0;
+}
+
+.item .item-text .whether {
+    margin-top: 40px;
+    border-top: 1px solid #ddddde;
+    height: 90px;
+}
+
+.item .item-text .whether .whether-box {
+    float: right;
+    line-height: 90px;
+    font-size: 16px;
+}
+
+.item .item-text .whether .whether-box > span {
+    margin-right: 20px;
+}
+
+.item .item-text .whether .whether-box a {
+    width: 120px;
+    margin-right: 20px;
+}
+
+.item .item-text .whether .whether-box .no-btn {
+    background-color: #ddddde;
+    border: 1px solid #ddddde;
+    box-shadow: none;
+    color: #3e3a3a;
+}
+
+.item .item-text .whether .whether-box .no-btn:hover {
+    box-shadow: 0 2px 2px #d3d4d4;
+}
+
+/*question 页面*/
+
+/*意见反馈页面*/
+.help-left .feedback-box {
+    width: 880px;
+    margin-top: 20px;
+    min-height: 1300px;
+}
+
+.feed-back-tips {
+    height: 70px;
+    border-bottom: 1px #efefef dashed;
+    font-size: 14px;
+    line-height: 70px;
+}
+
+.feedback-box .xing-hao {
+    font-size: 28px;
+    line-height: 28px;
+    color: red;
+    vertical-align: middle;
+}
+
+.feedback-box .user-info {
+    padding: 50px 0;
+    border-bottom: 1px #efefef dashed;
+}
+
+.feedback-box .user-info .info-item {
+    font-size: 14px;
+    display: inline-block;
+}
+
+.feedback-box .user-info .info-item input[type="text"], input[type="email"] {
+    width: 248px;
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid #ddddde;
+    border-radius: 4px;
+    background-color: #f7f8f8;
+    margin-left: 20px;
+    text-indent: 15px;
+    font-size: 16px;
+}
+
+.feedback-box .user-info .email-box {
+    margin: 20px 0 0 27px;
+}
+
+.feedback-box .views-content {
+    margin-top: 15px;
+    position: relative;
+    width: 880px;
+    height: 370px;
+}
+.feedback-box .views-content .mask{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 370px;
+    background-color: rgba(0,0,0,.1);
+    background-color: #000000;
+    z-index: 9;
+    opacity: .1;
+    filter: alpha(opacity=10);
+}
+.feedback-box .views-content >a{
+    color: #ff9933;
+    opacity: 1;
+    text-align: center;
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+    top: 50%;
+    text-decoration: underline;
+    font-size: 18px;
+}
+.feedback-box .views-content .feed-back-tips {
+    border-bottom: 0;
+}
+
+.feedback-box .views-content textarea {
+    resize: none;
+    width: 100%;
+    height: 210px;
+    background-color: #f7f8f8;
+    padding: 25px;
+    box-sizing: border-box;
+    font-size: 14px;
+    display: block;
+    border: 1px solid #ddddde;
+    border-bottom: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    overflow: hidden;
+}
+
+.views-content .submit-box {
+    border: 1px solid #ddddde;
+    height: 88px;
+    background-color: #f7f8f8;
+    text-align: right;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    overflow: hidden;
+}
+
+.views-content .submit-box > a {
+    width: 120px;
+    margin-top: 22px;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.views-content .submit-box > a:first-child {
+    background-color: #ddddde;
+    border: none;
+    box-shadow: none;
+    color: #3e3a3a;
+}
+
+/*留言列表*/
+.feedback-box .feedback-lists {
+    margin-top: 70px;
+}
+
+.feedback-box .feedback-lists > ul {
+    height: 50px;
+    border-bottom: 2px solid #ddddde;
+}
+
+.feedback-box .feedback-lists > ul > li {
+    width: 160px;
+    line-height: 48px;
+    text-align: center;
+    border: 2px solid #ddddde;
+    height: 48px;
+    font-size: 18px;
+}
+
+.feedback-box .feedback-lists > ul > .active-li {
+    border-bottom: 2px solid #ffffff;
+}
+
+.feedback-box .feedback-lists .lists-box {
+    margin-top: 25px;
+}
+
+.feedback-lists .lists-box .list {
+    padding-top: 25px;
+}
+
+.feedback-lists .lists-box .list:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.feedback-lists .lists-box .list .head-img {
+    float: left;
+}
+
+.feedback-lists .lists-box .list .list-text {
+    float: right;
+    width: 820px;
+    background-color: #f7f8f8;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddddde;
+    border-radius: 6px;
+}
+
+.lists-box .list .list-text .title {
+    font-size: 12px;
+    color: #898989;
+}
+
+.lists-box .list .list-text p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.lists-box .list .list-text .sys-item {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #ddddde;
+}
+
+.lists-box .list .list-text .sys-item:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.lists-box .list .list-text .sys-item .sys-img {
+    float: left;
+}
+
+.lists-box .list .list-text .sys-item .sys-text {
+    float: left;
+    margin-left: 15px;
+    width: 690px;
+}
+
+.sys-item .sys-text .sys-name {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.sys-item .sys-text .sys-name .name {
+    color: #008144;
+}
+
+/*意见反馈页面*/
+
+/*联系我们*/
+.link-us {
+    margin-top: 90px;
+}
+
+.link-us .address {
+    display: inline-block;
+    float: left;
+}
+
+.link-us .address .address-logo {
+    width: 125px;
+    height: 120px;
+    border-radius: 15px;
+    background-color: #07813b;
+    color: #ffffff;
+}
+
+.link-us .address .address-logo span {
+    margin: 20px 0 0 20px;
+    float: left;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.link-us .address .address-logo p {
+    margin: 10px 0 0 20px;
+    float: left;
+    font-size: 18px;
+}
+
+.link-us .address .link-way {
+    margin-top: 50px;
+
+}
+.link-us .address .link-way .way{
+    margin-bottom: 15px;
+}
+.link-us .address .link-way i {
+    float: left;
+    width: 85px;
+    font-size: 16px;
+}
+
+.link-us .address .link-way span {
+    float: left;
+    display: block;
+    width: 177px;
+    font-size: 16px;
+}
+.link-us .dashed-lines{
+    border-right: 1px #efefef dashed;
+    height: 285px;
+    float: left;
+    margin: 0 80px;
+}
+.help-left .link-map{
+    margin-top: 60px;
+    height: 300px;
+    border: 1px solid #ddddde;
+    border-radius: 6px;
+    width: 880px;
+    overflow: hidden;
+}
+.help-left .link-map #dituContent{
+    height: 300px;
+}
+/*联系我们*/
+
+
+/*购物指南*/
+.guide-box{
+    margin-top: 50px;
+    min-height: 500px;
+    text-align: center;
+    line-height: 500px;
+    font-size: 24px;
+}
+/*购物指南*/
+
+/*右侧问题帮助*/
+.help-right {
+    float: right;
+    width: 298px;
+    height: auto;
+}
+
+.help-right .help-box {
+    width: 298px;
+    min-height: 200px;
+    position: relative;
+    transition: all .3s;
+}
+
+.help-right .help-box > h2 {
+    margin-top: 60px;
+    text-indent: 40px;
+    font-size: 24px;
+    color: #008144;
+}
+
+.help-right .help-box .help-list {
+    margin-top: 20px;
+}
+
+.help-right .help-box .help-list li {
+    width: 300px;
+    height: 50px;
+    margin-left: -2px;
+}
+
+.help-right .help-box .help-list li > a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.help-right .help-box .help-list li > a > h3 {
+    font-size: 14px;
+    color: #008144;
+    display: inline-block;
+    margin-left: 40px;
+    width: 260px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #efefef;
+}
+
+/*激活的条例*/
+.help-right .help-box .help-list .active-li {
+    border-left: 2px solid #008144;
+    background-color: #ddddde;
+}
+
+.help-right .help-box .link-box {
+    margin-top: 60px;
+    text-align: right;
+}
+
+/*问题帮助*/

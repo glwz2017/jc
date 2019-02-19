@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在线计价-深圳捷创电子科技有限公司</title>
+    <link rel="stylesheet" href="css/base-new.css">
+    <!--字体图标-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/pcb-order.css">
+    <!--浏览器版本-->
+    <!--[if lte IE 8]>
+    <script>var _iealwn = {once: 0, outver: 8};</script>
+    <script id="_iealwn_js" src="//support.dmeng.net/ie-alert-warning/latest.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--顶部快捷方式-->
+<div class="the-shortcut">
+    <div class="ui-left">
+        PCB制板\ SMT贴装综合服务商
+    </div>
+    <div class="ui-right">
+        <ul class="clearfloat">
+            <li class="js-phone-order">
+                <span class="iconfont">&#xe60c;</span>
+                手机端下单
+            </li>
+            <li class="split-lines"></li>
+            <li>
+                24小时客服：13826578334
+            </li>
+            <li class="split-lines"></li>
+            <li class="add-favorite">
+                收藏本站
+            </li>
+        </ul>
+    </div>
+</div>
+<!--导航-->
+<div class="nav-box js-nav-box clearfloat">
+    <div class="nav-left">
+        <h1>
+            <a href="index.html" class="iconfont">&#xe60d;</a>
+        </h1>
+        <ul class="nav-menu clearfloat">
+            <li >
+                <a href="index.html">首页</a>
+            </li>
+            <li>
+                <a href="smt-order.html">SMT贴片报价</a>
+            </li>
+            <li class="active-menu">
+                <a href="pcb-order.html">PCB打样报价</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">工艺介绍</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li>
+                        <a href="smt-introduce.html">SMT介绍</a>
+                    </li>
+                    <li>
+                        <a href="pcb-introduce.html">PCB介绍</a>
+                    </li>
+                    <li>
+                        <a href="material-introduce.html">物料介绍</a>
+                    </li>
+                    <li>
+                        <a href="product-display.html">产品展示</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="integral/integral-mall.html">积分商城</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">关于我们</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li>
+                        <a href="about-us.html">企业简介</a>
+                    </li>
+                    <li>
+                        <a href="news.html">新闻资讯</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="user-share.html">用户分享</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">帮助中心</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li><a href="questions.html">常见问题</a></li>
+                    <li><a href="buy-guide.html">购物指南</a></li>
+                    <li><a href="feedback.html">意见反馈</a></li>
+                    <li><a href="link-us.html">联系我们</a></li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <!--未登录-->
+        <div class="no-login">
+            <ul class="clearfloat">
+                <li><a href="jc-login.html">登录</a></li>
+                <li class="split-lines"></li>
+                <li><a href="jc-login.html">注册</a></li>
+            </ul>
+            <!--购物车-->
+            <div class="car-box">
+                <a href="javascript:void(0)">
+                    <span class="iconfont">&#xe600;</span>
+                    99
+                </a>
+            </div>
+        </div>
+        <!--已登录-->
+        <div class="logined">
+            <i class="user-img"><img src="images/user-pic.png" alt="头像" width="40" height="40"></i>
+            <div class="user-info">
+                <span>您好!00379A</span>
+                <span class="iconfont">&#xe629;</span>
+                <!--下拉菜单-->
+                <div class="info-box">
+                    <ul class="info-list">
+                        <li>
+                            <a href="javascript:void(0)">订单管理</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">个人信息管理</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">优惠券管理</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0)" class="sign-out">安全退出</a>
+                </div>
+            </div>
+            <!--购物车-->
+            <div class="car-box">
+                <a href="javascript:void(0)">
+                    <span class="iconfont">&#xe600;</span>
+                    99
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--订单标题-->
+<div class="denominat-box">
+    <div class="w-1280">
+        <!--位置提示 [动态导航]-->
+        <div class="location-hints">
+            <!--您当前位置：首页 - PCB贴片报价-->
+            您当前位置：<a href="index.html">首页</a> - <a href="pcb-order.html">PCB贴片报价</a>
+        </div>
+    </div>
+</div>
+<!--主体-->
+<div class="main-order">
+    <div class="order-box">
+        <!--左侧部分-->
+        <div class="order-left">
+            <!--pcb模块开始-->
+            <div class="pcb-box">
+                <div class="pcb-title js-pcb-title">
+                    <!--计算-->
+                    <div class="ji-jia">
+                        <span class="iconfont">&#xe622;</span>
+                    </div>
+                    <div class="pcb-plane">
+                        <h2>PCB打样报价</h2>
+                        <span class="pcb-title-tips">以下标记“*”为必填选项</span>
+                        <div class="group-box">
+                            <a href="javascript:void(0)" class="btn rest-btn">重置</a>
+                            <a href="javascript:void(0)" class="btn js-immediately">立即报价</a>
+                        </div>
+                    </div>
+                </div>
+                <!--内容区-->
+                <div class="pcb-content show-content clearfloat">
+                    <!--左边-->
+                    <div class="orders-left">
+                        <span class="iconfont pcb">
+                         &#xe635;
+                        </span>
+                    </div>
+                    <!--右边-->
+                    <div class="orders-right">
+                        <!--3-->
+                        <div class="order-item">
+                            <div class="item-left">
+                                <!--必填-->
+                                <span class="flag iconfont">&#xe623;</span>
+                                尺寸（单）
+                                <!--提示信息-->
+                                <div class="tips-box">
+                                    <span class="iconfont">&#xe665;</span>
+                                    <div class="tips-text">
+                                        板子大小指的是客户投单板子的长宽，如果是圆形板，长宽尺寸就是圆的直径；如果是外形不规则的电路板，长宽尺寸则按最大的外形范围测量；注：多款电路板打一个压缩包，不知道拼版后尺寸多少，则长宽可随意填写一个大小，捷多邦工作人员会按下单板子拼版后的尺寸进行计算。板子的大小都有公差范围，外形的正常公差是±0.2mm左右；如果对外形公差另有要求时，请在其它要求中备注，没有备注的则视为认同公示的公差大小。外形必须设计在同一层，即keep
+                                        out层或机械层，不要在2个层分别设计，否则容易出错。如有不清楚的，请找工作人员咨询。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-right size-item">
+                                <input type="text" placeholder="长" class="easyui-validatebox validatebox-text"
+                                       id="hidLength" name="hidLength" autocomplete="off"
+                                       data-options="required:true,validType:'integer'">
+                                <i class="take-flag iconfont">&#xe620;</i>
+                                <input type="text" placeholder="宽" class="easyui-validatebox validatebox-text"
+                                       id="hidWidth"
+                                       name="hidWidth" autocomplete="off"
+                                       data-options="required:true,validType:'integer'">
+                                <i class="take-flag right-margin">cm</i>
+                            </div>
+                        </div>
+                        <!--4-->
+                        <div class="order-item">
+                            <div class="item-left">
+                                <!--必填-->
+                                <span class="flag iconfont">&#xe623;</span>
+                                数量（单）
+                                <!--提示信息-->
+                                <div class="tips-box">
+                                    <span class="iconfont">&#xe665;</span>
+                                    <div class="tips-text">
+                                        面积一平米内，数量50pcs内为样板，超出此范围则为小批量。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-right js-single" style="position: relative;z-index: 10">
+                                <input class="js-quantity easyui-validatebox validatebox-text" type="text" readonly=""
+                                       id="txtNum" name="txtNum" data-options="required:true">
+                                <div class="board-nums">
+                                    <ul class="boardnumber js-number">
+                                        <li>5</li>
+                                        <li>10</li>
+                                        <li>15</li>
+                                        <li>20</li>
+                                        <li>25</li>
+                                        <li>30</li>
+                                        <li>40</li>
+                                        <li>50</li>
+                                        <li>75</li>
+                                        <li>100</li>
+                                        <li>125</li>
+                                        <li>150</li>
+                                        <li>200</li>
+                                        <li>250</li>
+                                        <li>300</li>
+                                        <li>350</li>
+                                        <li>400</li>
+                                        <li>450</li>
+                                        <li>500</li>
+                                        <li>600</li>
+                                        <li>700</li>
+                                        <li>800</li>
+                                        <li>900</li>
+                                        <li>1000</li>
+                                        <li>1500</li>
+                                        <li>2000</li>
+                                        <li>2500</li>
+                                        <li>3000</li>
+                                        <li>3500</li>
+                                        <li>4000</li>
+                                        <li>4500</li>
+                                        <li>5000</li>
+                                        <li>5500</li>
+                                        <li>6000</li>
+                                        <li>6500</li>
+                                        <li>7000</li>
+                                        <li>7500</li>
+                                        <li>8000</li>
+                                    </ul>
+                                    <div class="other-box">
+                                        其它
+                                        <input type="text" class="other-input">
+                                        <a href="javascript:void(0)" class="confirm-btn">
+                                            确认
+                                        </a>
+                                        <a href="javascript:void(0)" class="cancel-btn">
+                                            取消
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--5-->
+                        <div class="order-item">
+                            <div class="item-left">
+                                板子层数
+                            </div>
+                            <input type="hidden" name="hidLayers" value="2">
+                            <div class="item-right js-boards">
+                                <div class="list" data="1">
+                                    1层
+                                </div>
+                                <div class="list active-list" data="2">
+                                    2层
+                                </div>
+                                <div class="list " data="4">
+                                    4层
+                                </div>
+                                <div class="list " data="6">
+                                    6层
+                                </div>
+                                <div class="list " data="8">
+                                    8层
+                                </div>
+                                <div class="list " data="10">
+                                    10层
+                                </div>
+                            </div>
+                        </div>
+                        <!--5.1隐藏元素-->
+                        <div class="order-item layer-boxs js-boards-style">
+                            <div class="item-left">
+                                &nbsp;
+                            </div>
+                            <div class="item-right">
+                                <!--1-->
+                                <div class="dropdown">
+                                    <label >铜层</label>
+                                    <br>
+                                    <select name="hidCopperlayer">
+                                        <option value="--">--</option>
+                                        <option value="上层">上层</option>
+                                        <option value="底层">底层</option>
+                                        <option value="None">没有</option>
+                                    </select>
+                                </div>
+                                <!--2-->
+                                <div class="dropdown">
+                                    <label >阻焊</label>
+                                    <br>
+                                    <select name="hidsoldermask">
+                                        <option value="--">--</option>
+                                        <option value="上层">上层</option>
+                                        <option value="底层">底层</option>
+                                        <option value="双层">双层</option>
+                                        <option value="None">没有</option>
+                                    </select>
+
+                                </div>
+                                <!--3-->
+                                <div class="dropdown">
+                                    <label >面板中的打叉板</label>
+                                    <br>
+                                    <select name="hidSilkscreenLegend">
+                                        <option value="--">--</option>
+                                        <option value="上层">上层</option>
+                                        <option value="底层">底层</option>
+                                        <option value="双层">双层</option>
+                                        <option value="None">没有</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!--5.2隐藏元素遮罩弹窗-->
+                        <div class="open-mask js-open-mask">
+                            <div class="table-open">
+                                <div class="open-title">
+                                    <div class="choose-title">
+                                        请在这里从上到下填入图层顺序
+                                    </div>
+                                    <div class="close-box js-close-box">
+                                        <img src="images/closed.png" alt="关闭">
+                                    </div>
+                                </div>
+                                <div class="in-box">
+                                    <p style="margin-bottom: 10px;">
+                                        请根据 <br>
+                                        您的文件中的图层名称,从顶部视图机身侧填入图层顺序
+                                    </p>
+                                    <div class="getInput-box"><label>L1:</label><input type="text" class="getInput"
+                                                                                       id="txtLayerCXL1"></div>
+                                    <div class="getInput-box"><label>L2:</label><input type="text" class="getInput"
+                                                                                       id="txtLayerCXL2"></div>
+                                    <div class="getInput-box"><label>L3:</label><input type="text" class="getInput"
+                                                                                       id="txtLayerCXL3"></div>
+                                    <div class="getInput-box"><label>L4:</label><input type="text" class="getInput"
+                                                                                       id="txtLayerCXL4"></div>
+                                    <div class="getInput-box"><label>L5:</label><input type="text" class="getInput"
+                                                                                       id="txtLayerCXL5"></div>
+                                    <div class="getInput-box"><label>L6:</label><input type="text" class="getInput"
+                                                                                       id="txtLayerCXL6"></div>
+                                    <div class="getInput-box"><label>L7:</label><input type="text" class="getInput"
+                                                                                       id="txtLayerCXL7"></div>
+                                    <div class="getInput-box"><label>L8:</label><input type="text" class="getInput"
+                                                                                       id="txtLayerCXL8"></div>
+                                    <div class="get-btn" onclick="SetLayerNote()">提交</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--位置调换开始-->
+                        <!--1-->
+                        <div class="order-item">
+                            <div class="item-left">
+                                板类型
+                                <!--提示信息-->
+                                <div class="tips-box">
+                                    <span class="iconfont">&#xe665;</span>
+                                    <div class="tips-text">
+                                        面积一平米内，数量50pcs内为样板，超出此范围则为小批量。
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="hidBoardType" id="hidBoardType" value="单片">
+                            <div class="item-right js-layer">
+                                <div class="list active-list" data="单片">
+                                    单片
+                                </div>
+                                <div class="list" data="按客户文件拼版出货">
+                                    按客户文件拼版出货
+                                </div>
+                                <div class="list" data="指定出货方式">
+                                    指定出货方式
+                                </div>
+                            </div>
+                        </div>
+                        <!--隐藏元素1.1-->
+                        <div class="delivery-box js-page-request">
+                            <div class="order-item">
+                                <div class="item-left">
+                                    交货形式
+                                </div>
+                                <div class="item-right size-item">
+                                    <input type="text" style="width: 97px" id="txtLayoutX" name="txtLayoutX"
+                                           class="easyui-validatebox validatebox-text" autocomplete="off"
+                                           data-options="validType:'integer'">
+                                    <i class="take-flag">X</i>
+                                    <input type="text" style="width: 97px" id="txtLayoutY" name="txtLayourY"
+                                           class="easyui-validatebox validatebox-text" autocomplete="off"
+                                           data-options="validType:'integer'">
+                                    <i class="take-flag right-margin">pcs</i>
+                                    <div class="delivery-pic">
+                                        示例
+                                        <!--提示图片-->
+                                        <i></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <div class="item-left">
+                                    工艺边:
+                                </div>
+                                <div class="item-right size-item">
+                                    <div class="side-box">
+                                        <select name="hidEdgeRails" id="hidEdgeRails" class="side-param js-side-param">
+                                            <option value="">请选择</option>
+                                            <option value="无">无</option>
+                                            <option value="上下">上下</option>
+                                            <option value="左右">左右</option>
+                                        </select>
+                                        <input type="text" class="easyui-validatebox js-side-size validatebox-text"
+                                               name="txtEdgeWidth" id="txtEdgeWidth" style="width: 97px" placeholder="0"
+                                               autocomplete="off" data-options="validType:'integer'">
+                                        <i class="take-flag right-margin">mm</i>
+                                        <div class="demo-pic">
+                                            示例
+                                            <!--提示图片-->
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--隐藏元素1.2-->
+                        <div class="line-process js-line-process">
+                            <div class="order-item">
+                                <div class="item-left">
+                                    拼版方式
+                                </div>
+                                <input type="hidden" name="hidRouteProcess" id="hidRouteProcess" value="v-cut拼版">
+                                <div class="item-right">
+                                    <div class="list active-list" data="v-cut拼版">
+                                        v-cut拼版
+                                    </div>
+                                    <div class="list" data="连接位拼版">
+                                        连接位拼版
+                                    </div>
+                                    <div class="list" data="Both V-Scoring&amp;Tab-routing">
+                                        v-cut拼版 + 连接位拼版
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <div class="item-left">
+                                    接受打叉板
+                                </div>
+                                <input type="hidden" name="hidAcceptCrossed" value="yes">
+                                <div class="item-right">
+                                    <div class="list active-list" data="yes">
+                                        接受
+                                    </div>
+                                    <div class="list" data="no">
+                                        不接受
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--2-->
+                        <div class="order-item">
+                            <div class="item-left">
+                                设计文件款数
+                                <!--提示信息-->
+                                <div class="tips-box">
+                                    <span class="iconfont">&#xe665;</span>
+                                    <div class="tips-text">
+                                        拼版个数指的是同一个文件中包含几个不同的板子时，收取拼版费，如果是同一款板拼版则不收拼版费。拼版划分：电路板中间打邮票孔、开槽、V割、直接铣开都算拼版。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-right file-number">
+                                <span class="minus js-minus">-</span>
+                                <input type="text" placeholder="1" class="js-files-number" value="1">
+                                <span class="add js-add">+</span>
+                                <input type="hidden">
+                            </div>
+                        </div>
+                        <!--位置调换结束-->
+                        <!--6-->
+                        <div class="order-item">
+                            <div class="item-left">
+                                材料
+                            </div>
+                            <input type="hidden" id="FR4Type" name="FR4Type" value="FR-4">
+                            <div class="item-right js-material">
+                                <div class="list active-list" data="FR-4">
+                                    FR-4
+                                </div>
+                                <div class="list" data="铝基板1.5">
+                                    铝基板(导热系数1.5W)
+                                </div>
+                                <div class="list" data="铝基板2.0">
+                                    铝基板(导热系数2.0W)
+                                </div>
+                            </div>
+                        </div>
+                        <!--6.1隐藏元素-->
+                        <div class="order-item mcpcb js-mcpcb">
+                            <div class="item-left">
+                                MCpcb结构
+                            </div>
+                            <input type="hidden" id="hidStructure" name="hidStructure" value="金属核心在中间">
+                            <div class="item-right">
+                                <div class="list active-list" data="金属核心在中间">
+                                    金属核心在中间
+                                </div>
+                                <img src="images/ic1.png" alt="结构图" width="55" height="31">
+                                <div class="list" data="金属核心在底部">
+                                    金属核心在底部
+                                </div>
+                                <img src="images/ic2.png" alt="结构图" height="31" width="55">
+                            </div>
+                        </div>
+                        <!--7-->
+                        <!--8-->
+                        <div class="order-item js-thickness">
+                            <div class="item-left">
+                                板子厚度
+                                <!--提示信息-->
+                                <div class="tips-box">
+                                    <span class="iconfont">&#xe665;</span>
+                                    <div class="tips-text">
+                                        板子厚度是指电路板的厚度，在这说明一下板厚的公差，公司采用的是KB军工A级料，公差相对较小，正常板厚在10%左右；10%主要是因为印阻焊和沉铜引起的；如果对板厚公差另有要求，请在其它要求项备注，否则视为按正常板厚公差。注：选板厚跟价格也有关联，0.6-1.6为正常板厚的价格，0.4、2.0板厚价格相对0.6-1.6正常板厚高100元左右。
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" value="1.6" name="radBoardThickness">
+                            <div class="item-right">
+                                <div class="list" data="0.2">
+                                    0.2
+                                </div>
+                                <div class="list" data="0.4">
+                                    0.4
+                                </div>
+                                <div class="list" data="0.6">
+                                    0.6
+                                </div>
+                                <div class="list" data="0.8">
+                                    0.8
+                                </div>
+                                <div class="list" data="1.0">
+                                    1.0
+                                </div>
+                                <div class="list" data="1.2">
+                                    1.2
+                                </div>
+                                <div class="list active-list" data="1.6">
+                                    1.6
+                                </div>
+                                <div class="list" data="2.0">
+                                    2.0
+                                </div>
+                                <div class="list" data="2.4">
+                                    2.4
+                                </div>
+                                <i class="unit-mm">mm</i>
+
+                            </div>
+                        </div>
+                        <!--9-->
+                        <div class="order-item">
+                            <div class="item-left">
+                                最小线宽/线距
+                            </div>
+                            <input type="hidden" value="6/6mil" name="radLineWeight">
+                            <div class="item-right">
+                                <div class="list" data="4/4mil">
+                                    4/4mil
+                                </div>
+                                <div class="list" data="5/5mil">
+                                    5/5mil
+                                </div>
+                                <div class="list active-list" data="6/6mil">
+                                    6/6mil
+                                </div>
+                                <div class="unit-mm">mil</div>
+                                <img src="images/min-track1.png" alt="" width="80" height="32">
+                            </div>
+                        </div>
+                        <!--10-->
+                        <div class="order-item">
+                            <div class="item-left">
+                                最小过孔
+                            </div>
+                            <input type="hidden" value="0.3" name="radVias">
+                            <div class="item-right">
+                                <div class="list" data="0.2">
+                                    0.2mm
+                                </div>
+                                <div class="list" data="0.25">
+                                    0.25mm
+                                </div>
+                                <div class="list active-list" data="0.3">
+                                    0.3mm
+                                </div>
+                                <div class="list" data="0">
+                                    没有
+                                </div>
+                                <div class="unit-mm">mm</div>
+                                <img src="images/min-size-pic.png" alt="" width="36" height="31">
+                            </div>
+                        </div>
+                        <!--11-->
+                        <div class="order-item">
+                            <div class="item-left">
+                                阻焊颜色
+                                <!--提示信息-->
+                                <div class="tips-box">
+                                    <span class="iconfont">&#xe665;</span>
+                                    <div class="tips-text">
+                                        部分特殊颜色加收颜色费,如哑光绿、哑光黑以及黄油黑字或绿油黑字等
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" value="绿色" name="radSolderColor">
+                            <div class="item-right color-box js-solder-down">
+                                <div class="list active-list" data="绿色">
+                                    <i class="green"></i>
+                                    绿色
+                                </div>
+                                <div class="list" data="红色">
+                                    <i class="red"></i>
+                                    红色
+                                </div>
+                                <div class="list" data="黄色">
+                                    <i class="yellow"></i>
+                                    黄色
+                                </div>
+                                <div class="list" data="蓝色">
+                                    <i class="blue"></i>
+                                    蓝色
+                                </div>
+                                <div class="list" data="白色">
+                                    <i class="white"></i>
+                                    白色
+                                </div>
+                                <div class="list" data="紫色">
+                                    <i class="purple"></i>
+                                    紫色
+                                </div>
+                                <div class="list" data="黑色">
+                                    <i class="black"></i>
+                                    黑色
+                                </div>
+                                <div class="list" data="哑光黑">
+                                    <i class="matt-black"></i>
+                                    哑光黑
+                                </div>
+                                <div class="list" data="哑光绿">
+                                    <i class="matt-green"></i>
+                                    哑光绿
+                                </div>
+                                <div class="list" data="无">
+                                    没有
+                                </div>
+                            </div>
+                        </div>
+                        <!--12-->
+                        <div class="order-item character-color">
+                            <div class="item-left">
+                                字符颜色
+                                <!--提示信息-->
+                                <div class="tips-box">
+                                    <span class="iconfont">&#xe665;</span>
+                                    <div class="tips-text">
+                                        指的是电路板字符色，我们只提供白色，如果阻焊油墨选白色时，字符为黑色。
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" value="白色" name="radFontColor">
+                            <div class="item-right color-box js-silk-down">
+                                <div class="list active-list" data="白色">
+                                    <i class="white"></i>
+                                    白色
+                                </div>
+                                <div class="list" data="黑色">
+                                    <i class="black"></i>
+                                    黑色
+                                </div>
+                                <div class="list" data="无">
+                                    没有
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--13-->
+                        <div class="order-item">
+                            <div class="item-left">
+                                金手指
+                            </div>
+                            <input type="hidden" value="No" name="radGoldfingers">
+                            <div class="item-right js-gold-finger">
+                                <div class="list " data="Yes">
+                                    是
+                                </div>
+                                <div class="list active-list" data="No">
+                                    没有
+                                </div>
+                                <input type="hidden" value="斜边30°" name="hidChamferedborder">
+                                <div class="bevel-box js-bevel">
+                                    <div class="bevel-text">
+                                        斜边
+                                    </div>
+                                    <div class="list" data="不需要">
+                                        不需要
+                                    </div>
+                                    <div class="list active-list" data="斜边30°">
+                                        斜边30°
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--14-->
+                        <div class="order-item">
+                            <div class="item-left">
+                                焊盘喷镀
+                                <!--提示信息-->
+                                <div class="tips-box">
+                                    <span class="iconfont">&#xe665;</span>
+                                    <div class="tips-text">
+                                        指的是电路板的表面处理，捷多邦提供：有铅喷锡、无铅喷锡、沉金，在此说明三点：1、表面处理有铅喷锡不收费，无铅喷锡加收20元，沉金加收100元；2、在实际操作过程中，下单时选喷锡，为了效率及交期，有少部分电路板可能会拼在沉金板中生产，沉金的成本大大高于喷锡，且性能上是没有问题的，如果你不接受此项，请在其它要求备注不能更改工艺；3、不做镀金原因：镀金的焊接性能非常差，为保证品质，不做此类工艺。
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" value="有铅喷锡" name="radPlatingType">
+                            <div class="item-right js-welding-plate">
+                                <div class="list active-list" data="有铅喷锡">
+                                    有铅喷锡
+                                </div>
+                                <div class="list" data="无铅喷锡">
+                                    无铅喷锡
+                                </div>
+                                <div class="list" data="沉金">
+                                    沉金
+                                </div>
+                                <div class="list" data="OSP">
+                                    OSP
+                                </div>
+                                <div class="list" data="裸铜">
+                                    裸铜
+                                </div>
+                            </div>
+                        </div>
+                        <!--14.1隐藏元素-->
+                        <!--<div class="order-item js-plate-tips">-->
+                        <!--<div class="item-left">-->
+                        <!--&nbsp;-->
+                        <!--</div>-->
+                        <!--<input type="hidden" name="radAcceptHASLUp" value="No">-->
+                        <!--<div class="item-right">-->
+                        <!--<p style="float: left">-->
+                        <!--勾选“是”表示您接受我们可以 <br>-->
+                        <!--自行决定更改“喷锡”为“沉金”，无需额外付费。谢谢！-->
+                        <!--</p>-->
+                        <!--<div class="list" data="Yes">-->
+                        <!--是-->
+                        <!--</div>-->
+                        <!--<div class="list active-list" data="No">-->
+                        <!--没有-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--15-->
+                        <div class="order-item">
+                            <div class="item-left">
+                                阻焊覆盖
+                                <!--提示信息-->
+                                <div class="tips-box">
+                                    <span class="iconfont">&#xe665;</span>
+                                    <div class="tips-text">
+                                        此项经常存在争议，重点说明。现在提供三种：（1）过孔盖油 （2）过孔开窗
+                                        （3）gerber文件按文件加工，因为gerber文件中，没法分清过孔和插键孔，只能按文件加工；如果提供的是原文件，则过孔有属性，工厂在转菲林文件时会注意。如有此类不清楚的，可致电工作人员咨询。
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" value="过孔盖油" name="radSolderCover">
+                            <div class="item-right">
+                                <div class="list active-list" data="过孔盖油">
+                                    过孔盖油
+                                </div>
+                                <div class="list" data="过孔开窗">
+                                    过孔开窗
+                                </div>
+                            </div>
+                        </div>
+                        <!--16-->
+                        <div class="order-item ">
+                            <div class="item-left">
+                                铜箔厚度
+                                <!--提示信息-->
+                                <div class="tips-box">
+                                    <span class="iconfont">&#xe665;</span>
+                                    <div class="tips-text">普通板铜箔厚度为1 OZ（35um），工艺需求时可选2OZ（70um）铜箔厚度，在此需注意：2 OZ铜厚的费用肯定要比1
+                                        OZ铜厚稍贵些。
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" value="1 oz Cu" name="radCopperThickness">
+                            <div class="item-right js-finishedCopper">
+                                <div class="list active-list" data="1 oz Cu">
+                                    1 oz Cu
+                                </div>
+                                <div class="list" data="2 oz Cu">
+                                    2 oz Cu
+                                </div>
+                                <div class="list" data="3 oz Cu">
+                                    3 oz Cu
+                                </div>
+                                <img src="images/layer-pic.png" alt="" width="70" height="28">
+                                <div class="add-order">
+                                    <label style="margin: 0 10px;">+添加采购单号</label>
+                                    <input type="text" id="PONumber" name="PONumber">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-item js-inner-copper" style="display:none">
+                            <div class="item-left">
+                                内铜
+                            </div>
+                            <input type="hidden" value="1" name="radInsideThickness">
+                            <div class="item-right">
+                                <div class="list" data="0.5">
+                                    0.5 oz
+                                </div>
+                                <div class="list active-list" data="1">
+                                    1 oz
+                                </div>
+                                <div class="list" data="1.5">
+                                    1.5 oz
+                                </div>
+                            </div>
+                            <!--提示信息-->
+                            <div class="tips-box">
+                                <div class="tips-text">
+                                    普通板铜箔厚度为1 OZ（35um），工艺需求时可选2OZ（70um）铜箔厚度，在此需注意：2 OZ铜厚的费用肯定要比1 OZ铜厚稍贵些。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-item">
+                            <div class="item-left">
+                                测试
+                            </div>
+                            <input type="hidden" value="全部测试" name="hidFlyingProbe">
+                            <div class="item-right">
+                                <div class="list active-list" data="全部测试">
+                                    全部测试
+                                </div>
+                                <div class="list" data="抽测试">
+                                    抽测试
+                                </div>
+                                <div class="list" data="测试架测试">
+                                    测试架测试
+                                </div>
+                                <div class="list" data="不测试">
+                                    不测试
+                                </div>
+                            </div>
+                        </div>
+                        <!--文本域-->
+                        <div class="order-item">
+                            <div class="item-left">
+                                特殊要求
+                            </div>
+                            <div class="item-right">
+                                <textarea name="txtPCBNote" id="txtPCBNote" cols="30" rows="10"
+                                          maxlength="1000"></textarea>
+                                <p>注：如果您没有标明不要在板上标注PCB订单号，我们会默认将其添加到板上！</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--pcb模块结束-->
+            <!--特殊工艺开始-->
+            <div class="special-process">
+                <div class="special-title js-special-title">
+                    <div class="title-left">
+                        <span class="add-flag">+</span>
+                    </div>
+                    <div class="title-right">
+                        <span class="options">特殊工艺选项</span>嵌入式孔、边缘电镀、阻坑控制、埋入/盲孔...
+                        <span class="iconfont">&#xe615;</span>
+                    </div>
+                </div>
+                <!--内容-->
+                <div class="special-content clearfloat js-special-content">
+                    <div class="special-left"></div>
+                    <div class="special-right">
+                        <div class="title">
+                            以下选项不包括在在线报价中
+                        </div>
+                        <div class="order-item">
+                            <div class="item-left">
+                                可剥离阻焊膜
+                                <!--提示信息-->
+                                <div class="tips-box">
+                                    <span class="iconfont"></span>
+                                    <div class="tips-text">
+                                        在板子过波峰焊后涂料可被祛除掉
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-right js-welding-plate">
+                                <div class="list active-list" data="没有">
+                                    没有
+                                </div>
+                                <div class="list" data="顶层">
+                                    顶层
+                                </div>
+                                <div class="list" data="底层">
+                                    底层
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-item">
+                            <div class="item-left">
+                                UL标
+                                <!--提示信息-->
+                                <div class="tips-box">
+                                    <span class="iconfont"></span>
+                                    <div class="tips-text">
+                                        通过切割成半孔的镀铜孔，在孔壁侧面形成一个开口， 通常他们用于将一个电路板安装到另一个板子上
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-right ul-element">
+                                <div class="list active-list" data="不需要">
+                                    不需要
+                                </div>
+                                <div class="list" data="无指定位置">
+                                    无指定位置
+                                </div>
+                                <div class="list" data="加到顶层字符">
+                                    加到顶层字符
+                                </div>
+                                <div class="list" data="加到底层字符">
+                                    加到底层字符
+                                </div>
+                                <div class="list" data="加到顶层阻焊">
+                                    加到顶层阻焊
+                                </div>
+                                <div class="list" data="加到底层阻焊">
+                                    加到底层阻焊
+                                </div>
+                                <div class="list" data="加到顶层线路">
+                                    加到顶层线路
+                                </div>
+                                <div class="list" data="加到底层线路">
+                                    加到底层线路
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-item">
+                            <div class="item-left">
+                                其它要求(多选)
+                            </div>
+                            <div class=" other-element js-other-element">
+                                <div class="list active-list">
+                                    半孔/蜂窝孔
+                                    <!--提示信息-->
+                                    <div class="tips-box">
+                                        <span class="iconfont"></span>
+                                        <div class="tips-text">
+                                            在板子过波峰焊后涂料可被祛除掉
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    金属化包边
+                                    <!--提示信息-->
+                                    <div class="tips-box">
+                                        <span class="iconfont"></span>
+                                        <div class="tips-text">
+                                            微孔塞满非导电的树脂，然后覆盖镀金
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    阻抗要求
+                                    <!--提示信息-->
+                                    <div class="tips-box">
+                                        <span class="iconfont"></span>
+                                        <div class="tips-text">
+                                            Z 轴锣边就是在一个电路板的边缘或里面不同角度锣边
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    盲埋孔
+                                    <!--提示信息-->
+                                    <div class="tips-box">
+                                        <span class="iconfont"></span>
+                                        <div class="tips-text">
+                                            在板子上的UL标记
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    自定义层压
+                                    <!--提示信息-->
+                                    <div class="tips-box">
+                                        <span class="iconfont"></span>
+                                        <div class="tips-text">
+                                            电路板镀铜的部分边缘
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    碳油阻焊
+                                    <!--提示信息-->
+                                    <div class="tips-box">
+                                        <span class="iconfont"></span>
+                                        <div class="tips-text">
+                                            一个电路板在开始布局设计前，需要应用到多层板的层压以及参考铜层和绝缘层的排列方式
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    过孔开窗
+                                    <!--提示信息-->
+                                    <div class="tips-box">
+                                        <span class="iconfont"></span>
+                                        <div class="tips-text">
+                                            树脂塞孔
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    过孔树脂塞油
+                                    <!--提示信息-->
+                                    <div class="tips-box">
+                                        <span class="iconfont"></span>
+                                        <div class="tips-text">
+                                            对电流的电阻，通常在高频电路中由电阻、电容和电感反应组成的电网络来表示
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    沉头孔
+                                    <!--提示信息-->
+                                    <div class="tips-box">
+                                        <span class="iconfont"></span>
+                                        <div class="tips-text">
+                                            碳油为电器开关形成表面电阻器和一个保护接触面
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    Z字形锣边
+                                    <!--提示信息-->
+                                    <div class="tips-box">
+                                        <span class="iconfont"></span>
+                                        <div class="tips-text">
+                                            埋头孔是电路板中螺丝钉锥形头上的一个锥孔，沉头孔是两侧直接向下钻的平底孔，通常用于安装六头管帽或螺丝
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--特殊工艺结束-->
+            <!--smt模块开始-->
+            <div class="pcb-smt-title active-title js-smt-title">
+                <div class="title-left">
+                    <span class="iconfont">&#xe63b;</span>
+                </div>
+                <div class="title-right">
+                    <div class="title-text">
+                        <span>SMT计价</span>+ 我们提供PCB-SMT一条龙服务，您可在下面表单添加新SMT订单
+                    </div>
+                </div>
+            </div>
+            <div class="smt-box">
+                <div class="smt-left"></div>
+                <!--计价项-->
+                <div class="smt-right">
+                    <!--1-->
+                    <div class="order-item">
+                        <div class="item-left">
+                            <!--必填-->
+                            <span class="flag iconfont">&#xe623;</span>
+                            电路板数量
+                            <!--提示信息-->
+                            <div class="tips-box">
+                                <span class="iconfont">&#xe665;</span>
+                                <div class="tips-text">
+                                    请填写单片(PCS)数量
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-right">
+                            <input id="PcbNum" name="PcbNum" type="text" class="easyui-validatebox validatebox-text"
+                                   placeholder="以单板数量为准" data-options="required:true,validType:'integer'">
+                            <label>PCS</label>
+                        </div>
+                        <div class="item-pic">
+                            <img src="images/smt1.png" alt="电路板" width="64" height="32">
+                        </div>
+                    </div>
+                    <!--2-->
+                    <div class="order-item">
+                        <div class="item-left">
+                            <!--必填-->
+                            <span class="flag iconfont">&#xe623;</span>
+                            元器件数量
+                            <!--提示信息-->
+                            <div class="tips-box">
+                                <span class="iconfont">&#xe665;</span>
+                                <div class="tips-text">
+                                    填写数量为单板元件数量,非单板物料种类、若不知数量，请填写1
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-right">
+                            <input type="text" name="ComponentNum" id="ComponentNum"
+                                   class="easyui-validatebox validatebox-text"
+                                   data-options="required:true,validType:'integer'">
+                            <label>PCS</label>
+                        </div>
+                        <div class="item-pic">
+                            <img src="images/smt2.png" alt="元器件" width="53" height="32">
+                        </div>
+                    </div>
+                    <!--3-->
+                    <div class="order-item" id="PadNum1">
+                        <div class="item-left">
+                            <!--必填-->
+                            <span class="flag iconfont">&#xe623;</span>
+                            焊盘点数
+                        </div>
+                        <div class="item-right">
+                            <input type="text" name="PadNum" id="PadNum" class="easyui-validatebox validatebox-text"
+                                   data-options="required:true,validType:'integer'">
+                            <label>PCS</label>
+                        </div>
+                        <div class="item-pic">
+                            <img src="images/smt3.png" alt="焊盘" width="34" height="34">
+                        </div>
+                    </div>
+                    <!--4-->
+                    <div class="order-item">
+                        <div class="item-left">
+                            工艺要求
+                        </div>
+                        <input type="hidden" name="TechnologyNote" value="有铅">
+                        <div class="item-right">
+                            <div class="list active-list" data="有铅">
+                                有铅
+                            </div>
+                            <div class="list" data="无铅">
+                                无铅
+                            </div>
+                        </div>
+                    </div>
+                    <!--5-->
+                    <div class="order-item">
+                        <div class="item-left">
+                            是否开钢网
+                            <!--提示信息-->
+                            <div class="tips-box">
+                                <span class="iconfont">&#xe665;</span>
+                                <div class="tips-text">
+                                    1、钢网尺寸超过19cmx29cm有效面积,需要增加费用,费用另计。2、本公司有权决定钢网按生产需求代开。3、钢网只保留三个月,客户未说明，3个月后我司自行处理。
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="IsNeedStencil" value="true">
+                        <div class="item-right">
+                            <div class="list " data="true">
+                                是
+                            </div>
+                            <div class="list active-list" data="false">
+                                否
+                            </div>
+                        </div>
+                    </div>
+                    <!--新加-->
+                    <div class="order-item">
+                        <div class="item-left">
+                            是否代购物料
+                        </div>
+                        <input type="hidden" name="IsNeedPaint" value="false">
+                        <div class="item-right">
+                            <div class="list active-list" data="true">
+                                是
+                            </div>
+                            <div class="list " data="false">
+                                否
+                            </div>
+                        </div>
+                    </div>
+                    <!--6-->
+                    <div class="order-item">
+                        <div class="item-left">
+                            是否喷三防漆
+                        </div>
+                        <input type="hidden" name="IsNeedPaint" value="false">
+                        <div class="item-right">
+                            <div class="list" data="true">
+                                是
+                            </div>
+                            <div class="list active-list" data="false">
+                                否
+                            </div>
+                        </div>
+                    </div>
+                    <!--7文本域-->
+                    <div class="order-item">
+                        <div class="item-left">
+                            备注
+                        </div>
+                        <div class="item-right">
+                            <textarea name="Note" cols="30" rows="10" placeholder="请填写您的特殊要求、注意事项等..."
+                                      maxlength="1000"></textarea>
+                        </div>
+
+                    </div>
+                    <!--新加计价按钮-->
+                    <div class="group-box">
+                        <a href="javascript:void(0)" class="btn rest-btn">重置</a>
+                        <a href="javascript:void(0)" class="btn js-immediately">立即报价</a>
+                    </div>
+                </div>
+            </div>
+            <!--smt模块结束-->
+        </div>
+        <!--右侧部分-->
+        <div class="order-right">
+            <div class="move-price">
+                <!--计价结果-->
+                <div class="combined-box">
+                    <!--计算中动画样式 默认隐藏-->
+                    <div class="in-calculation js-in-calculation">
+                        <div class="in-left">
+                            计算中...
+                        </div>
+                        <div class="in-right">
+                            <span class="iconfont">&#xe62b;</span>
+                        </div>
+                    </div>
+                    <!--未下单按钮样式-->
+                    <div class="not-place js-not-place">
+                        <div class="place-left">
+                            总计
+                        </div>
+                        <div class="place-right">
+                            <p><span>￥</span>88888.00<span>元</span></p>
+                            <div><span>优惠:&nbsp;&nbsp;</span>9999.00<span>元</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="refer-tips js-refer-tips">
+                    计价仅供参考，最终以下单审核为准！
+                </div>
+                <!--广告盒子-->
+                <div class="advertising ">
+                    <a href="javascript:void(0)">
+                        <img src="images/advertising.png" alt="">
+                    </a>
+                </div>
+                <!--已下单计价样式 默认隐藏-->
+                <div class="denominated-box js-denominated-box">
+                   <div class="price-box">
+                       <!--smt报价-->
+                       <div class="smt-price">
+                           <span class="style-name">SMT报价</span>
+                           <span class="style-price">￥148.00元</span>
+                       </div>
+                       <!--pcb报价-->
+                       <div class="pcb-price">
+                           <span class="style-name">PCB报价</span>
+                           <span class="style-price">￥148.00元</span>
+                       </div>
+                   </div>
+                    <!--选择生成周期-->
+                    <div class="production-cycle">
+                        <h3>选择生成周期</h3>
+                        <h6>以下时间为PCB交期，SMT交期以审核为准！</h6>
+                        <!--交期盒子-->
+                        <ul class="delivery-option js-delivery">
+                            <li class="active-option">正常2-3天(样板)
+                                <span class="iconfont">&#xe615;</span>
+                            </li>
+                            <li>24小时加急(样板)
+                                <span class="iconfont">&#xe615;</span>
+                            </li>
+                            <li>12小时加急(样板)
+                                <span class="iconfont">&#xe615;</span>
+                            </li>
+                        </ul>
+                        <!--结算价格总计-->
+                        <div class="settlement-price">
+                            <div class="refer-tips">
+                                计价仅供参考，最终以下单审核为准！
+                            </div>
+                            <a href="car.html" class="btn reference-btn ">
+                                加入购物车
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--遮罩层开始-->
+    <div class="confirm-mask js-confirm-box">
+        <div class="confirm-box">
+            <div class="confirm-content">
+                <p class="content-top">
+                    您好！欢迎您使用捷创PCB计价系统，
+                    <br>
+                    业务人员将尽快与您取得联系！
+                </p>
+                <p class="way">您也可以通过以下方式购买PCB产品</p>
+                <!--按钮-->
+                <div class="btn-group">
+                    <span class="cancel-btn js-cancel-btn">取消</span>
+                    <span class="order-btn js-order-btn">与SMT组合下单</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--遮罩层结束-->
+</div>
+<!--服务保障-->
+<div class="four-guarante">
+    <div class="w-1280">
+        <div class="item">
+            <i><img src="images/guar1@icon.png"/></i>
+            <em>
+                <span class="dt f18">质量保证</span>
+                <p class="txt f14">知名品牌，厂家直售</p>
+            </em>
+        </div>
+        <div class="item">
+            <i><img src="images/guar2@icon.png"/></i>
+            <em>
+                <span class="dt f18">交期保证</span>
+                <p class="txt f14">按时发货，加急服务</p>
+            </em>
+        </div>
+        <div class="item">
+            <i><img src="images/guar3@icon.png"/></i>
+            <em>
+                <span class="dt f18">付款安全</span>
+                <p class="txt f14">使用大众及安全的方式支付</p>
+            </em>
+        </div>
+        <div class="item">
+            <i><img src="images/guar4@icon.png"/></i>
+            <em>
+                <span class="dt f18">价格优势</span>
+                <p class="txt f14">优势的价格源于不同生产能力</p>
+            </em>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+</div>
+<!--底部版权-->
+<div class="footer">
+    <!--关于捷创-->
+    <div class="footer-content clearfloat">
+        <div class="w-1280">
+            <div class="footer-left clearfloat">
+                <ul class="jc-menu ">
+                    <li>关于捷创</li>
+                    <li><a href="javascript:void(0)">企业简介</a></li>
+                    <li><a href="javascript:void(0)">产品展示</a></li>
+                    <li><a href="javascript:void(0)">联系我们</a></li>
+                    <li><a href="javascript:void(0)">用户分享</a></li>
+                </ul>
+                <ul class="jc-menu">
+                    <li>产品服务</li>
+                    <li><a href="javascript:void(0)">SMT贴片报价</a></li>
+                    <li><a href="javascript:void(0)">PCB打样报价</a></li>
+                </ul>
+                <ul class="jc-menu ">
+                    <li>工艺介绍</li>
+                    <li><a href="javascript:void(0)">SMT介绍</a></li>
+                    <li><a href="javascript:void(0)">PCB介绍</a></li>
+                    <li><a href="javascript:void(0)">物料介绍</a></li>
+                    <li><a href="javascript:void(0)">产品展示</a></li>
+                </ul>
+                <ul class="jc-menu ">
+                    <li>帮助中心</li>
+                    <li><a href="javascript:void(0)">常见问题</a></li>
+                    <li><a href="javascript:void(0)">购物指南</a></li>
+                    <li><a href="javascript:void(0)">意见反馈</a></li>
+                    <li><a href="javascript:void(0)">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div class="contact-us">
+                    <h3>CONTACT US .</h3>
+                    <div class="contact-item clearfloat">
+                        <i>办公地址：</i>
+                        <span>深圳市坂田街道万科星火online七栋234-235室</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>联系电话：</i>
+                        <span>18033063691</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>企业邮箱：</i>
+                        <span>2881601568@qq.com</span>
+                    </div>
+                </div>
+                <div class="contact-us">
+                    <h3>&nbsp;</h3>
+                    <div class="contact-item clearfloat">
+                        <i>工厂地址：</i>
+                        <span>深圳市坪山新区坑梓街道金沙工业区中兴路15号</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>联系电话：</i>
+                        <span>13826578334</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>企业邮箱：</i>
+                        <span>2881601568</span>
+                    </div>
+                </div>
+                <!--扫码关注-->
+                <div class="qr-code">
+                    <i>
+                        扫一扫关注公众号
+                        <br>随时了解捷创动态
+                    </i>
+                    <img src="images/the-public.png" alt="二维码" width="97" height="97">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--版权-->
+    <div class="jc-copyright">
+        <div class="w-1280">
+            <div class="copyright-box">
+                <div class="copyright-left">
+                    <span class="iconfont">&#xe60d;</span>
+                    <span>Copyright © 2016 www.jc-pcba.com 版权所有 深圳捷创电子科技有限公司 粤ICP备16117886号-1</span>
+                </div>
+                <div class="copyright-right">
+                    <a href="http://wpa.qq.com/msgrd?v=1&uin=2881601560&site=www.jdbpcb.com&menu=yes" target="_blank"
+                       class="iconfont">&#xe603;</a>
+                    <a href="https://weibo.com/6500851014/" target="_blank" class="iconfont">&#xe653;</a>
+                    <a href="https://shop303085121.taobao.com/" target="_blank" class="iconfont">&#xe616;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--通用弹窗遮罩-->
+<div class="g-mian-bg"></div>
+<!--跳转手机站链接弹窗-->
+<div class="phone-box js-phone-box">
+    <div class="phone-link">
+        <div class="link-left">
+            <h3>
+                捷创移动端网站
+                现已上线
+            </h3>
+            <p>
+                打开您的手机浏览器
+                <br>扫一扫及可进入捷创移动端
+                <br>便可随时随地
+                <br>计价--下单--管理您的订单
+            </p>
+        </div>
+        <img src="images/phone.png" alt="手机" width="340" height="423" class="phone">
+        <div class="link-right">
+            <h6>移动端二维码</h6>
+            <img src="images/phone-qr.png" alt="手机二维码" width="203" height="203">
+        </div>
+        <!--关闭按钮-->
+        <i class="iconfont popup-close js-popup-close">&#xe7be;</i>
+    </div>
+</div>
+<!--右侧分享-->
+<div class="share-box">
+    <!--返回顶部按钮-->
+    <div class="back-btn js-back-btn">
+        <span class="iconfont">&#xe649;</span>
+    </div>
+    <!--每一项-->
+    <ul class="share-lists">
+        <li>
+            <a href="javascript:void(0)">
+                <i>99</i>
+                <span class="iconfont">&#xe611;</span>
+            </a>
+        </li>
+        <li class="phone-btn">
+            <span class="iconfont" title="点击">&#xe60c;</span>
+        </li>
+        <li>
+            <span class="iconfont">&#xe61f;</span>
+            <!--弹出电话-->
+            <div class="tel-popup">24小时客服：13826578334</div>
+        </li>
+        <li>
+            <span class="iconfont">&#xe60b;</span>
+            <!--弹出微信-->
+            <div class="wx-popup">
+                <div class="wexin">
+                    <img src="images/wechat.png" alt="微信" width="127" height="127">
+                    <p>
+                        扫一扫
+                        <br>关注捷创
+                        <br>微信
+                        <br>公众号
+                    </p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/golbal.js"></script>
+<script src="js/pcb-order.js"></script>
+<script>
+    $(function () {
+        // 右侧计价滚动
+        if ($('.four-guarante').length > 0) {
+            var offsetTop = $('.four-guarante').offset().top;
+            var top = $('.move-price').height();
+            $(window).scroll(function () {
+                var moveTop = $(this).scrollTop();
+                if ((offsetTop - (moveTop + top)) <= 300) {
+                    $('.move-price').hide();
+                } else {
+                    $('.move-price').show();
+                }
+                if (moveTop > 50) {
+                    $('.move-price').css({position: 'fixed', top: 90});
+                } else {
+                    $('.move-price').css({position: 'relative', top: 0});
+                }
+            });
+        } else {
+            console.log('哎呦，走丢了');
+        }
+    })
+</script>
+</body>
+</html>

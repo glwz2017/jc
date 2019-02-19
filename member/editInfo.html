@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/member/m-global.css">
+    <style>
+        .editor-box {
+            width: 850px;
+            height: 670px;
+            background-color: #ffffff;
+        }
+        .messages-box{
+            width: 590px;
+            height: 350px;
+            margin: 0 auto;
+            padding-top: 50px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+        .messages-box p{
+            margin-bottom: 23px;
+        }
+        .messages-box p>label{
+            width: 85px;
+            display: inline-block;
+        }
+        .messages-box p>input[type="text"]{
+            width: 498px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #f4f4f4;
+            border: 1px solid #d7d7d7;
+            text-indent: 15px;
+        }
+        .messages-box p>select{
+            width: 240px;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid #d7d7d7;
+            background-color: #f4f4f4;
+        }
+        .messages-box p>textarea{
+            width: 498px;
+            height: 70px;
+            background-color: #f4f4f4;
+            border: 1px solid #d7d7d7;
+           padding: 5px;
+          box-sizing: border-box;
+            resize: none;
+        }
+        .messages-box .get-box{
+            text-align: center;
+        }
+        .messages-box .get-box>input{
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #046122;
+            border-radius: 2px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            color: #ffffff;
+            margin-top: 15px;
+            transition: all .3s;
+        }
+        .messages-box .get-box>input:hover{
+            background-color: #045720;
+        }
+    </style>
+</head>
+<body>
+<div class="editor-box">
+    <div class="messages-box">
+        <form action="#">
+            <p><label for="name">姓名:</label>
+                <input type="text" placeholder="姓名" id="name">
+            </p>
+            <p><label for="company-name">公司名称:</label>
+                <input type="text" placeholder="公司名称" id="company-name">
+            </p>
+            <p>
+                <label >地址:</label>
+                <select name="" style="margin-right: 13px">
+                    <option value="请选择省份">请选择省份</option>
+                </select>
+                <select name="" >
+                    <option value="请选择城市">请选择城市</option>
+                </select>
+            </p>
+            <p>
+                <label >&nbsp;</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="请填写详细地址"></textarea>
+            </p>
+            <p><label for="link-name">联系人:</label>
+                <input type="text" placeholder="联系人" id="link-name">
+            </p>
+            <p><label for="link-phone">联系手机:</label>
+                <input type="text" placeholder="联系手机" id="link-phone">
+            </p>
+            <p><label for="link-qq">QQ号码:</label>
+                <input type="text" placeholder="QQ号码" id="link-qq">
+            </p>
+            <div class="get-box">
+                <input type="submit" value="提交修改">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

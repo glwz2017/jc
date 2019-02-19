@@ -1,0 +1,182 @@
+/*有效券*/
+.coupons-box {
+    margin-top: 30px;
+    background-color: #ffffff;
+    height: auto;
+    padding-bottom: 80px;
+}
+
+.coupons-box .coupon-title {
+    height: 60px;
+    background: #e5e5e5;
+}
+
+.coupons-box .coupon-title > li {
+    font-size: 16px;
+    color: #3e3a3a;
+    width: 180px;
+    border-top: 2px solid #ffffff;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.coupons-box .coupon-title > .active-li {
+    border-top: 2px solid #098734;
+}
+
+/*内容盒子*/
+.coupons-box .coupon-content {
+    /*margin: 60px auto 0;*/
+    margin-top: 60px;
+    min-height: 500px;
+}
+
+.coupons-box .coupon-content .content-title {
+    height: 40px;
+    margin: 0 auto;
+    width: 870px;
+}
+
+.coupons-box .coupon-content .content-title > h3 {
+    float: left;
+    height: 40px;
+    font-size: 18px;
+    color: #3e3a3a;
+    font-weight: 600;
+    /*line-height: 40px;*/
+}
+
+.coupon-content .content-title > h3 > span {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.coupon-content .content-title > .go-use {
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 140px;
+    border-radius: 2px;
+    color: #ffffff;
+    background-color: #046122;
+    transition: all .3s;
+}
+
+.coupon-content .content-title > .go-use:hover {
+    background-color: #04541e;
+}
+
+/*具体优惠*/
+.coupon-content .coupons-items {
+    /*margin-top: 20px;*/
+    margin: 20px auto;
+    height: auto;
+    width: 930px;
+    /*padding-bottom: 50px;*/
+}
+
+/*有效项目*/
+.coupon-content .coupons-items .effective-item {
+    background: url("../../images/member/effective.png") no-repeat center;
+    width: 420px;
+    height: 160px;
+    float: left;
+    margin: 0 0 20px 30px;
+}
+
+.coupon-content .coupons-items .item-text {
+    /*width: 328px;*/
+    height: auto;
+    margin: 35px 0 0 35px;
+}
+
+/*左侧*/
+.text-left {
+    width: 145px;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    float: left;
+    margin-top: 30px;
+}
+/*右侧*/
+.text-right {
+    width: 225px;
+    display: inline-block;
+    text-align: center;
+    float: left;
+}
+
+.text-right > h2 {
+    color: #f63849;
+    font-size: 48px;
+}
+
+.text-right > h2 > span {
+    font-size: 24px;
+}
+
+.text-right > span {
+    font-size: 14px;
+    color: #9fa0a0;
+}
+/*无效项目*/
+.coupon-content .coupons-items .invalid-item {
+    background: url("../../images/member/invalid-bg.png") no-repeat center;
+    width: 420px;
+    height: 160px;
+    float: left;
+    margin: 0 0 20px 30px;
+}
+
+.invalid-item .text-left {
+    width: 145px;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    color: #3e3a3a;
+    float: left;
+    margin-top: 30px;
+}
+
+.invalid-item .text-right > h2 {
+    color: #3e3a3a;
+    font-size: 48px;
+}
+
+.invalid-item .text-right > h2 > span {
+    font-size: 24px;
+}
+
+.invalid-item .text-right > span {
+    font-size: 14px;
+    color: #9fa0a0;
+}
+/*免费钢网*/
+.free-left{
+    margin-top: 25px;
+}
+.free-right{
+    margin-top: 10px;
+}
+.free-right>h2{
+    font-size: 30px;
+}
+.invalid-item .free-right>h2{
+    font-size: 30px;
+}
+/*免费钢网*/
+/*分割线*/
+.invalid-coupons .m-split-line {
+    height: 1px;
+    border-top: 1px solid #e5e5e5;
+    margin: 20px auto 0;
+    width: 870px;
+    padding-top: 20px;
+}

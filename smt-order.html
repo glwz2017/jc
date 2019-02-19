@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在线计价-深圳捷创电子科技有限公司</title>
+    <link rel="stylesheet" href="css/base-new.css">
+    <!--字体图标-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/smt-order.css">
+    <!--浏览器版本-->
+    <!--[if lte IE 8]>
+    <script>var _iealwn = {once: 0, outver: 8};</script>
+    <script id="_iealwn_js" src="//support.dmeng.net/ie-alert-warning/latest.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--顶部快捷方式-->
+<div class="the-shortcut">
+    <div class="ui-left">
+        PCB制板\ SMT贴装综合服务商
+    </div>
+    <div class="ui-right">
+        <ul class="clearfloat">
+            <li class="js-phone-order">
+                <span class="iconfont">&#xe60c;</span>
+                手机端下单
+            </li>
+            <li class="split-lines"></li>
+            <li>
+                24小时客服：13826578334
+            </li>
+            <li class="split-lines"></li>
+            <li class="add-favorite">
+                收藏本站
+            </li>
+        </ul>
+    </div>
+</div>
+<!--导航-->
+<div class="nav-box js-nav-box clearfloat">
+    <div class="nav-left">
+        <h1>
+            <a href="index.html" class="iconfont">&#xe60d;</a>
+        </h1>
+        <ul class="nav-menu clearfloat">
+            <li >
+                <a href="index.html">首页</a>
+            </li>
+            <li class="active-menu">
+                <a href="smt-order.html">SMT贴片报价</a>
+            </li>
+            <li>
+                <a href="pcb-order.html">PCB打样报价</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">工艺介绍</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li>
+                        <a href="smt-introduce.html">SMT介绍</a>
+                    </li>
+                    <li>
+                        <a href="pcb-introduce.html">PCB介绍</a>
+                    </li>
+                    <li>
+                        <a href="material-introduce.html">物料介绍</a>
+                    </li>
+                    <li>
+                        <a href="product-display.html">产品展示</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="integral/integral-mall.html">积分商城</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">关于我们</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li>
+                        <a href="about-us.html">企业简介</a>
+                    </li>
+                    <li>
+                        <a href="news.html">新闻资讯</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="user-share.html">用户分享</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">帮助中心</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li><a href="questions.html">常见问题</a></li>
+                    <li><a href="buy-guide.html">购物指南</a></li>
+                    <li><a href="feedback.html">意见反馈</a></li>
+                    <li><a href="link-us.html">联系我们</a></li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <!--未登录-->
+        <div class="no-login">
+            <ul class="clearfloat">
+                <li><a href="jc-login.html">登录</a></li>
+                <li class="split-lines"></li>
+                <li><a href="jc-login.html">注册</a></li>
+            </ul>
+            <!--购物车-->
+            <div class="car-box">
+                <a href="car.html">
+                    <span class="iconfont">&#xe600;</span>
+                    99
+                </a>
+            </div>
+        </div>
+        <!--已登录-->
+        <div class="logined">
+            <i class="user-img"><img src="images/user-pic.png" alt="头像" width="40" height="40"></i>
+            <div class="user-info">
+                <span>您好!00379A</span>
+                <span class="iconfont">&#xe629;</span>
+                <!--下拉菜单-->
+                <div class="info-box">
+                    <ul class="info-list">
+                        <li>
+                            <a href="javascript:void(0)">订单管理</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">个人信息管理</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">优惠券管理</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0)" class="sign-out">安全退出</a>
+                </div>
+            </div>
+            <!--购物车-->
+            <div class="car-box">
+                <a href="javascript:void(0)">
+                    <span class="iconfont">&#xe600;</span>
+                    99
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--订单标题-->
+<div class="denominat-box">
+    <div class="w-1280">
+        <!--位置提示-->
+        <div class="location-hints">
+            <!--您当前位置：首页 - SMT贴片报价-->
+            您当前位置：<a href="index.html">首页</a> - <a href="smt-order.html">SMT贴片报价</a>
+        </div>
+    </div>
+</div>
+<!--主体-->
+<div class="main-order">
+    <div class="order-box">
+        <!--左侧部分-->
+        <div class="order-left">
+            <!--smt模块开始-->
+            <div class="pcb-smt-title active-title js-smt-title">
+                <div class="title-left">
+                    <span class="iconfont">&#xe63b;</span>
+                </div>
+                <div class="title-right">
+                    <div class="title-text">
+                        <span>SMT计价</span>+ 我们提供PCB-SMT一条龙服务，您可在下面表单添加新SMT订单
+                    </div>
+                </div>
+            </div>
+            <div class="smt-box">
+                <div class="smt-left"></div>
+                <!--计价项-->
+                <div class="smt-right">
+                    <!--1-->
+                    <div class="order-item">
+                        <div class="item-left">
+                            <!--必填-->
+                            <span class="flag iconfont">&#xe623;</span>
+                            电路板数量
+                            <!--提示信息-->
+                            <div class="tips-box">
+                                <span class="iconfont">&#xe665;</span>
+                                <div class="tips-text">
+                                    请填写单片(PCS)数量
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-right">
+                            <input id="PcbNum" name="PcbNum" type="text" class="easyui-validatebox validatebox-text"
+                                   placeholder="以单板数量为准" data-options="required:true,validType:'integer'">
+                            <label>PCS</label>
+                        </div>
+                        <div class="item-pic">
+                            <img src="images/smt1.png" alt="电路板" width="64" height="32">
+                        </div>
+                    </div>
+                    <!--2-->
+                    <div class="order-item">
+                        <div class="item-left">
+                            <!--必填-->
+                            <span class="flag iconfont">&#xe623;</span>
+                            元器件数量
+                            <!--提示信息-->
+                            <div class="tips-box">
+                                <span class="iconfont">&#xe665;</span>
+                                <div class="tips-text">
+                                    填写数量为单板元件数量,非单板物料种类、若不知数量，请填写1
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-right">
+                            <input type="text" name="ComponentNum" id="ComponentNum"
+                                   class="easyui-validatebox validatebox-text"
+                                   data-options="required:true,validType:'integer'">
+                            <label>PCS</label>
+                        </div>
+                        <div class="item-pic">
+                            <img src="images/smt2.png" alt="元器件" width="53" height="32">
+                        </div>
+                    </div>
+                    <!--3-->
+                    <div class="order-item" id="PadNum1">
+                        <div class="item-left">
+                            <!--必填-->
+                            <span class="flag iconfont">&#xe623;</span>
+                            焊盘点数
+                        </div>
+                        <div class="item-right">
+                            <input type="text" name="PadNum" id="PadNum" class="easyui-validatebox validatebox-text"
+                                   data-options="required:true,validType:'integer'">
+                            <label>PCS</label>
+                        </div>
+                        <div class="item-pic">
+                            <img src="images/smt3.png" alt="焊盘" width="34" height="34">
+                        </div>
+                    </div>
+                    <!--4-->
+                    <div class="order-item">
+                        <div class="item-left">
+                            工艺要求
+                        </div>
+                        <input type="hidden" name="TechnologyNote" value="有铅">
+                        <div class="item-right">
+                            <div class="list active-list" data="有铅">
+                                有铅
+                            </div>
+                            <div class="list" data="无铅">
+                                无铅
+                            </div>
+                        </div>
+                    </div>
+                    <!--5-->
+                    <div class="order-item">
+                        <div class="item-left">
+                            是否开钢网
+                            <!--提示信息-->
+                            <div class="tips-box">
+                                <span class="iconfont">&#xe665;</span>
+                                <div class="tips-text">
+                                    1、钢网尺寸超过19cmx29cm有效面积,需要增加费用,费用另计。2、本公司有权决定钢网按生产需求代开。3、钢网只保留三个月,客户未说明，3个月后我司自行处理。
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="IsNeedStencil" value="true">
+                        <div class="item-right">
+                            <div class="list " data="true">
+                                是
+                            </div>
+                            <div class="list active-list" data="false">
+                                否
+                            </div>
+                        </div>
+                    </div>
+                    <!--新加-->
+                    <div class="order-item">
+                        <div class="item-left">
+                            是否代购物料
+                        </div>
+                        <input type="hidden" name="IsNeedPaint" value="false">
+                        <div class="item-right">
+                            <div class="list active-list" data="true">
+                                是
+                            </div>
+                            <div class="list " data="false">
+                                否
+                            </div>
+                        </div>
+                    </div>
+                    <!--6-->
+                    <div class="order-item">
+                        <div class="item-left">
+                            是否喷三防漆
+                        </div>
+                        <input type="hidden" name="IsNeedPaint" value="false">
+                        <div class="item-right">
+                            <div class="list" data="true">
+                                是
+                            </div>
+                            <div class="list active-list" data="false">
+                                否
+                            </div>
+                        </div>
+                    </div>
+                    <!--7文本域-->
+                    <div class="order-item">
+                        <div class="item-left">
+                            备注
+                        </div>
+                        <div class="item-right">
+                            <textarea name="Note" cols="30" rows="10" placeholder="请填写您的特殊要求、注意事项等..."
+                                      maxlength="1000"></textarea>
+                        </div>
+
+                    </div>
+                    <!--新加计价按钮-->
+                    <div class="group-box">
+                        <a href="javascript:void(0)" class="btn rest-btn">重置</a>
+                        <a href="javascript:void(0)" class="btn js-immediately">立即报价</a>
+                    </div>
+                </div>
+            </div>
+            <!--smt模块结束-->
+        </div>
+        <!--右侧部分-->
+        <div class="order-right">
+            <div class="move-price">
+                <!--计价结果-->
+                <div class="combined-box">
+                    <!--计算中动画样式 默认隐藏-->
+                    <div class="in-calculation js-in-calculation">
+                        <div class="in-left">
+                            计算中...
+                        </div>
+                        <div class="in-right">
+                            <span class="iconfont">&#xe62b;</span>
+                        </div>
+                    </div>
+                    <!--未下单按钮样式-->
+                    <div class="not-place js-not-place">
+                        <div class="place-left">
+                            总计
+                        </div>
+                        <div class="place-right">
+                            <p><span>￥</span>88888.00<span>元</span></p>
+                            <div><span>优惠:&nbsp;&nbsp;</span>9999.00<span>元</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="refer-tips js-refer-tips">
+                    计价仅供参考，最终以下单审核为准！
+                </div>
+                <!--广告盒子-->
+                <div class="advertising ">
+                    <a href="javascript:void(0)">
+                        <img src="images/advertising.png" alt="">
+                    </a>
+                </div>
+                <!--已下单计价样式 默认隐藏-->
+                <div class="denominated-box js-denominated-box">
+                    <div class="price-box">
+                        <!--smt报价-->
+                        <div class="smt-price">
+                            <span class="style-name">SMT报价</span>
+                            <span class="style-price">￥148.00元</span>
+                        </div>
+                        <!--pcb报价-->
+                        <div class="pcb-price">
+                            <span class="style-name">PCB报价</span>
+                            <span class="style-price">￥148.00元</span>
+                        </div>
+                    </div>
+
+                    <!--选择生成周期-->
+                    <div class="production-cycle">
+                        <h3>选择生成周期</h3>
+                        <h6>以下时间为PCB交期，SMT交期以审核为准！</h6>
+                        <!--交期盒子-->
+                        <ul class="delivery-option js-delivery">
+                            <li class="active-option">正常2-3天(样板)
+                                <span class="iconfont">&#xe615;</span>
+                            </li>
+                            <li>24小时加急(样板)
+                                <span class="iconfont">&#xe615;</span>
+                            </li>
+                            <li>12小时加急(样板)
+                                <span class="iconfont">&#xe615;</span>
+                            </li>
+                        </ul>
+                        <!--结算价格总计-->
+                        <div class="settlement-price">
+                            <div class="refer-tips">
+                                计价仅供参考，最终以下单审核为准！
+                            </div>
+                            <a href="car.html" class="btn reference-btn ">
+                                加入购物车
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--服务保障-->
+<div class="four-guarante">
+    <div class="w-1280">
+        <div class="item">
+            <i><img src="images/guar1@icon.png"/></i>
+            <em>
+                <span class="dt f18">质量保证</span>
+                <p class="txt f14">知名品牌，厂家直售</p>
+            </em>
+        </div>
+        <div class="item">
+            <i><img src="images/guar2@icon.png"/></i>
+            <em>
+                <span class="dt f18">交期保证</span>
+                <p class="txt f14">按时发货，加急服务</p>
+            </em>
+        </div>
+        <div class="item">
+            <i><img src="images/guar3@icon.png"/></i>
+            <em>
+                <span class="dt f18">付款安全</span>
+                <p class="txt f14">使用大众及安全的方式支付</p>
+            </em>
+        </div>
+        <div class="item">
+            <i><img src="images/guar4@icon.png"/></i>
+            <em>
+                <span class="dt f18">价格优势</span>
+                <p class="txt f14">优势的价格源于不同生产能力</p>
+            </em>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+</div>
+<!--底部版权-->
+<div class="footer">
+    <!--关于捷创-->
+    <div class="footer-content clearfloat">
+        <div class="w-1280">
+            <div class="footer-left clearfloat">
+                <ul class="jc-menu ">
+                    <li>关于捷创</li>
+                    <li><a href="javascript:void(0)">企业简介</a></li>
+                    <li><a href="javascript:void(0)">产品展示</a></li>
+                    <li><a href="javascript:void(0)">联系我们</a></li>
+                    <li><a href="javascript:void(0)">用户分享</a></li>
+                </ul>
+                <ul class="jc-menu">
+                    <li>产品服务</li>
+                    <li><a href="javascript:void(0)">SMT贴片报价</a></li>
+                    <li><a href="javascript:void(0)">PCB打样报价</a></li>
+                </ul>
+                <ul class="jc-menu ">
+                    <li>工艺介绍</li>
+                    <li><a href="javascript:void(0)">SMT介绍</a></li>
+                    <li><a href="javascript:void(0)">PCB介绍</a></li>
+                    <li><a href="javascript:void(0)">物料介绍</a></li>
+                    <li><a href="javascript:void(0)">产品展示</a></li>
+                </ul>
+                <ul class="jc-menu ">
+                    <li>帮助中心</li>
+                    <li><a href="javascript:void(0)">常见问题</a></li>
+                    <li><a href="javascript:void(0)">购物指南</a></li>
+                    <li><a href="javascript:void(0)">意见反馈</a></li>
+                    <li><a href="javascript:void(0)">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div class="contact-us">
+                    <h3>CONTACT US .</h3>
+                    <div class="contact-item clearfloat">
+                        <i>办公地址：</i>
+                        <span>深圳市坂田街道万科星火online七栋234-235室</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>联系电话：</i>
+                        <span>18033063691</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>企业邮箱：</i>
+                        <span>2881601568@qq.com</span>
+                    </div>
+                </div>
+                <div class="contact-us">
+                    <h3>&nbsp;</h3>
+                    <div class="contact-item clearfloat">
+                        <i>工厂地址：</i>
+                        <span>深圳市坪山新区坑梓街道金沙工业区中兴路15号</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>联系电话：</i>
+                        <span>13826578334</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>企业邮箱：</i>
+                        <span>2881601568</span>
+                    </div>
+                </div>
+                <!--扫码关注-->
+                <div class="qr-code">
+                    <i>
+                        扫一扫关注公众号
+                        <br>随时了解捷创动态
+                    </i>
+                    <img src="images/the-public.png" alt="二维码" width="97" height="97">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--版权-->
+    <div class="jc-copyright">
+        <div class="w-1280">
+            <div class="copyright-box">
+                <div class="copyright-left">
+                    <span class="iconfont">&#xe60d;</span>
+                    <span>Copyright © 2016 www.jc-pcba.com 版权所有 深圳捷创电子科技有限公司 粤ICP备16117886号-1</span>
+                </div>
+                <div class="copyright-right">
+                    <a href="http://wpa.qq.com/msgrd?v=1&uin=2881601560&site=www.jdbpcb.com&menu=yes" target="_blank"
+                       class="iconfont">&#xe603;</a>
+                    <a href="https://weibo.com/6500851014/" target="_blank" class="iconfont">&#xe653;</a>
+                    <a href="https://shop303085121.taobao.com/" target="_blank" class="iconfont">&#xe616;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--通用弹窗遮罩-->
+<div class="g-mian-bg"></div>
+<!--跳转手机站链接弹窗-->
+<div class="phone-box js-phone-box">
+    <div class="phone-link">
+        <div class="link-left">
+            <h3>
+                捷创移动端网站
+                现已上线
+            </h3>
+            <p>
+                打开您的手机浏览器
+                <br>扫一扫及可进入捷创移动端
+                <br>便可随时随地
+                <br>计价--下单--管理您的订单
+            </p>
+        </div>
+        <img src="images/phone.png" alt="手机" width="340" height="423" class="phone">
+        <div class="link-right">
+            <h6>移动端二维码</h6>
+            <img src="images/phone-qr.png" alt="手机二维码" width="203" height="203">
+        </div>
+        <!--关闭按钮-->
+        <i class="iconfont popup-close js-popup-close">&#xe7be;</i>
+    </div>
+</div>
+<!--右侧分享-->
+<div class="share-box">
+    <!--返回顶部按钮-->
+    <div class="back-btn js-back-btn">
+        <span class="iconfont">&#xe649;</span>
+    </div>
+    <!--每一项-->
+    <ul class="share-lists">
+        <li>
+            <a href="javascript:void(0)">
+                <i>99</i>
+                <span class="iconfont">&#xe611;</span>
+            </a>
+        </li>
+        <li class="phone-btn">
+            <span class="iconfont" title="点击">&#xe60c;</span>
+        </li>
+        <li>
+            <span class="iconfont">&#xe61f;</span>
+            <!--弹出电话-->
+            <div class="tel-popup">24小时客服：13826578334</div>
+        </li>
+        <li>
+            <span class="iconfont">&#xe60b;</span>
+            <!--弹出微信-->
+            <div class="wx-popup">
+                <div class="wexin">
+                    <img src="images/wechat.png" alt="微信" width="127" height="127">
+                    <p>
+                        扫一扫
+                        <br>关注捷创
+                        <br>微信
+                        <br>公众号
+                    </p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/golbal.js"></script>
+<script src="js/pcb-order.js"></script>
+<script>
+    $(function () {
+        // 右侧计价滚动
+        if ($('.four-guarante').length > 0) {
+            var offsetTop = $('.four-guarante').offset().top;
+            var top = $('.move-price').height();
+            $(window).scroll(function () {
+                var moveTop = $(this).scrollTop();
+                if ((offsetTop - (moveTop + top)) <= 300) {
+                    $('.move-price').hide();
+                } else {
+                    $('.move-price').show();
+                }
+                if (moveTop > 50) {
+                    $('.move-price').css({position: 'fixed', top: 90})
+                } else {
+                    $('.move-price').css({position: 'relative', top: 0})
+                }
+            });
+        } else {
+            console.log('哎呦，走丢了');
+        }
+    })
+</script>
+</body>
+</html>

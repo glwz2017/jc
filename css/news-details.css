@@ -1,0 +1,334 @@
+.details-banner {
+    height: 50px;
+    border-bottom: 1px solid #efefef;
+    box-shadow: 0 2px 3px #ccc inset;
+}
+
+.details-banner .current-position {
+    float: right;
+    margin-top: 17px;
+    font-size: 12px;
+    color: #9fa0a0;
+}
+
+.details-banner .current-position > a {
+    color: #9fa0a0;
+    max-width: 170px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: text-top;
+}
+
+/*主体*/
+.details-content {
+    margin-top: 50px;
+    background-color: #ffffff;
+}
+
+/*左侧*/
+.details-content .details-left {
+    float: left;
+    height: auto;
+    width: 885px;
+}
+
+.sliding-box {
+    height: 640px;
+    width: 79px;
+    border-right: 1px solid #efefef;
+    transition: all .3s;
+    position: relative;
+    top: 0;
+    background-color: #ffffff;
+    float: left;
+}
+
+.sliding-box .go-lists {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: #0b953a;
+    text-align: center;
+    font-size: 12px;
+    display: table-cell;
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+.sliding-box .time {
+    margin-top: 60px;
+    color: #9fa0a0;
+    font-size: 12px;
+    text-align: center;
+    width: 55px;
+}
+
+.sliding-box .time .year {
+    position: relative;
+
+}
+
+.sliding-box .time .year > span {
+    background: #ffffff;
+}
+
+.sliding-box .time .year::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #e8e8e8;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+}
+
+.sliding-box .time .days {
+    font-size: 18px;
+}
+
+.sliding-box .split-lines {
+    margin: 25px 0;
+    border-top: 1px solid #efefef;
+    width: 55px;
+}
+
+.sliding-box .viewed {
+    width: 55px;
+    text-align: center;
+    font-size: 12px;
+    color: #9fa0a0;
+}
+
+.sliding-box .viewed .times {
+    color: #008144;
+    font-size: 16px;
+}
+
+.sliding-box .viewed .eye {
+    font-size: 30px;
+    line-height: 30px;
+    color: #008144;
+}
+
+/*社交分享*/
+.sliding-box .social-share {
+    text-align: center;
+    width: 55px;
+    color: #9fa0a0;
+}
+
+.sliding-box .social-share > i {
+    font-size: 36px;
+    cursor: pointer;
+    transition: all .3s;
+    position: relative;
+}
+
+/*二维码*/
+.sliding-box .social-share #qrcode {
+    width: 128px;
+    height: 125px;
+    border: 1px solid #bcbcbc;
+    color: gray;
+    position: absolute;
+    left: -148px;
+    top: 0;
+    text-align: center;
+    line-height: 1;
+    background: #fff;
+    border-radius: 3px;
+    padding: 9px 5px 5px 3px;
+    font-size: 14px;
+    overflow: hidden;
+    display: none;
+    background: url("../images/loading.gif") no-repeat center;
+}
+
+.sliding-box .social-share #qrcode:before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-top: 1px solid #bcbcbc;
+    border-right: 1px solid #bcbcbc;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: block;
+    position: absolute;
+    right: -4px;
+    top: 15px;
+}
+
+.sliding-box .social-share > i:hover {
+    color: #0b953a;
+}
+
+/*文章内容*/
+.content-article {
+    width: 750px;
+    height: auto;
+    float: right;
+    overflow: hidden;
+    color: #3e3a3a;
+}
+
+.content-article > h2 {
+    font-size: 36px;
+}
+
+.content-article .graphic-box {
+    margin-top: 30px;
+    padding: 35px 0 80px 0;
+    border-top: 1px solid #efefef;
+}
+
+.content-article .graphic-box > p {
+    margin-bottom: 30px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.content-article .graphic-box > p > img {
+    width: 100%;
+}
+
+.content-article .the-end {
+    border-top: 1px solid #efefef;
+    padding-top: 50px;
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.content-article .the-end .end {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: -50px;
+    font-size: 18px;
+    color: #dcdddd;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.content-article .the-end > a {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    transition: all .3s;
+}
+.content-article .the-end a:first-child{
+    color: #00a964;
+}
+.content-article .the-end > a > span {
+    display: inline-block;
+    max-width: 520px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: bottom;
+    line-height: 20px;
+}
+
+.content-article .the-end > a:hover {
+    color: #00a964;
+}
+
+/*右侧在线计价*/
+.details-content .details-right {
+    float: right;
+    width: 360px;
+}
+
+.online-invoicing {
+    float: right;
+    width: 360px;
+    height: 430px;
+    border-radius: 6px;
+    border: 1px solid #efefef;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.online-invoicing > h3 {
+    height: 60px;
+    line-height: 60px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #efefef;
+    font-size: 18px;
+    color: #3e3a3a;
+}
+
+.online-invoicing .components-box {
+    padding: 30px;
+}
+
+.online-invoicing .components-box .component-item {
+    width: 100%;
+}
+
+.components-box .component-item input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #efefef;
+    margin: 5px 0 15px 0;
+    text-indent: 10px;
+    background-color: #ffffff;
+}
+
+/*工艺要求*/
+.components-box .component-item .special-box {
+    width: 137px;
+}
+
+.components-box .component-item .special-box:first-child {
+    float: left;
+}
+
+.components-box .component-item .special-box:first-child + .special-box {
+    float: right;
+}
+
+.special-box ul {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.special-box ul li {
+    float: left;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #efefef;
+    margin-left: 10px;
+}
+
+.special-box ul li:first-child {
+    margin-left: 0;
+}
+
+/*激活参数*/
+.special-box ul .active-li {
+    border: 1px solid #0b953a;
+    color: #0b953a;
+}
+
+.components-box .component-item .btn {
+    margin: 30px 0 0 60px;
+}
+
+/*广告盒子*/
+.details-right .advertising {
+    margin-top: 20px;
+    float: right;
+}

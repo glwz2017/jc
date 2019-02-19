@@ -1,0 +1,199 @@
+/*用户编辑*/
+.edit-box {
+    background-color: #ffffff;
+    min-height: 350px;
+}
+
+.edit-box .user-title {
+    height: 60px;
+    background-color: #e5e5e5;
+}
+
+.edit-box .user-title > li {
+    float: left;
+    line-height: 60px;
+    text-align: center;
+    width: 180px;
+    font-size: 16px;
+    color: #3e3a3a;
+    border-right: 1px solid #ffffff;
+    cursor: pointer;
+    border-top: 2px solid #e5e5e5;
+}
+
+.edit-box .user-title > .active-info {
+    background-color: #ffffff;
+    border-top: 2px solid #098734;
+}
+.edit-box .user-title > li:hover{
+    border-top: 2px solid #098734;
+}
+
+/*信息盒子*/
+.info-box {
+    background-color: #ffffff;
+}
+
+.info-box .person-box {
+    width: 870px;
+    margin: 80px auto 0;
+    height: auto;
+    padding-bottom: 220px;
+}
+
+.person-box .person-title {
+    height: 105px;
+    line-height: 105px;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.person-title .title-left {
+    float: left;
+    font-size: 14px;
+}
+
+.person-title .title-left > i {
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    margin: 10px 15px 0 0;
+}
+
+.person-title .title-left > i > img {
+    width: 100%;
+    height: 100%;
+}
+
+.person-title .title-right {
+    float: right;
+}
+
+.person-title .title-right > a {
+    width: 138px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 2px;
+    margin-right: 15px;
+}
+
+.person-title .title-right > a:first-child {
+    color: #d0021b;
+    border: 1px solid #d0021b;
+}
+
+.person-title .title-right > a:first-child + a {
+    color: #ffffff;
+    border: 1px solid #046122;
+    background-color: #046122;
+}
+
+.person-box .person-info {
+
+}
+
+.person-box .person-info > li {
+    height: 58px;
+    line-height: 58px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+}
+
+.person-box .person-info > li > span:first-child {
+    width: 100px;
+    display: inline-block;
+}
+
+/*开票信息*/
+.invoice-box {
+display: none;
+}
+
+.invoice-box .open-invoice {
+    margin-top: 45px;
+    height: auto;
+}
+
+.invoice-box .open-invoice .add-invoice {
+    width: 140px;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: #046122;
+    border-radius: 2px;
+    float: right;
+    margin-right: 60px;
+}
+
+/*具体票种*/
+.open-invoice .invoice-lists {
+    /*border: 1px solid blue;*/
+    margin: 25px 0 0 60px;
+    /*width: 870px;*/
+    height: auto;
+    min-height: 500px;
+}
+
+.open-invoice .invoice-lists .invoice-item {
+    float: left;
+    background: url("../../images/member/invoice-bg.png") no-repeat center;
+    width: 421px;
+    height: 161px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.invoice-item .item-text{
+    margin: 28px 0 0 50px;
+    font-size: 14px;
+}
+ .invoice-item .item-text>h3{
+    color: #f63849;
+}
+.invoice-item .item-text .taxpayers{
+     margin-top: 20px;
+ }
+.invoice-item .item-text  .account{
+    margin-top: 10px;
+}
+.invoice-item .item-text .edit-btns{
+    float: right;
+    margin: 10px 20px 0 0 ;
+    font-size: 12px;
+}
+.item-text .edit-btns a{
+    float: left;
+}
+.item-text .edit-btns a:first-child{
+    margin-right: 10px;
+    color: #3e3a3a;
+    text-decoration: underline;
+}
+.item-text .edit-btns a:first-child+a{
+    color: #00612b;
+    text-decoration: underline;
+    margin-right: 10px;
+}
+.item-text .edit-btns a:first-child+a+a{
+    color: #f63849;
+}
+.open-invoice .invoice-lists .invoice-item .invoice-flag{
+    position: absolute;
+    top:0;
+    right: 0;
+    background: url("../../images/member/active-flag.png") no-repeat center;
+    width: 52px;
+    height: 20px;
+    display: none;
+}
+.open-invoice .invoice-lists .invoice-item .active-flag{
+    display: block;
+}

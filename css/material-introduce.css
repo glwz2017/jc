@@ -1,0 +1,358 @@
+body {
+    background-color: #f7f8f8;
+}
+
+.introduce-banner {
+    background: url("../images/material-introduce.png") no-repeat center;
+    width: 100%;
+    min-width: 1280px;
+    height: 400px;
+}
+
+.introduce-banner .current-location {
+    float: right;
+    margin-top: 25px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.introduce-banner .current-location > a {
+    color: #ffffff;
+}
+
+.introduce-banner .introduce-title {
+    float: left;
+    margin-top: 175px;
+}
+
+/*优势*/
+.advantages-box {
+    height: 210px;
+    background-color: #0080bc;
+}
+
+.advantages-box > ul {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.advantages-box > ul:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.advantages-box > ul > li {
+    width: 24.9%;
+    float: left;
+    height: 210px;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    position: relative;
+}
+
+.advantages-box .ensure-text {
+    margin: 40px 0 0 40px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.advantages-box .ensure-text h3 {
+    color: #00426c;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.advantages-box .ensure-text p {
+    width: 230px;
+}
+
+.advantages-box > ul > li {
+    border-right: 1px solid #0088c7;
+}
+
+.advantages-box > ul > li:hover {
+    background-color: #0088c7;
+}
+
+/*优势*/
+/*品质控制*/
+.quality-control {
+    padding: 80px 0 60px;
+}
+
+.quality-control .control-title {
+    position: relative;
+    height: 26px;
+    border-top: 1px solid #efefef;
+}
+
+.quality-control .control-title span {
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 24px;
+    color: #3e3a3a;
+    background-color: #f7f8f8;
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    margin-left: -78px;
+}
+
+.quality-control .control-img {
+    margin-top: 40px;
+
+}
+
+.quality-control .control-img li {
+    float: left;
+    width: 24.9%;
+    height: 420px;
+    border-left: 1px solid #efefef;
+    position: relative;
+    cursor: pointer;
+}
+
+.quality-control .control-img li:first-child {
+    border-left: none;
+}
+
+.quality-control .control-img li .mask-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #5c5a54;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    -moz-opacity: .6;
+    -ms-opacity: .6;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    transition: all .3s ease-in;
+}
+
+.quality-control .control-img li:hover .mask-img {
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.quality-control .control-img li .control-name {
+    color: #ffff;
+    text-align: center;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    font-size: 24px;
+}
+
+.control-img li .control-name p {
+    font-size: 12px;
+}
+
+/*品质控制*/
+/*来料示范*/
+.come-material {
+    background-color: #ffffff;
+    padding-bottom: 80px;
+}
+
+.come-material .come-item {
+    padding-top: 45px;
+}
+
+.come-material .come-item h2 {
+    font-size: 24px;
+    color: #3e3a3a;
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 30px;
+}
+
+.come-material .come-item h3 {
+    font-size: 18px;
+    color: #0081b7;
+    margin-top: 25px;
+}
+
+.come-material .come-item ul:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.come-material .come-item ul li {
+    float: left;
+    width: 400px;
+    height: auto;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.come-material .come-item ul li:first-child {
+    margin-left: 0;
+}
+
+.come-material .come-item .category-img {
+    height: auto;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.come-material .come-item .category-img .img-text {
+    padding: 30px 24px;
+    background-color: #0080bc;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 23px;
+    position: relative;
+    min-height: 70px;
+}
+
+.come-material .come-item .category-img .img-text .style {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    position: absolute;
+    top: -40px;
+    left: 25px;
+    z-index: 9;
+    border-radius: 100%;
+    background-color: #0080bc;
+}
+
+.come-material .come-item ul li:hover img {
+    transform: scale(1.01);
+}
+
+.come-material .come-item p {
+    color: #0081b7;
+    margin-top: 35px;
+}
+
+/*来料示范*/
+/*来料包装与标识*/
+.packaging {
+    border-top: 1px solid #efefef;
+    background-color: #ffffff;
+    height: auto;
+    min-height: 200px;
+    padding-bottom: 10px;
+}
+
+.packaging h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #3e3a3a;
+    margin: 50px 0;
+}
+
+.packaging .pack-item {
+    height: 410px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.packaging .pack-item .pack-way, .pack-tips {
+    float: left;
+}
+
+.packaging .pack-item .pack-way {
+    width: 144px;
+    height: 410px;
+    background-color: #0080bc;
+    border-right: 1px solid #efefef;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.packaging .pack-item .pack-way .iconfont{
+    display: block;
+    font-size: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    margin-top: 70px;
+}
+.packaging .pack-item .pack-way i{
+    display: block;
+    width: 24px;
+    margin: 20px auto 0;
+    font-size: 20px;
+    color: #ffffff;
+}
+.packaging .pack-item  .error-pack{
+    background-color: #f43b44;
+}
+.packaging .pack-item .pack-way:hover i{
+    /*text-shadow: 2px 2px 2px #000;*/
+    /*color: transparent;*/
+    /*text-shadow: 0 0 5px #f96;*/
+    color: #fff;
+    text-shadow: 1px 1px rgba(197, 223, 248,0.8),2px 2px rgba(197, 223, 248,0.8),3px 3px rgba(197, 223, 248,0.8),4px 4px
+    rgba(197, 223, 248,0.8),5px 5px rgba(197, 223, 248,0.8),6px 6px rgba(197, 223, 248,0.8);
+
+
+}
+/*来料包装与标识*/
+/*加工能力*/
+.capacity-box {
+    margin: 60px 0;
+}
+
+.capacity-parameter {
+    border-radius: 6px;
+    background-color: #ffffff;
+    padding: 25px 40px 50px;
+    box-sizing: border-box;
+}
+
+.capacity-parameter h2 {
+    font-size: 24px;
+    color: #3e3a3a;
+    margin-bottom: 15px;
+}
+
+.capacity-parameter table {
+    width: 100%;
+    border-right: 1px solid #efefef;
+}
+
+.capacity-parameter table tr:first-child {
+    height: 40px;
+    color: #ffffff;
+    background-color: #0da95b;
+}
+
+.capacity-parameter table th {
+    border-right: 1px solid #098946;
+    text-align: left;
+    padding: 12px 25px;
+}
+
+.capacity-parameter table td {
+    border: 1px solid #efefef;
+    border-right: 0;
+    border-top: 0;
+    height: 50px;
+    line-height: 25px;
+    text-align: left;
+    padding: 5px 10px 5px 25px;
+}
+.capacity-parameter .bom-standard{
+    margin-top: 40px;
+    font-size: 14px;
+    color: #3e3a3a;
+}
+/*加工能力*/

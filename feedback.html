@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="images/jc.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="images/jc.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/base-new.css"/>
+    <link rel="stylesheet" href="css/help-center.css">
+    <!--字体图标-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!--浏览器版本-->
+    <!--[if lte IE 8]>
+    <script>var _iealwn = {once: 0, outver: 8};</script>
+    <script id="_iealwn_js" src="//support.dmeng.net/ie-alert-warning/latest.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--顶部快捷方式-->
+<div class="the-shortcut">
+    <div class="ui-left">
+        PCB制板\ SMT贴装综合服务商
+    </div>
+    <div class="ui-right">
+        <ul class="clearfloat">
+            <li class="js-phone-order">
+                <span class="iconfont">&#xe60c;</span>
+                手机端下单
+            </li>
+            <li class="split-lines"></li>
+            <li>
+                24小时客服：13826578334
+            </li>
+            <li class="split-lines"></li>
+            <li class="add-favorite">
+                收藏本站
+            </li>
+        </ul>
+    </div>
+</div>
+<!--导航-->
+<div class="nav-box js-nav-box clearfloat">
+    <div class="nav-left">
+        <h1>
+            <a href="index.html" class="iconfont">&#xe60d;</a>
+        </h1>
+        <ul class="nav-menu clearfloat">
+            <li >
+                <a href="index.html">首页</a>
+            </li>
+            <li>
+                <a href="smt-order.html">SMT贴片报价</a>
+            </li>
+            <li>
+                <a href="pcb-order.html">PCB打样报价</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">工艺介绍</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li>
+                        <a href="smt-introduce.html">SMT介绍</a>
+                    </li>
+                    <li>
+                        <a href="pcb-introduce.html">PCB介绍</a>
+                    </li>
+                    <li>
+                        <a href="material-introduce.html">物料介绍</a>
+                    </li>
+                    <li>
+                        <a href="product-display.html">产品展示</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="integral/integral-mall.html">积分商城</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">关于我们</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li>
+                        <a href="about-us.html">企业简介</a>
+                    </li>
+                    <li>
+                        <a href="news.html">新闻资讯</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="user-share.html">用户分享</a>
+            </li>
+            <li class="active-menu">
+                <a href="javascript:void(0)">帮助中心</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li><a href="questions.html">常见问题</a></li>
+                    <li><a href="buy-guide.html">购物指南</a></li>
+                    <li class="active-second"><a href="feedback.html">意见反馈</a></li>
+                    <li><a href="link-us.html">联系我们</a></li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <!--未登录-->
+        <div class="no-login">
+            <ul class="clearfloat">
+                <li><a href="javascript:void(0)">登录</a></li>
+                <li class="split-lines"></li>
+                <li><a href="javascript:void(0)">注册</a></li>
+            </ul>
+            <!--购物车-->
+            <div class="car-box">
+                <a href="javascript:void(0)">
+                    <span class="iconfont">&#xe600;</span>
+                    99
+                </a>
+            </div>
+        </div>
+        <!--已登录-->
+        <div class="logined">
+            <i class="user-img"><img src="images/user-pic.png" alt="头像" width="40" height="40"></i>
+            <div class="user-info">
+                <span>您好!00379A</span>
+                <span class="iconfont">&#xe629;</span>
+                <!--下拉菜单-->
+                <div class="info-box">
+                    <ul class="info-list">
+                        <li>
+                            <a href="javascript:void(0)">订单管理</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">个人信息管理</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">优惠券管理</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0)" class="sign-out">安全退出</a>
+                </div>
+            </div>
+            <!--购物车-->
+            <div class="car-box">
+                <a href="javascript:void(0)">
+                    <span class="iconfont">&#xe600;</span>
+                    99
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--顶部-->
+<div class="help-top">
+    <div class="w-1280">
+        <!--当前位置-->
+        <div class="current-location">
+            您当前位置：<a href="index.html">首页</a> - <a href="javascript:void(0)">帮助中心</a> - <a href="feedback.html">
+            意见反馈
+        </a>
+        </div>
+    </div>
+</div>
+<div class="help-center">
+    <div class="help-content clearfloat">
+        <!--分割线-->
+        <div class="split-lines"></div>
+        <!--左侧-->
+        <div class="help-left">
+            <h2>意见反馈</h2>
+            <div class="feedback-box">
+                <div class="feed-back-tips">
+                    <span class="iconfont xing-hao">&#xe623;</span>
+                    号为必填项
+                </div>
+                <div class="user-info">
+                    <div class="info-item">
+                        <label for="name"><span class="iconfont xing-hao">&#xe623;</span>姓名&nbsp;:</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="info-item">
+                        <span> <label><span class="iconfont xing-hao">&#xe623;</span>姓别&nbsp;:</label></span>
+                        <input type="radio" id="man" name="sex">
+                        <label for="man">先生</label>
+                        <input type="radio" id="woman" name="sex">
+                        <label for="woman">女士</label>
+                    </div>
+                    <div class="email-box">
+                        <div class="info-item">
+                            <label for="email">邮箱&nbsp;:</label>
+                            <input type="text" id="email">
+                        </div>
+                    </div>
+                </div>
+                <!--意见内容-->
+                <div class="views-content">
+                    <!--登录后，文字隐藏-->
+                    <a href="jc-login.html" class="js-jump-login">请登录后再填写</a>
+                    <div class="mask js-mask"></div>
+                    <div class="feed-back-tips">
+                        <span class="iconfont xing-hao">&#xe623;</span>
+                        意见内容&nbsp;:
+                    </div>
+                    <textarea name="" id="opinion" cols="30" rows="10" placeholder="请在这里写下您的宝贵意见"></textarea>
+                    <!--提交按钮-->
+                    <div class="submit-box">
+                        <a href="javascript:void(0)" class="btn js-rest-btn">重置</a>
+                        <a href="javascript:void(0)" class="btn js-submit">提交</a>
+                    </div>
+                </div>
+                <!--留言列表-->
+                <div class="feedback-lists">
+                    <ul>
+                        <li class="active-li">留言列表</li>
+                    </ul>
+                    <div class="lists-box js-lists-box">
+                        <div class="list">
+                            <div class="head-img">
+                                <!--默认头像-->
+                                <img src="images/user-pic.png" alt="用户头像" width="40" height="40">
+                            </div>
+                            <div class="list-text">
+                                <div class="title">提交时间：<span>2018.11.10</span></div>
+                                <p>
+                                    网站还是有很需要加强的地方，如一二三四五。
+                                </p>
+                                <!--系统回复-->
+                                <div class="sys-item">
+                                    <div class="sys-img">
+                                        <img src="images/sys-pic.png" alt="系统logo" width="40" height="41">
+                                    </div>
+                                    <div class="sys-text">
+                                        <div class="title">提交时间：<span>2018.11.10</span></div>
+                                        <div class="sys-name">
+                                            <span class="name">捷创客服：</span>
+                                            <span>
+                                            非常感谢，我们将更快完善网站功能，为您提供更优的服务。
+                                            非常感谢，我们将更快完善网站功能，为您提供更优的服务。
+                                            非常感谢，我们将更快完善网站功能，为您提供更优的服务。
+                                            非常感谢，我们将更快完善网站功能，为您提供更优的服务。
+                                            非常感谢，我们将更快完善网站功能，为您提供更优的服务。
+                                            非常感谢，我们将更快完善网站功能，为您提供更优的服务。
+                                            非常感谢，我们将更快完善网站功能，为您提供更优的服务。
+                                            非常感谢，我们将更快完善网站功能，为您提供更优的服务。
+                                            非常感谢，我们将更快完善网站功能，为您提供更优的服务。
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="head-img">
+                                <!--默认头像-->
+                                <img src="images/user-pic.png" alt="用户头像" width="40" height="40">
+                            </div>
+                            <div class="list-text">
+                                <div class="title">提交时间：<span>2018.11.10</span></div>
+                                <p>
+                                    网站还是有很需要加强的地方，如一二三四五。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右侧-->
+        <div class="help-right">
+            <div class="help-box js-help-box">
+                <h2>帮助中心</h2>
+                <ul class="help-list">
+                    <li>
+                        <a href="questions.html">
+                            <h3>常见问题</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="buy-guide.html">
+                            <h3>购物指南</h3>
+                        </a>
+                    </li>
+                    <li class="active-li">
+                        <a href="feedback.html">
+                            <h3>意见反馈</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="link-us.html">
+                            <h3>联系我们</h3>
+                        </a>
+                    </li>
+                </ul>
+                <!--服务连接-->
+                <div class="link-box">
+                    <a href="javascript:void(0)">
+                        <img src="images/link-us.png" alt="联系我们" width="260" height="380">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部衬托-->
+<div style="height: 300px;"></div>
+<!--服务保障-->
+<div class="four-guarante">
+    <div class="w-1280">
+        <div class="item">
+            <i><img src="images/guar1@icon.png"/></i>
+            <em>
+                <span class="dt f18">质量保证</span>
+                <p class="txt f14">知名品牌，厂家直售</p>
+            </em>
+        </div>
+        <div class="item">
+            <i><img src="images/guar2@icon.png"/></i>
+            <em>
+                <span class="dt f18">交期保证</span>
+                <p class="txt f14">按时发货，加急服务</p>
+            </em>
+        </div>
+        <div class="item">
+            <i><img src="images/guar3@icon.png"/></i>
+            <em>
+                <span class="dt f18">付款安全</span>
+                <p class="txt f14">使用大众及安全的方式支付</p>
+            </em>
+        </div>
+        <div class="item">
+            <i><img src="images/guar4@icon.png"/></i>
+            <em>
+                <span class="dt f18">价格优势</span>
+                <p class="txt f14">优势的价格源于不同生产能力</p>
+            </em>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+</div>
+<!--底部版权-->
+<div class="footer">
+    <!--关于捷创-->
+    <div class="footer-content clearfloat">
+        <div class="w-1280">
+            <div class="footer-left clearfloat">
+                <ul class="jc-menu ">
+                    <li>关于捷创</li>
+                    <li><a href="javascript:void(0)">企业简介</a></li>
+                    <li><a href="javascript:void(0)">产品展示</a></li>
+                    <li><a href="javascript:void(0)">联系我们</a></li>
+                    <li><a href="javascript:void(0)">用户分享</a></li>
+                </ul>
+                <ul class="jc-menu">
+                    <li>产品服务</li>
+                    <li><a href="javascript:void(0)">SMT贴片报价</a></li>
+                    <li><a href="javascript:void(0)">PCB打样报价</a></li>
+                </ul>
+                <ul class="jc-menu ">
+                    <li>工艺介绍</li>
+                    <li><a href="javascript:void(0)">SMT介绍</a></li>
+                    <li><a href="javascript:void(0)">PCB介绍</a></li>
+                    <li><a href="javascript:void(0)">物料介绍</a></li>
+                    <li><a href="javascript:void(0)">产品展示</a></li>
+                </ul>
+                <ul class="jc-menu ">
+                    <li>帮助中心</li>
+                    <li><a href="javascript:void(0)">常见问题</a></li>
+                    <li><a href="javascript:void(0)">购物指南</a></li>
+                    <li><a href="javascript:void(0)">意见反馈</a></li>
+                    <li><a href="javascript:void(0)">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div class="contact-us">
+                    <h3>CONTACT US .</h3>
+                    <div class="contact-item clearfloat">
+                        <i>办公地址：</i>
+                        <span>深圳市坂田街道万科星火online七栋234-235室</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>联系电话：</i>
+                        <span>18033063691</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>企业邮箱：</i>
+                        <span>2881601568@qq.com</span>
+                    </div>
+                </div>
+                <div class="contact-us">
+                    <h3>&nbsp;</h3>
+                    <div class="contact-item clearfloat">
+                        <i>工厂地址：</i>
+                        <span>深圳市坪山新区坑梓街道金沙工业区中兴路15号</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>联系电话：</i>
+                        <span>13826578334</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>企业邮箱：</i>
+                        <span>2881601568</span>
+                    </div>
+                </div>
+                <!--扫码关注-->
+                <div class="qr-code">
+                    <i>
+                        扫一扫关注公众号
+                        <br>随时了解捷创动态
+                    </i>
+                    <img src="images/the-public.png" alt="二维码" width="97" height="97">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--版权-->
+    <div class="jc-copyright">
+        <div class="w-1280">
+            <div class="copyright-box">
+                <div class="copyright-left">
+                    <span class="iconfont">&#xe60d;</span>
+                    <span>Copyright © 2016 www.jc-pcba.com 版权所有 深圳捷创电子科技有限公司 粤ICP备16117886号-1</span>
+                </div>
+                <div class="copyright-right">
+                    <a href="http://wpa.qq.com/msgrd?v=1&uin=2881601560&site=www.jdbpcb.com&menu=yes" target="_blank"
+                       class="iconfont">&#xe603;</a>
+                    <a href="https://weibo.com/6500851014/" target="_blank" class="iconfont">&#xe653;</a>
+                    <a href="https://shop303085121.taobao.com/" target="_blank" class="iconfont">&#xe616;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--通用弹窗遮罩-->
+<div class="g-mian-bg"></div>
+<!--跳转手机站链接弹窗-->
+<div class="phone-box js-phone-box">
+    <div class="phone-link">
+        <div class="link-left">
+            <h3>
+                捷创移动端网站
+                现已上线
+            </h3>
+            <p>
+                打开您的手机浏览器
+                <br>扫一扫及可进入捷创移动端
+                <br>便可随时随地
+                <br>计价--下单--管理您的订单
+            </p>
+        </div>
+        <img src="images/phone.png" alt="手机" width="340" height="423" class="phone">
+        <div class="link-right">
+            <h6>移动端二维码</h6>
+            <img src="images/phone-qr.png" alt="手机二维码" width="203" height="203">
+        </div>
+        <!--关闭按钮-->
+        <i class="iconfont popup-close js-popup-close">&#xe7be;</i>
+    </div>
+</div>
+<!--右侧分享-->
+<div class="share-box">
+    <!--返回顶部按钮-->
+    <div class="back-btn js-back-btn">
+        <span class="iconfont">&#xe649;</span>
+    </div>
+    <!--每一项-->
+    <ul class="share-lists">
+        <li>
+            <a href="javascript:void(0)">
+                <i>99</i>
+                <span class="iconfont">&#xe611;</span>
+            </a>
+        </li>
+        <li class="phone-btn">
+            <span class="iconfont" title="点击">&#xe60c;</span>
+        </li>
+        <li>
+            <span class="iconfont">&#xe61f;</span>
+            <!--弹出电话-->
+            <div class="tel-popup">24小时客服：13826578334</div>
+        </li>
+        <li>
+            <span class="iconfont">&#xe60b;</span>
+            <!--弹出微信-->
+            <div class="wx-popup">
+                <div class="wexin">
+                    <img src="images/wechat.png" alt="微信" width="127" height="127">
+                    <p>
+                        扫一扫
+                        <br>关注捷创
+                        <br>微信
+                        <br>公众号
+                    </p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<script src="js/golbal.js"></script>
+<script src="js/layer-v3.1.1/layer/layer.js"></script>
+<script>
+    $(function () {
+
+        //内容切换
+        $(document).on('click', '.js-lists-box .item', function () {
+            if ($(this).find('.item-text').css('display') == 'block') {
+                $(this).find('.item-text').slideUp();
+            } else {
+                $(this).find('.item-text').slideDown();
+                $(this).siblings('.item').children('.item-text').slideUp();
+            }
+        });
+
+        //    采纳
+        $('.js-btn').click(function () {
+            layer.msg('采纳成功', {icon: 1, time: 1500});
+            $(this).find('span').html(parseInt($(this).find('span').html()) + 1);
+            return false;//防止关闭
+        });
+
+        // 右侧帮助中心滚动
+        if ($('.js-help-box').length > 0) {
+            var offsetTop = $('.four-guarante').offset().top;
+            var top = $('.js-help-box').height();
+            $(window).scroll(function () {
+                var moveTop = $(this).scrollTop();
+                if ((offsetTop - (moveTop + top)) <= 300) {
+                    $('.js-help-box').hide();
+                } else {
+                    $('.js-help-box').show();
+                }
+                if ($(this).scrollTop() > 200) {
+                    $('.js-help-box').css({position: 'fixed', top: 95})
+                } else {
+                    $('.js-help-box').css({position: 'relative', top: 0})
+                }
+            });
+        } else {
+            console.log('哎呦，走丢了');
+        }
+
+        //双击模拟登录【暂时提供】套用时删除即可
+        $('.js-mask').dblclick(function () {
+            $('.js-jump-login').hide();//文字提示
+            $(this).hide();//遮罩
+        });
+
+
+        //重置按钮
+        $('.js-rest-btn').click(function () {
+            $('#opinion').val('');
+        });
+        //提交按钮
+        $('.js-submit').click(function () {
+            if ($.trim($('#opinion').val()) == '') {
+                layer.msg('请输入您的意见信息', {time: 1500});
+                return false;
+            }
+            $('.js-lists-box').append(' <div class="list">\n' +
+                '                            <div class="head-img">\n' +
+                '                                <!--默认头像-->\n' +
+                '                                <img src="images/user-pic.png" alt="用户头像" width="40" height="40">\n' +
+                '                            </div>\n' +
+                '                            <div class="list-text">\n' +
+                '                                <div class="title">提交时间：<span>' + new Date() + '</span></div>\n' +
+                '                                <p>\n' + $.trim($('#opinion').val()) +
+                '                                </p>\n' +
+                '                            </div>\n' +
+                '                        </div>'
+            );
+            layer.msg('留言成功',{time:1500},function () {
+                $('#opinion').val('');
+            });
+        });
+    });//end function
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.polygon{
+    position: absolute;
+    top:-48px;
+    left: 670px;
+}
+.order-status{
+    min-height: 500px;
+    background-color: #ffffff;
+}
+.order-status .status-title{
+    height: 60px;
+    width: 100%;
+    background-color: #e5e5e5;
+}
+.order-status .status-title>li{
+    float: left;
+    width: 180px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    border-top: 2px solid #e5e5e5;
+    border-right: 1px solid #ffffff;
+}
+.order-status .status-title>li:hover{
+    border-top: 2px solid #098734;
+}
+/*激活样式*/
+.order-status .status-title> .active-item{
+    border-top: 2px solid #098734;
+    background-color: #ffffff;
+}
+.order-status .status-title>li>a{
+    color: #3e3a3a;
+    width: 100%;
+    font-size: 16px;
+}

@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="images/jc.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="images/jc.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/base-new.css"/>
+    <link rel="stylesheet" href="css/about-us.css">
+    <!--字体图标-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <!--视频-->
+    <link rel="stylesheet" href="js/video/video.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!--浏览器版本-->
+    <!--[if lte IE 8]>
+    <script>var _iealwn = {once: 0, outver: 8};</script>
+    <script id="_iealwn_js" src="//support.dmeng.net/ie-alert-warning/latest.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--顶部快捷方式-->
+<div class="the-shortcut">
+    <div class="ui-left">
+        PCB制板\ SMT贴装综合服务商
+    </div>
+    <div class="ui-right">
+        <ul class="clearfloat">
+            <li class="js-phone-order">
+                <span class="iconfont">&#xe60c;</span>
+                手机端下单
+            </li>
+            <li class="split-lines"></li>
+            <li>
+                24小时客服：13826578334
+            </li>
+            <li class="split-lines"></li>
+            <li class="add-favorite">
+                收藏本站
+            </li>
+        </ul>
+    </div>
+</div>
+<!--导航-->
+<div class="nav-box js-nav-box clearfloat">
+    <div class="nav-left">
+        <h1>
+            <a href="index.html" class="iconfont">&#xe60d;</a>
+        </h1>
+        <ul class="nav-menu clearfloat">
+            <li >
+                <a href="index.html">首页</a>
+            </li>
+            <li>
+                <a href="smt-order.html">SMT贴片报价</a>
+            </li>
+            <li>
+                <a href="pcb-order.html">PCB打样报价</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">工艺介绍</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li>
+                        <a href="smt-introduce.html">SMT介绍</a>
+                    </li>
+                    <li>
+                        <a href="pcb-introduce.html">PCB介绍</a>
+                    </li>
+                    <li>
+                        <a href="material-introduce.html">物料介绍</a>
+                    </li>
+                    <li>
+                        <a href="product-display.html">产品展示</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="integral/integral-mall.html">积分商城</a>
+            </li>
+            <li class="active-menu">
+                <a href="javascript:void(0)">关于我们</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li class="active-second">
+                        <a href="about-us.html">企业简介</a>
+                    </li>
+                    <li>
+                        <a href="news.html">新闻资讯</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="user-share.html">用户分享</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">帮助中心</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li><a href="questions.html">常见问题</a></li>
+                    <li><a href="buy-guide.html">购物指南</a></li>
+                    <li><a href="feedback.html">意见反馈</a></li>
+                    <li><a href="link-us.html">联系我们</a></li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <!--未登录-->
+        <div class="no-login">
+            <ul class="clearfloat">
+                <li><a href="jc-login.html">登录</a></li>
+                <li class="split-lines"></li>
+                <li><a href="jc-login.html">注册</a></li>
+            </ul>
+            <!--购物车-->
+            <div class="car-box">
+                <a href="javascript:void(0)">
+                    <span class="iconfont">&#xe600;</span>
+                    99
+                </a>
+            </div>
+        </div>
+        <!--已登录-->
+        <div class="logined">
+            <i class="user-img"><img src="images/user-pic.png" alt="头像" width="40" height="40"></i>
+            <div class="user-info">
+                <span>您好!00379A</span>
+                <span class="iconfont">&#xe629;</span>
+                <!--下拉菜单-->
+                <div class="info-box">
+                    <ul class="info-list">
+                        <li>
+                            <a href="javascript:void(0)">订单管理</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">个人信息管理</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">优惠券管理</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0)" class="sign-out">安全退出</a>
+                </div>
+            </div>
+            <!--购物车-->
+            <div class="car-box">
+                <a href="javascript:void(0)">
+                    <span class="iconfont">&#xe600;</span>
+                    99
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--banner背景-->
+<div class="about-banner">
+    <div class="w-1280">
+        <!--深圳捷创电子科技有限公司-->
+        <div class="company-name">
+            <img src="images/company-name.png" alt="公司名称" width="480" height="136">
+        </div>
+        <!--当前位置 [动态导航]-->
+        <div class="current-position">
+            <!--您当前位置：首页 - 关于我们 - 企业简介-->
+            您当前位置：<a href="index.html">首页</a> - <a href="about-us.html">关于我们</a> - <a href="about-us.html">企业简介</a>
+        </div>
+    </div>
+</div>
+<!--企业简介-->
+<div class="company-introduction">
+    <div class="w-1280">
+        <div class="company-content">
+            <!--企业简介-->
+            <img class="company-title" src="images/company-title.png" alt="企业简介" width="197" height="102">
+            <!--企业文字与视频-->
+            <div class="company-box clearfloat">
+                <div class="company-text">
+                    <h4>
+                        深圳捷创电子科技有限公司是PCB制板\ SMT贴装综合服务商，在国内首推在线投单CRM管理系统。
+                        致力于为国内外高科技企业、科研单位、大学院校、集成电路原厂、消费类方案公司提供优质、专业、
+                        快捷、便利的SMT快速打样、小批量生产服务。
+                    </h4>
+                    <p>
+                        公司现在有雅马哈贴片机7台，高性能8温区回流焊3台，自动印刷机、半自动浸锡机，波峰焊、X-RAY检测等设备；
+                        各种工程人员近十人，熟练操作工数十人，PCBA打样日产量60款。为更好的服务客户，公司配备的营销、
+                        技术和生产团队7天24小时为客户提供技术支持、生产运作及订单服务，可快速全面地响应客户的个性化需求。
+                        公司自主开发了在线投单CRM管理系统、CRM管理系统，可实现在线自助报价，同时还具有打印订购单、系统下单、
+                        在线支付（折扣优惠）、生产进度查询、快件追踪等一系列先进的特色功能。借助于该系统，不用一个电话，
+                        客户即可自主完成下单采购、进度跟踪和快件交货的全过程。同时，公司还提供代开钢网、代采物料、BGA植球、
+                        PCBA外观维修、24小时SMT加急、散料贴装服务。
+                    </p>
+                    <p>
+                        公司始终坚持“市场为导向，质量为中心”的经营理念，力争成为一家完整产业链的硬件外包设计综合解决方案提供商，
+                        打造一条与客户关系紧密，利益取向一致的价值链体系。捷创以"质量至上、价格实惠、服务至上"的服务宗旨，
+                        一直致力于高精度、高质量的产品制造。拥有技艺精湛的生产技术人员，创业团队的核心成员也都是从事该行业近10年的专业人才，
+                        有良好的品质管理经验。在雄厚的技术力量 支持和完善的质量保证下，推行ISO9001品质管理，严格对生产工艺的控制和成品测试、
+                        检验，以切实保障广大用户的利益及满足客户的卓越追求。
+                    </p>
+                </div>
+                <div class="company-video">
+                    <span class="iconfont js-video-btn video-btn">&#xe678;</span>
+                    <i>点击播放企业宣传片</i>
+                    <!--视频盒子-->
+                    <div class="video-box">
+                        <!--要弹出的视频-->
+                        <div class="video-file">
+                            <video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto"
+                                   width="600"
+                                   height="380">
+                                <source src="" type='video/mp4'>
+                                <p class="vjs-no-js">
+                                    如您坚持使用当前浏览器访问本站，你将看到排版错误、视频无法播放、功能不全、无法正常使用的
+                                    网页，甚至是满屏乱码。 请至少升级至 IE9 或使用更先进的浏览器再访问<br>
+                                    <a href="http://www.liulanqi.net/" target="_blank">升级浏览器</a>
+                                </p>
+                            </video>
+                        </div>
+                        <!--关闭按钮-->
+                        <div class="close js-close iconfont">
+                            &#xe7be;
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--我们的优势-->
+            <div class="our-advantages">
+                <div class="our-title">
+                    <h3>我们的优势</h3>
+                </div>
+                <ul class="clearfloat">
+                    <li>
+                        <img src="images/advantage1.png" alt="优势1">
+                        <p>一片起贴 <br>可贴散料</p>
+                    </li>
+                    <li class="lines"></li>
+                    <li>
+                        <img src="images/advantage2.png" alt="优势2">
+                        <p>不收开机费 <br>工程费</p>
+                    </li>
+                    <li class="lines"></li>
+                    <li>
+                        <img src="images/advantage3.png" alt="优势3">
+                        <p>正常交货3天 <br>加急最快8小时</p>
+                    </li>
+                    <li class="lines"></li>
+                    <li>
+                        <img src="images/advantage4.png" alt="优势4">
+                        <p>PCB制板、代购物料、<br> 代开钢网+Layout设计</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--企业文化-->
+<div class="company-culture">
+    <div class="w-1280">
+        <div class="culture-text">
+            <p>
+                捷创总体倡行“敬业担当 同创共享”的企业文化，尊崇用户导向，追求刚性绩效，坚守诚信务实，乐于创新和团队协作。
+                打造充满激情活力的员工队伍，打造率先垂范的领导干部队伍，凝心聚力，推进企业转型升级、做优做强。
+            </p>
+            <p>
+                “敬业”是全体员工的基本品质和职业素养，诚信务实，专注专业，用户至上，追求绩效，倡行“岗位有我就能，
+                不作为就下位”，创造个人在组织中的最大价值；“担当”，即工作尽职尽责，积极主动，勇于承担，全力达成目标。
+                “同创共享”，全体员工创新创造企业价值，遵循公平公正的原则，共同分享企业的发展成果。强调创新创造与团队协作，
+                以用户为中心，凝心聚力，风雨同舟。奋斗在捷创，成就在捷创。
+            </p>
+            <p>
+
+                捷创确立“员工满意 顾客满意 股东满意”即“三个满意”为企业宗旨。三者利益统一，互为条件，不片面强调任何单一方面。
+                捷创认为，员工是企业最可宝贵的财富，是企业价值链的起点。只有员工满意，企业才能提供使顾客满意的产品和服务，
+                同时才能与上下游合作伙伴共同构建可持续产业链生态体系；只有顾客满意，企业才有市场、才能获利；只有企业有效益了，
+                才能给股东提供回报，股东才会满意，才能更好地造福社会和国家。员工满意是基石， 尊重员工，依靠员工，
+                为员工提供实现自我价值的舞台。建立员工发展机制和激励机制，坚持为员工办实事，引导全员创新创造，提升个人、
+                团队和企业的价值。
+            </p>
+            <p>
+                顾客满意是核心， 感恩，创新，通过提供高品质的产品和服务，为用户创造更多价值；
+                真诚、共赢，与上下游合作伙伴共同构建可持续产业链生态体系。
+            </p>
+            <p>
+                通过企业文化建设，激发员工创新、创造精神，发挥员工的主体作用，增强员工归属感、进步感和成就感，
+                提升企业运营效率，实现企业利益相关方共赢，构筑企业发展软实力，使企业文化成为企业长期竞争优势的来源。
+            </p>
+        </div>
+        <div class="culture-img">
+            <div class="img-title">
+                <h3>企业文化</h3>
+            </div>
+            <img src="images/culture-img.png" alt="文化图片" width="333" height="342">
+        </div>
+    </div>
+</div>
+<!--工厂设备-->
+<div class="factory-equipment">
+    <div class="factory-content">
+        <div class="factory-title">
+            <h3>工厂设备</h3>
+        </div>
+        <!--图片展示-->
+        <div class="factory-box clearfloat">
+            <!--左侧大图-->
+            <div class="factory-left">
+                <!--具体图片-->
+                <div class="img-box js-img-box">
+                    <img src="images/factory-img/factory1.jpg" alt="雅马哈" width="880" height="550">
+                    <!--名字提示-->
+                    <div class="name-mask">
+                        雅马哈
+                    </div>
+                </div>
+            </div>
+            <!--右侧切换-->
+            <div class="factory-right">
+                <ul class="shows-imgs clearfloat js-shows-imgs">
+                    <li class="active-img" img-src="http://www.jc-pcba.com/img/images/equipment/01.jpg">
+                        <img src="http://www.jc-pcba.com/img/images/equipment/01.jpg" alt="雅马哈1" width="100"
+                             height="62">
+                    </li>
+                    <li img-src="http://www.jc-pcba.com/img/images/equipment/02.jpg">
+                        <img src="http://www.jc-pcba.com/img/images/equipment/02.jpg" alt="雅马哈2" width="100"
+                             height="62">
+                    </li>
+                    <li img-src="http://www.jc-pcba.com/img/images/equipment/03.jpg">
+                        <img src="http://www.jc-pcba.com/img/images/equipment/03.jpg" alt="雅马哈3" width="100"
+                             height="62">
+                    </li>
+                    <li img-src="http://www.jc-pcba.com/img/images/equipment/04.jpg">
+                        <img src="http://www.jc-pcba.com/img/images/equipment/04.jpg" alt="雅马哈4" width="100"
+                             height="62">
+                    </li>
+                    <li img-src="http://www.jc-pcba.com/img/images/equipment/05.jpg">
+                        <img src="http://www.jc-pcba.com/img/images/equipment/05.jpg" alt="雅马哈5" width="100"
+                             height="62">
+                    </li>
+                    <li img-src="http://www.jc-pcba.com/img/images/equipment/06.jpg">
+                        <img src="http://www.jc-pcba.com/img/images/equipment/06.jpg" alt="雅马哈6" width="100"
+                             height="62">
+                    </li>
+                    <li img-src="http://www.jc-pcba.com/img/images/equipment/07.jpg">
+                        <img src="http://www.jc-pcba.com/img/images/equipment/07.jpg" alt="雅马哈7" width="100"
+                             height="62">
+                    </li>
+                    <li img-src="http://www.jc-pcba.com/img/images/equipment/08.jpg">
+                        <img src="http://www.jc-pcba.com/img/images/equipment/08.jpg" alt="雅马哈8" width="100"
+                             height="62">
+                    </li>
+                    <li img-src="http://www.jc-pcba.com/img/images/equipment/09.jpg">
+                        <img src="http://www.jc-pcba.com/img/images/equipment/09.jpg" alt="雅马哈9" width="100"
+                             height="62">
+                    </li>
+                    <li img-src="http://www.jc-pcba.com/img/images/equipment/10.jpg">
+                        <img src="http://www.jc-pcba.com/img/images/equipment/10.jpg" alt="雅马哈10" width="100"
+                             height="62">
+                    </li>
+                    <li img-src="http://www.jc-pcba.com/img/images/equipment/11.jpg">
+                        <img src="http://www.jc-pcba.com/img/images/equipment/11.jpg" alt="雅马哈11" width="100"
+                             height="62">
+                    </li>
+                    <li img-src="http://www.jc-pcba.com/img/images/equipment/12.jpg">
+                        <img src="http://www.jc-pcba.com/img/images/equipment/12.jpg" alt="雅马哈12" width="100"
+                             height="62">
+                    </li>
+                </ul>
+                <!--分页展示-->
+                <div class="paging-box clearfloat">
+                    <!--显示页数-->
+                    <div class="pages-box">
+                        <span class="now-pages js-now-pages">1</span>
+                        <span>/</span>
+                        <span class="total-pages js-total-pages">0</span>
+                    </div>
+                    <!--分页操作-->
+                    <ul class="up-down js-up-down">
+                        <li class="up-pages pages js-up-pages">上一页</li>
+                        <li class="separation">|</li>
+                        <li class="down-pages pages active-pages js-down-pages">下一页</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--服务保障-->
+<div class="four-guarante">
+    <div class="w-1280">
+        <div class="item">
+            <i><img src="images/guar1@icon.png"/></i>
+            <em>
+                <span class="dt f18">质量保证</span>
+                <p class="txt f14">知名品牌，厂家直售</p>
+            </em>
+        </div>
+        <div class="item">
+            <i><img src="images/guar2@icon.png"/></i>
+            <em>
+                <span class="dt f18">交期保证</span>
+                <p class="txt f14">按时发货，加急服务</p>
+            </em>
+        </div>
+        <div class="item">
+            <i><img src="images/guar3@icon.png"/></i>
+            <em>
+                <span class="dt f18">付款安全</span>
+                <p class="txt f14">使用大众及安全的方式支付</p>
+            </em>
+        </div>
+        <div class="item">
+            <i><img src="images/guar4@icon.png"/></i>
+            <em>
+                <span class="dt f18">价格优势</span>
+                <p class="txt f14">优势的价格源于不同生产能力</p>
+            </em>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+</div>
+<!--底部版权-->
+<div class="footer">
+    <!--关于捷创-->
+    <div class="footer-content clearfloat">
+        <div class="w-1280">
+            <div class="footer-left clearfloat">
+                <ul class="jc-menu ">
+                    <li>关于捷创</li>
+                    <li><a href="javascript:void(0)">企业简介</a></li>
+                    <li><a href="javascript:void(0)">产品展示</a></li>
+                    <li><a href="javascript:void(0)">联系我们</a></li>
+                    <li><a href="javascript:void(0)">用户分享</a></li>
+                </ul>
+                <ul class="jc-menu">
+                    <li>产品服务</li>
+                    <li><a href="javascript:void(0)">SMT贴片报价</a></li>
+                    <li><a href="javascript:void(0)">PCB打样报价</a></li>
+                </ul>
+                <ul class="jc-menu ">
+                    <li>工艺介绍</li>
+                    <li><a href="javascript:void(0)">SMT介绍</a></li>
+                    <li><a href="javascript:void(0)">PCB介绍</a></li>
+                    <li><a href="javascript:void(0)">物料介绍</a></li>
+                    <li><a href="javascript:void(0)">产品展示</a></li>
+                </ul>
+                <ul class="jc-menu ">
+                    <li>帮助中心</li>
+                    <li><a href="javascript:void(0)">常见问题</a></li>
+                    <li><a href="javascript:void(0)">购物指南</a></li>
+                    <li><a href="javascript:void(0)">意见反馈</a></li>
+                    <li><a href="javascript:void(0)">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div class="contact-us">
+                    <h3>CONTACT US .</h3>
+                    <div class="contact-item clearfloat">
+                        <i>办公地址：</i>
+                        <span>深圳市坂田街道万科星火online七栋234-235室</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>联系电话：</i>
+                        <span>18033063691</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>企业邮箱：</i>
+                        <span>2881601568@qq.com</span>
+                    </div>
+                </div>
+                <div class="contact-us">
+                    <h3>&nbsp;</h3>
+                    <div class="contact-item clearfloat">
+                        <i>工厂地址：</i>
+                        <span>深圳市坪山新区坑梓街道金沙工业区中兴路15号</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>联系电话：</i>
+                        <span>13826578334</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>企业邮箱：</i>
+                        <span>2881601568</span>
+                    </div>
+                </div>
+                <!--扫码关注-->
+                <div class="qr-code">
+                    <i>
+                        扫一扫关注公众号
+                        <br>随时了解捷创动态
+                    </i>
+                    <img src="images/the-public.png" alt="二维码" width="97" height="97">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--版权-->
+    <div class="jc-copyright">
+        <div class="w-1280">
+            <div class="copyright-box">
+                <div class="copyright-left">
+                    <span class="iconfont">&#xe60d;</span>
+                    <span>Copyright © 2016 www.jc-pcba.com 版权所有 深圳捷创电子科技有限公司 粤ICP备16117886号-1</span>
+                </div>
+                <div class="copyright-right">
+                    <a href="http://wpa.qq.com/msgrd?v=1&uin=2881601560&site=www.jdbpcb.com&menu=yes" target="_blank"
+                       class="iconfont">&#xe603;</a>
+                    <a href="https://weibo.com/6500851014/" target="_blank" class="iconfont">&#xe653;</a>
+                    <a href="https://shop303085121.taobao.com/" target="_blank" class="iconfont">&#xe616;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--通用弹窗遮罩-->
+<div class="g-mian-bg"></div>
+<!--跳转手机站链接弹窗-->
+<div class="phone-box js-phone-box">
+    <div class="phone-link">
+        <div class="link-left">
+            <h3>
+                捷创移动端网站
+                现已上线
+            </h3>
+            <p>
+                打开您的手机浏览器
+                <br>扫一扫及可进入捷创移动端
+                <br>便可随时随地
+                <br>计价--下单--管理您的订单
+            </p>
+        </div>
+        <img src="images/phone.png" alt="手机" width="340" height="423" class="phone">
+        <div class="link-right">
+            <h6>移动端二维码</h6>
+            <img src="images/phone-qr.png" alt="手机二维码" width="203" height="203">
+        </div>
+        <!--关闭按钮-->
+        <i class="iconfont popup-close js-popup-close">&#xe7be;</i>
+    </div>
+</div>
+<!--右侧分享-->
+<div class="share-box">
+    <!--返回顶部按钮-->
+    <div class="back-btn js-back-btn">
+        <span class="iconfont">&#xe649;</span>
+    </div>
+    <!--每一项-->
+    <ul class="share-lists">
+        <li>
+            <a href="javascript:void(0)">
+                <i>99</i>
+                <span class="iconfont">&#xe611;</span>
+            </a>
+        </li>
+        <li class="phone-btn">
+            <span class="iconfont" title="点击">&#xe60c;</span>
+        </li>
+        <li>
+            <span class="iconfont">&#xe61f;</span>
+            <!--弹出电话-->
+            <div class="tel-popup">24小时客服：13826578334</div>
+        </li>
+        <li>
+            <span class="iconfont">&#xe60b;</span>
+            <!--弹出微信-->
+            <div class="wx-popup">
+                <div class="wexin">
+                    <img src="images/wechat.png" alt="微信" width="127" height="127">
+                    <p>
+                        扫一扫
+                        <br>关注捷创
+                        <br>微信
+                        <br>公众号
+                    </p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<script src="js/golbal.js"></script>
+<!--layer-->
+<script src="js/layer-v3.1.1/layer/layer.js"></script>
+<!--视频-->
+<script src="js/video/video.min.js"></script>
+<script>
+    $(function () {
+
+        //图片展示
+        $(document).on('click', '.js-shows-imgs li', function () {
+            $(this).addClass('active-img').siblings('li').removeClass('active-img');//小图选择
+            $('.js-img-box').find('img').attr('src', $(this).attr('img-src'));
+            $('.js-img-box').find('.name-mask').html($(this).find('img').attr('alt'));
+        });
+       //模拟数据请求  //后台以json格式返回即可  参考img.json文件
+        $.ajax({
+            url: 'img.json',
+            type: 'get',
+            success: function (data) {
+                addImg(data);//回调实现分页
+            },
+            error: function (res) {
+                console.log('网络开差了,请在服务器环境下浏览');
+                console.log(res);
+            }
+        });
+        //回调函数
+        function addImg(data) {
+            var imgArr = data;
+            //一页数量
+            var pageSize = 12;
+            var totalPages = Math.ceil(imgArr.length / pageSize);
+            console.log(imgArr);//请求的数据
+            $('.js-total-pages').html(totalPages);
+            var pages = 1;
+            $('.js-up-pages').click(function () {
+                if (pages <= 1) {
+                    layer.msg('没有更多了', {icon: 2});
+                    return false;
+                }
+                $(this).addClass('active-pages').siblings('li').removeClass('active-pages');
+                pages--;
+                $('.js-now-pages').html(pages);
+                $('.js-shows-imgs').empty();//清空数据
+                $('.js-shows-imgs').append(pagination(pageSize, pages, imgArr));//更新数据
+                $('.js-shows-imgs li').first().addClass('active-img');
+            });
+            $('.js-down-pages').click(function () {
+                if (pages >= totalPages) {
+                    layer.msg('没有更多了', {icon: 2});
+                    return false;
+                }
+                $(this).addClass('active-pages').siblings('li').removeClass('active-pages');
+                pages++;
+                $('.js-now-pages').html(pages);
+                $('.js-shows-imgs').empty();//清空数据
+                $('.js-shows-imgs').append(pagination(pageSize, pages, imgArr));//更新数据
+                $('.js-shows-imgs li').first().addClass('active-img');
+            });
+        }
+        //分页数据切换
+        var pagination = function (pageSize, currentPage, arr) {
+            var skipNum = (currentPage - 1) * pageSize;
+            var newArr = (skipNum + pageSize >= arr.length) ? arr.slice(skipNum, arr.length) : arr.slice(skipNum, skipNum + pageSize);
+            var newStr = '';
+            for (var i = 0; i < newArr.length; i++) {
+                newStr += '  <li img-src="' + newArr[i].src + '">\n' +
+                    '                        <img src="' + newArr[i].src + ' ' +
+                    '" alt="' + newArr[i].title + '" width="100" height="62">\n' + '</li>'
+            }
+            return newStr;
+        };
+           //   打开视频
+           $('.js-video-btn').click(function () {
+               var videoUrl = 'images/123456.mp4';//视频播放路径相应修改
+               var $video = $('video');
+               $('.g-mian-bg').fadeIn();//显示遮罩
+               $('.video-box').fadeIn();//显示视频
+               $video.find('source').attr('src', videoUrl);
+               $video.attr('src', videoUrl);
+               //初始化视频
+               try {
+                   myPlayer = videojs('my-video');
+                   videojs("my-video").ready(function () {
+                       myPlayer = this;
+                   });
+               } catch (e) {
+                   console.log('浏览器版本过低，请至少升级至IE9');
+               }//end try
+           });
+           //  关闭视频
+           $('.js-close').click(function () {
+               $('.video-box').fadeOut();//关闭视频
+               $('.g-mian-bg').fadeOut();//关闭遮罩
+               myPlayer.load();
+           });
+           //暂停视频
+           $(document).keydown(function (e) {
+               if (e.keyCode === 27) {
+                   $('.video-box').fadeOut();//关闭视频
+                   $('.g-mian-bg').fadeOut();//关闭遮罩
+                   myPlayer.pause();
+               }
+           });
+    });//end function
+</script>
+</body>
+</html>

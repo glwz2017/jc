@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="images/jc.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="images/jc.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/base-new.css"/>
+    <link rel="stylesheet" href="css/news.css">
+    <!--字体图标-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!--浏览器版本-->
+    <!--[if lte IE 8]>
+    <script>var _iealwn = {once: 0, outver: 8};</script>
+    <script id="_iealwn_js" src="//support.dmeng.net/ie-alert-warning/latest.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--顶部快捷方式-->
+<div class="the-shortcut">
+    <div class="ui-left">
+        PCB制板\ SMT贴装综合服务商
+    </div>
+    <div class="ui-right">
+        <ul class="clearfloat">
+            <li class="js-phone-order">
+                <span class="iconfont">&#xe60c;</span>
+                手机端下单
+            </li>
+            <li class="split-lines"></li>
+            <li>
+                24小时客服：13826578334
+            </li>
+            <li class="split-lines"></li>
+            <li class="add-favorite">
+                收藏本站
+            </li>
+        </ul>
+    </div>
+</div>
+<!--导航-->
+<div class="nav-box js-nav-box clearfloat">
+    <div class="nav-left">
+        <h1>
+            <a href="index.html" class="iconfont">&#xe60d;</a>
+        </h1>
+        <ul class="nav-menu clearfloat">
+            <li>
+                <a href="index.html">首页</a>
+            </li>
+            <li>
+                <a href="smt-order.html">SMT贴片报价</a>
+            </li>
+            <li>
+                <a href="pcb-order.html">PCB打样报价</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">工艺介绍</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li>
+                        <a href="smt-introduce.html">SMT介绍</a>
+                    </li>
+                    <li>
+                        <a href="pcb-introduce.html">PCB介绍</a>
+                    </li>
+                    <li>
+                        <a href="material-introduce.html">物料介绍</a>
+                    </li>
+                    <li>
+                        <a href="product-display.html">产品展示</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="integral/integral-mall.html">积分商城</a>
+            </li>
+            <li class="active-menu">
+                <a href="javascript:void(0)">关于我们</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li>
+                        <a href="about-us.html">企业简介</a>
+                    </li>
+                    <li class="active-second">
+                        <a href="news.html">新闻资讯</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="user-share.html">用户分享</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">帮助中心</a>
+                <!--二级菜单-->
+                <ol class="second-menu">
+                    <li><a href="questions.html">常见问题</a></li>
+                    <li><a href="buy-guide.html">购物指南</a></li>
+                    <li><a href="feedback.html">意见反馈</a></li>
+                    <li><a href="link-us.html">联系我们</a></li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <!--未登录-->
+        <div class="no-login">
+            <ul class="clearfloat">
+                <li><a href="javascript:void(0)">登录</a></li>
+                <li class="split-lines"></li>
+                <li><a href="javascript:void(0)">注册</a></li>
+            </ul>
+            <!--购物车-->
+            <div class="car-box">
+                <a href="javascript:void(0)">
+                    <span class="iconfont">&#xe600;</span>
+                    99
+                </a>
+            </div>
+        </div>
+        <!--已登录-->
+        <div class="logined">
+            <i class="user-img"><img src="images/user-pic.png" alt="头像" width="40" height="40"></i>
+            <div class="user-info">
+                <span>您好!00379A</span>
+                <span class="iconfont">&#xe629;</span>
+                <!--下拉菜单-->
+                <div class="info-box">
+                    <ul class="info-list">
+                        <li>
+                            <a href="javascript:void(0)">订单管理</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">个人信息管理</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">优惠券管理</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0)" class="sign-out">安全退出</a>
+                </div>
+            </div>
+            <!--购物车-->
+            <div class="car-box">
+                <a href="javascript:void(0)">
+                    <span class="iconfont">&#xe600;</span>
+                    99
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--banner-->
+<div class="news-banner">
+    <div class="w-1280">
+        <!--当前位置 [动态导航]-->
+        <div class="current-position">
+            您当前位置：<a href="#">首页</a> - <a href="#">关于我们</a> - <a href="#">新闻资讯</a> - <a href="#">公司新闻</a>
+        </div>
+    </div>
+</div>
+<!--新闻展示-->
+<div class="show-news">
+    <div class="news-content">
+        <!--图片轮播-->
+        <div class="headlines-box clearfloat">
+            <!--图片-->
+            <div class="left-headlines js-left-headlines">
+                <!--图片项-->
+                <div class="headlines-img">
+                    <a href="javascript:void(0)">
+                        <img src="images/news1.png" alt="新闻1" width="883" height="487">
+                    </a>
+                </div>
+                <div class="headlines-img ">
+                    <a href="javascript:void(0)">
+                        <img src="images/banner1.jpg" alt="新闻2" width="883" height="487">
+                    </a>
+                </div>
+                <!--控制小圆点-->
+                <ul class="control-box js-control-box"></ul>
+            </div>
+            <!--文字-->
+            <div class="right-headlines">
+                <!--logo标志-->
+                <img class="headlines-logo" src="images/headlines.png" alt="头条标志" width="50" height="51">
+                <!--切换新闻文字条目-->
+                <div class="news-box js-news-box">
+                    <div class="news-text">
+                        <!--标题-->
+                        <h3>恭喜捷创电子首届“PCBA观摩活动“圆满结束1</h3>
+                        <!--介绍-->
+                        <div class="text">
+                            <p> 捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领者，
+                                更好的服务客户，方便客户，新的网站将植入手机下单端口，客户可以直接通手机站www.jc-pcba.com直接访问自已的
+                                订单情况，随时掌握订单的跟进情况，更方便更快捷。
+                                订单情况，随时掌握订单的跟进情况，更方便更快捷。
+                                订单情况，随时掌握订单的跟进情况，更方便更快捷。
+                                订单情况，随时掌握订单的跟进情况，更方便更快捷。</p>
+                        </div>
+                        <!--时间-->
+                        <div class="news-time">
+                            <i>2018.11.05</i>
+                            <span>+</span>
+                        </div>
+                    </div>
+                    <div class="news-text">
+                        <!--标题-->
+                        <h3>恭喜捷创电子首届“PCBA观摩活动“圆满结束2</h3>
+                        <!--介绍-->
+                        <div class="text">
+                            <p> 捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领者，
+                                更好的服务客户，方便客户，新的网站将植入手机下单端口，客户可以直接通手机站www.jc-pcba.com直接访问自已的
+                                订单情况，随时掌握订单的跟进情况，更方便更快捷。
+                                订单情况，随时掌握订单的跟进情况，更方便更快捷。
+                                订单情况，随时掌握订单的跟进情况，更方便更快捷。
+                                订单情况，随时掌握订单的跟进情况，更方便更快捷。</p>
+                        </div>
+                        <!--时间-->
+                        <div class="news-time">
+                            <i>2018.11.06</i>
+                            <span>+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--列表导航-->
+        <ul class="list-navigation clearfloat js-list-navigation">
+            <li class="active-nav" data="0">公司新闻</li>
+            <li class="split-lines"></li>
+            <li data="1">行业新闻</li>
+            <li class="split-lines"></li>
+            <li data="2">会员公告</li>
+        </ul>
+    </div>
+</div>
+<!--分类信息展示-->
+<div class="category-box clearfloat">
+    <div class="w-1280">
+        <!--左侧类别信息-->
+        <div class="style-info js-style-info">
+            <!--公司新闻-->
+            <div class="news-lists">
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>恭喜捷创电子首届“PCBA观摩活动“圆满结束</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>深圳捷创电子全国第一家线路板喷涂三防漆加工厂，PCB板喷三防漆后使用寿命更长</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                            <!--图片展示 有显示无隐藏-->
+                            <ul class="graphic-img clearfloat">
+                                <li>
+                                    <img src="images/show-img1.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img2.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img1.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img2.png" alt="图例1" width="175" height="100">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>深圳捷创电子全国第一家线路板喷涂三防漆加工厂，PCB板喷三防漆后使用寿命更长</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                            <!--图片展示 有显示无隐藏-->
+                            <ul class="graphic-img clearfloat">
+                                <li>
+                                    <img src="images/show-img1.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img2.png" alt="图例1" width="175" height="100">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>恭喜捷创电子首届“PCBA观摩活动“圆满结束</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>恭喜捷创电子首届“PCBA观摩活动“圆满结束</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>深圳捷创电子全国第一家线路板喷涂三防漆加工厂，PCB板喷三防漆后使用寿命更长</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                            <!--图片展示 有显示无隐藏-->
+                            <ul class="graphic-img clearfloat">
+                                <li>
+                                    <img src="images/show-img1.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img2.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img1.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img2.png" alt="图例1" width="175" height="100">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>深圳捷创电子全国第一家线路板喷涂三防漆加工厂，PCB板喷三防漆后使用寿命更长</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                            <!--图片展示 有显示无隐藏-->
+                            <ul class="graphic-img clearfloat">
+                                <li>
+                                    <img src="images/show-img1.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img2.png" alt="图例1" width="175" height="100">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>恭喜捷创电子首届“PCBA观摩活动“圆满结束</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--行业新闻-->
+            <div class="news-lists">
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>行业恭喜捷创电子首届“PCBA观摩活动“圆满结束</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>行业深圳捷创电子全国第一家线路板喷涂三防漆加工厂，PCB板喷三防漆后使用寿命更长</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                            <!--图片展示 有显示无隐藏-->
+                            <ul class="graphic-img clearfloat">
+                                <li>
+                                    <img src="images/show-img1.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img2.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img1.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img2.png" alt="图例1" width="175" height="100">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>行业深圳捷创电子全国第一家线路板喷涂三防漆加工厂，PCB板喷三防漆后使用寿命更长</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                            <!--图片展示 有显示无隐藏-->
+                            <ul class="graphic-img clearfloat">
+                                <li>
+                                    <img src="images/show-img1.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img2.png" alt="图例1" width="175" height="100">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>行业恭喜捷创电子首届“PCBA观摩活动“圆满结束</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>恭喜捷创电子首届“PCBA观摩活动“圆满结束</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>深圳捷创电子全国第一家线路板喷涂三防漆加工厂，PCB板喷三防漆后使用寿命更长</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                            <!--图片展示 有显示无隐藏-->
+                            <ul class="graphic-img clearfloat">
+                                <li>
+                                    <img src="images/show-img1.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img2.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img1.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img2.png" alt="图例1" width="175" height="100">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>深圳捷创电子全国第一家线路板喷涂三防漆加工厂，PCB板喷三防漆后使用寿命更长</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                            <!--图片展示 有显示无隐藏-->
+                            <ul class="graphic-img clearfloat">
+                                <li>
+                                    <img src="images/show-img1.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img2.png" alt="图例1" width="175" height="100">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>恭喜捷创电子首届“PCBA观摩活动“圆满结束</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--会员公告-->
+            <div class="news-lists">
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>会员恭喜捷创电子首届“PCBA观摩活动“圆满结束</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>会员深圳捷创电子全国第一家线路板喷涂三防漆加工厂，PCB板喷三防漆后使用寿命更长</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                            <!--图片展示 有显示无隐藏-->
+                            <ul class="graphic-img clearfloat">
+                                <li>
+                                    <img src="images/show-img1.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img2.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img1.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img2.png" alt="图例1" width="175" height="100">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>深圳捷创电子全国第一家线路板喷涂三防漆加工厂，PCB板喷三防漆后使用寿命更长</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                            <!--图片展示 有显示无隐藏-->
+                            <ul class="graphic-img clearfloat">
+                                <li>
+                                    <img src="images/show-img1.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img2.png" alt="图例1" width="175" height="100">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>恭喜捷创电子首届“PCBA观摩活动“圆满结束</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>恭喜捷创电子首届“PCBA观摩活动“圆满结束</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>深圳捷创电子全国第一家线路板喷涂三防漆加工厂，PCB板喷三防漆后使用寿命更长</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                            <!--图片展示 有显示无隐藏-->
+                            <ul class="graphic-img clearfloat">
+                                <li>
+                                    <img src="images/show-img1.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img2.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img1.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img2.png" alt="图例1" width="175" height="100">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>深圳捷创电子全国第一家线路板喷涂三防漆加工厂，PCB板喷三防漆后使用寿命更长</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                            <!--图片展示 有显示无隐藏-->
+                            <ul class="graphic-img clearfloat">
+                                <li>
+                                    <img src="images/show-img1.png" alt="图例1" width="175" height="100">
+                                </li>
+                                <li>
+                                    <img src="images/show-img2.png" alt="图例1" width="175" height="100">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="news-details.html">
+                        <div class="left-graphic">
+                            <h3>恭喜捷创电子首届“PCBA观摩活动“圆满结束</h3>
+                            <p>捷创电子官网将全面改版升级，首面的内容将更加丰富，体验度也越来越好。捷创电子做为smt贴片打样行业的引领...</p>
+                        </div>
+                        <div class="right-time">
+                            <i>2018.12.29</i>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--分页 不足八条不显示-->
+            <div class="pages-box">
+                <div id="pageToolbar"></div>
+            </div>
+        </div>
+        <!--右侧计价-->
+        <div class="right-box">
+            <div class="online-invoicing">
+                <h3>在线计价</h3>
+                <!--元器件-->
+                <div class="components-box">
+                    <div class="component-item">
+                        <label for="num">元器件数量</label>
+                        <input type="text" id="num">
+                    </div>
+                    <div class="component-item">
+                        <label for="circuit">电路板数量</label>
+                        <input type="text" id="circuit">
+                    </div>
+                    <!--工艺要求与代购元件-->
+                    <div class="component-item clearfloat">
+                        <!--工艺要求-->
+                        <div class="special-box ">
+                            <h4>工艺要求</h4>
+                            <ul class="clearfloat js-special-ul">
+                                <li class="active-li">有铅</li>
+                                <li>无铅</li>
+                            </ul>
+                        </div>
+                        <!--代购元件-->
+                        <div class="special-box js-special-ul">
+                            <h4>代购元件</h4>
+                            <ul class="clearfloat">
+                                <li class="active-li">是</li>
+                                <li>否</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--立即报价-->
+                    <div class="component-item">
+                        <a href="pcb-order.html" class="btn">立即报价</a>
+                    </div>
+                </div>
+            </div>
+            <!--广告-->
+            <div class="advertising">
+                <a href="javascript:void(0)">
+                    <img src="images/advertising.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--服务保障-->
+<div class="four-guarante">
+    <div class="w-1280">
+        <div class="item">
+            <i><img src="images/guar1@icon.png" alt="品质"/></i>
+            <em>
+                <span class="dt f18">质量保证</span>
+                <p class="txt f14">知名品牌，厂家直售</p>
+            </em>
+        </div>
+        <div class="item">
+            <i><img src="images/guar2@icon.png" /></i>
+            <em>
+                <span class="dt f18">交期保证</span>
+                <p class="txt f14">按时发货，加急服务</p>
+            </em>
+        </div>
+        <div class="item">
+            <i><img src="images/guar3@icon.png"/></i>
+            <em>
+                <span class="dt f18">付款安全</span>
+                <p class="txt f14">使用大众及安全的方式支付</p>
+            </em>
+        </div>
+        <div class="item">
+            <i><img src="images/guar4@icon.png"/></i>
+            <em>
+                <span class="dt f18">价格优势</span>
+                <p class="txt f14">优势的价格源于不同生产能力</p>
+            </em>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+</div>
+<!--底部版权-->
+<div class="footer">
+    <!--关于捷创-->
+    <div class="footer-content clearfloat">
+        <div class="w-1280">
+            <div class="footer-left clearfloat">
+                <ul class="jc-menu ">
+                    <li>关于捷创</li>
+                    <li><a href="javascript:void(0)">企业简介</a></li>
+                    <li><a href="javascript:void(0)">产品展示</a></li>
+                    <li><a href="javascript:void(0)">联系我们</a></li>
+                    <li><a href="javascript:void(0)">用户分享</a></li>
+                </ul>
+                <ul class="jc-menu">
+                    <li>产品服务</li>
+                    <li><a href="javascript:void(0)">SMT贴片报价</a></li>
+                    <li><a href="javascript:void(0)">PCB打样报价</a></li>
+                </ul>
+                <ul class="jc-menu ">
+                    <li>工艺介绍</li>
+                    <li><a href="javascript:void(0)">SMT介绍</a></li>
+                    <li><a href="javascript:void(0)">PCB介绍</a></li>
+                    <li><a href="javascript:void(0)">物料介绍</a></li>
+                    <li><a href="javascript:void(0)">产品展示</a></li>
+                </ul>
+                <ul class="jc-menu ">
+                    <li>帮助中心</li>
+                    <li><a href="javascript:void(0)">常见问题</a></li>
+                    <li><a href="javascript:void(0)">购物指南</a></li>
+                    <li><a href="javascript:void(0)">意见反馈</a></li>
+                    <li><a href="javascript:void(0)">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div class="contact-us">
+                    <h3>CONTACT US .</h3>
+                    <div class="contact-item clearfloat">
+                        <i>办公地址：</i>
+                        <span>深圳市坂田街道万科星火online七栋234-235室</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>联系电话：</i>
+                        <span>18033063691</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>企业邮箱：</i>
+                        <span>2881601568@qq.com</span>
+                    </div>
+                </div>
+                <div class="contact-us">
+                    <h3>&nbsp;</h3>
+                    <div class="contact-item clearfloat">
+                        <i>工厂地址：</i>
+                        <span>深圳市坪山新区坑梓街道金沙工业区中兴路15号</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>联系电话：</i>
+                        <span>13826578334</span>
+                    </div>
+                    <div class="contact-item clearfloat">
+                        <i>企业邮箱：</i>
+                        <span>2881601568</span>
+                    </div>
+                </div>
+                <!--扫码关注-->
+                <div class="qr-code">
+                    <i>
+                        扫一扫关注公众号
+                        <br>随时了解捷创动态
+                    </i>
+                    <img src="images/the-public.png" alt="二维码" width="97" height="97">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--版权-->
+    <div class="jc-copyright">
+        <div class="w-1280">
+            <div class="copyright-box">
+                <div class="copyright-left">
+                    <span class="iconfont">&#xe60d;</span>
+                    <span>Copyright © 2016 www.jc-pcba.com 版权所有 深圳捷创电子科技有限公司 粤ICP备16117886号-1</span>
+                </div>
+                <div class="copyright-right">
+                    <a href="http://wpa.qq.com/msgrd?v=1&uin=2881601560&site=www.jdbpcb.com&menu=yes" target="_blank"
+                       class="iconfont">&#xe603;</a>
+                    <a href="https://weibo.com/6500851014/" target="_blank" class="iconfont">&#xe653;</a>
+                    <a href="https://shop303085121.taobao.com/" target="_blank" class="iconfont">&#xe616;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--通用弹窗遮罩-->
+<div class="g-mian-bg"></div>
+<!--跳转手机站链接弹窗-->
+<div class="phone-box js-phone-box">
+    <div class="phone-link">
+        <div class="link-left">
+            <h3>
+                捷创移动端网站
+                现已上线
+            </h3>
+            <p>
+                打开您的手机浏览器
+                <br>扫一扫及可进入捷创移动端
+                <br>便可随时随地
+                <br>计价--下单--管理您的订单
+            </p>
+        </div>
+        <img src="images/phone.png" alt="手机" width="340" height="423" class="phone">
+        <div class="link-right">
+            <h6>移动端二维码</h6>
+            <img src="images/phone-qr.png" alt="手机二维码" width="203" height="203">
+        </div>
+        <!--关闭按钮-->
+        <i class="iconfont popup-close js-popup-close">&#xe7be;</i>
+    </div>
+</div>
+<!--右侧分享-->
+<div class="share-box">
+    <!--返回顶部按钮-->
+    <div class="back-btn js-back-btn">
+        <span class="iconfont">&#xe649;</span>
+    </div>
+    <!--每一项-->
+    <ul class="share-lists">
+        <li>
+            <a href="javascript:void(0)">
+                <i>99</i>
+                <span class="iconfont">&#xe611;</span>
+            </a>
+        </li>
+        <li class="phone-btn">
+            <span class="iconfont" title="点击">&#xe60c;</span>
+        </li>
+        <li>
+            <span class="iconfont">&#xe61f;</span>
+            <!--弹出电话-->
+            <div class="tel-popup">24小时客服：13826578334</div>
+        </li>
+        <li>
+            <span class="iconfont">&#xe60b;</span>
+            <!--弹出微信-->
+            <div class="wx-popup">
+                <div class="wexin">
+                    <img src="images/wechat.png" alt="微信" width="127" height="127">
+                    <p>
+                        扫一扫
+                        <br>关注捷创
+                        <br>微信
+                        <br>公众号
+                    </p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<script src="js/golbal.js"></script>
+<!--分页-->
+<script src="js/pages/query.js"></script>
+<script src="js/pages/paging.js"></script>
+<script>
+    $(function () {
+        // pagesize:总页数可自定义 默认10;
+        var p = new Paging();
+        p.init(
+            {
+                target: '#pageToolbar',
+                pagesize: 15,
+                prevTpl: "上一页",
+                nextTpl: "下一页",
+                firstTpl: "首页",
+                lastTpl: "末页",
+                jumpTpl: "跳转",
+                toolbar: true,
+                callback: function (page, size, count) {
+                    // window.location.href = "url" + page
+                },
+                current: 1
+            }
+        );
+        //新闻轮播
+        void function () {
+            var index = 0;
+            var timer1 = null;
+            var headLinesImg = $('.js-left-headlines .headlines-img');
+            var newsText = $('.js-news-box .news-text');
+            var controlLength = headLinesImg.length;
+            $('.js-control-box').append(addControl(controlLength));
+            var controlLi = $('.js-control-box li');
+            controlLi.eq(0).addClass('active-point');
+
+            //动态添加控制原点
+            function addControl(controlLength) {
+                var str = '';
+                for (var i = 0; i < controlLength; i++) {
+                    str += ' <li></li>'
+                }
+                return str;
+            }
+
+            //移动元素
+            function moveNews() {
+                index >= controlLength ? index = 0 : index;
+                headLinesImg.eq(index).stop().fadeIn().siblings('.headlines-img').stop().fadeOut();
+                newsText.eq(index).stop().show().siblings('.news-text').stop().hide();
+                controlLi.eq(index).addClass('active-point').siblings('li').removeClass('active-point');
+                index++;
+            }
+
+            timer1 = setInterval(moveNews, 3000);
+            //    控制小圆点
+            controlLi.hover(function () {
+                clearInterval(timer1);
+                index = $(this).index();
+                moveNews();
+            }, function () {
+                timer1 = setInterval(moveNews, 3000);
+            });
+        }();
+        //新闻资讯切换
+        $('.js-list-navigation li').click(function () {
+            var index = $(this).attr('data');
+            console.log(index === undefined);
+            if (index === undefined) {
+                return false;
+            }
+            $(this).addClass('active-nav').siblings('li').removeClass('active-nav');
+            $('.js-style-info .news-lists').eq(index).show().siblings('.news-lists').hide();
+        });
+
+        //    计价下单
+        $('.js-special-ul li').click(function () {
+            $(this).addClass('active-li').siblings('li').removeClass('active-li');
+        });
+
+    });//end function
+</script>
+</body>
+</html>
